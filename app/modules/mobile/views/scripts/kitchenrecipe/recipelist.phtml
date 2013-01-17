@@ -1,0 +1,51 @@
+{%include file="header.phtml"%}
+{%include file="common/ad_header.phtml"%}
+
+<div id="recipeIndex">
+	<div class="content" style="background:#f0f5e0;">
+		<div class="headline" style="background:#8bbd82;color:#cce198;text-align:center;">
+			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/recipe.gif" width="230" height="60" /><br />
+			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+			{% if $genre == 1 %}
+				<span style="color:#ffffff;">洋食</span>|<a href='{% "$baseUrl/mobile/kitchenrecipe/recipelist?CF_genre=2&CF_uid=`$userInfo.uid`"|mixiurl %}' style="color:#cce198;"><span style="color:#cce198;">ﾘｽﾄﾗﾝﾃ</span></a>|和食<br />
+				中華|ｴｽﾆｯｸ|ﾒｷｼｶﾝ<br />
+			{% elseif $genre == 2 %}
+				<a href='{% "$baseUrl/mobile/kitchenrecipe/recipelist?CF_genre=1&CF_uid=`$userInfo.uid`"|mixiurl %}' style="color:#cce198;"><span style="color:#cce198;">洋食</span></a>|<span style="color:#ffffff;">ﾘｽﾄﾗﾝﾃ</span>|和食<br />
+				中華|ｴｽﾆｯｸ|ﾒｷｼｶﾝ<br />
+			{% /if %}
+		</div><!--/.headline-->
+		<div class="description" style="text-align:center;">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			{% $recipeCountPerGenre %}種類中<span style="color:#cc0000;">{% $recipeCount %}種類</span>覚えました!<br />
+		</div><!--/.description-->
+		<div class="inner" style="text-align:center;">
+			<table width="100%" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+				{% foreach from=$recipeList item=recipe key=index%}
+    				<td style="width:33%;text-align:center;"><a href='{% "$baseUrl/mobile/kitchenrecipe/recipedetail?CF_recipe_id=`$recipe.recipe_id`&CF_uid=`$userInfo.uid`"|mixiurl %}'>{% if $recipe.isdisplay %}<img src="{%$staticUrl%}/apps/kitchen/mobile/img/meal/74x74/{% $recipe.f %}/{% $recipe.n %}.gif" width="74" height="74" style="margin-top:3px;" />{% else %}<img src="{%$staticUrl%}/apps/kitchen/mobile/img/meal/74x74/null.gif" width="74" height="74" style="margin-top:3px;" />{% /if %}</a></td>
+					{% if $index % 3 == 2 %}</tr><tr>{% /if %}
+				{% /foreach %}
+				</tr>
+			</table>
+		</div><!--/.inner-->
+		{%include file="common/pager.phtml"%}
+		<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+		<div class="line" style="background:#8bbd82;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+		<div class="toInviteNav" style="text-align:center;">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			{% emoji code="F9A0" %}<a href='{% "invite:friends?callback=$baseUrl/mobile/callback/invite?forward=$baseUrl/mobile/kitchen/invitefinish" %}'>ﾏｲﾐｸと一緒にﾚｼﾋﾟを集めよう</a><br />
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			<div style="background:#8bbd82;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+		</div><!--/.toInviteNav-->
+		<div class="footlink">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			{% emoji code="F9B8" %}<a href='{% "$baseUrl/mobile/kitchenitem/food"|mixiurl %}'>アイテムBOX:食材冷蔵庫</a><br />
+			{% emoji code="F8C4" %}<a href='{% "$baseUrl/mobile/kitchen/home?CF_uid=`$userInfo.uid`"|mixiurl %}'>{% $userInfo.displayName%}のお店</a><br />
+		</div><!--/.footlink-->
+		<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+		<div class="line" style="background:#8bbd82;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+	</div><!--/.content-->
+</div><!--/#recipeIndex-->
+
+{%include file="common/menu.phtml"%}
+{%include file="ad_footer.phtml"%}

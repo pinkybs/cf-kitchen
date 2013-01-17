@@ -1,0 +1,43 @@
+{%include file="header.phtml"%}
+
+<div id="setFly">
+	<div class="content" style="background:#f0f5e0;">
+
+		<div class="headline" style="background:#8bbd82;color:#ffffff;text-align:center;">
+			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+			{%emoji code="F9A3"%}ハエを飛ばしました{%emoji code="F9A3"%}<br />
+			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+		</div><!--/.headline-->
+
+		<div class="description">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			{%$profileInfo.displayName%}さんの店にハエを飛ばしました{%emoji code="F9A3"%}撃退すると<span style="color:#cc0000;">経験値</span>が貰えます!<br />
+		</div><!--/.description-->
+
+		{%include file="common/ad_middle.phtml"%}
+
+		<div class="toKitchen" style="text-align:center;">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+			<span style="color:#ff9999;">≫</span><a href='{% "$baseUrl/mobile/kitchen/home?CF_uid=`$profileInfo.uid`"|mixiurl %}'>{%$profileInfo.displayName%}さんのｷｯﾁﾝへ</a><span style="color:#ff9999;">≪</span><br />
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+		</div><!--/.toKitchen-->
+
+		<div class="caution" style="text-align:center;">
+			{%emoji code="F9A0"%}他の店にもｲﾀｽﾞﾗしちゃう!?<br />
+			<span style="color:#ff9999;">≫</span><a href='{% "$baseUrl/mobile/kitchen/rankinglist"|mixiurl %}'>マイミクさんの店舗一覧へ</a><span style="color:#ff9999;">≪</span><br />
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+		</div><!--/.caution-->
+
+		<div class="footlink">
+			<div style="background:#8bbd82;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			{% emoji code="F8C4" %}<a href='{% "$baseUrl/mobile/kitchen/home"|mixiurl %}'>Myレストラン</a><br />
+		</div><!--/.footlink-->
+
+		<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+		<div class="line" style="background:#8bbd82;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+	</div><!--/.content-->
+</div><!--/#setFly-->
+
+{%include file="common/menu.phtml"%}
+{%include file="footer.phtml"%}

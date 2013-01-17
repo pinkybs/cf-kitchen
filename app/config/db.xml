@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<app>	
+	<database>
+		<db_basic>
+			<adapter>PDO_MYSQL</adapter>
+			<config>
+				<host>10.210.166.79</host>
+				<username>mysql</username>
+				<password>r$6i7kP#xb</password>
+				<dbname>mykitchen</dbname>
+			</config>
+		</db_basic>
+	</database>
+</app>

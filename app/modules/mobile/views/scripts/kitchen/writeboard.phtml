@@ -1,0 +1,72 @@
+{%include file="header.phtml"%}
+<div id="writeboardconfirm">
+    <div class="content" style="background:#fff5f5;">
+        <div class="headline" style="background:#ff9999;color:#ffffff;text-align:center;">
+            <img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/friendboard.gif" width="230" height="60" /><br />
+            {%*
+            <img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+            {% emoji code="F8C4" %}{% $activeResInfo.name %}<br />
+            *%}
+            <img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+            カキコミする<br />
+        </div><!--/.headline-->
+        <div class="description">
+            <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+            こちらの内容でよろしいですか？<br />
+            <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+            <div style="background:#ff9999;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+        </div><!--/.description-->
+		<div class="action">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+            
+            {%*
+            <form method="post" action='{% "$baseUrl/mobile/kitchen/writeboardfinish"|mixiurl %}'>
+                <div style="text-align:center;"><span style="color:#cc0000;">{%$alertTxt%}</span></div>
+                <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+                {%$txtShow%}<br />
+                <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+                <div style="background:#ff9999;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+                <input type="hidden" name="CF_txt" value="{% $txt %}"　>
+                <input type="hidden" name="CF_uid" value="{% $profileUid %}"　>
+                <div class="btn" style="text-align:center;">
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+                    <input type="submit" {% if $opera %}disabled="disabled"{% /if %} value=" カキコミ " />
+                </div><!--/.btn-->
+            </form>
+            *%}
+            <div class="buy" style="text-align:center;">
+                <div style="text-align:center;"><span style="color:#cc0000;">{%$alertTxt%}</span></div>
+                <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+                {%$txtShow%}<br />
+                <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+            </div>
+            
+            <div class="buy" style="color:#cc0000;text-align:center;">
+	            <form action="create:activity?callback={%$baseUrl%}/mobile/kitchen/writeboardfinish{% if $ua==1 %}&guid=ON{%/if%}" method="POST" >
+	                <input type="hidden" name="title" value="{%$commFeedTitle%}" />
+	                <input type="hidden" name="mobileUrl" value="http://ma.mixi.net/{%$appId%}/" />
+	                {%*<input type="hidden" name="mediaItem1" value="{%$commFeedUrl%}" />*%}
+	                <input type="hidden" name="recipient1" value="{% $profileUid %}" />
+	                <div style="text-align:center;"><input type="submit" value="決定" /></div>
+	            </form>
+	
+	            <form method="post" action='{% "$baseUrl/mobile/kitchen/home/CF_uid/`$profileUid`"|mixiurl %}'>
+	                <div class="btn" style="text-align:center;">
+	                    <input type="submit" value=" やめる " />
+	                </div><!--/.btn-->
+	            </form>
+	        </div><!--/.buy-->
+            
+            
+            
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+		</div><!--/.action-->
+		<div class="caution">
+			{% emoji code="F9A0" %}一度決定したカキコミは削除できませんのでご注意ください。<br />
+		</div><!--/.caution-->
+		<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+		<div class="line" style="background:#ff9999;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+	</div><!--/.content-->
+</div><!--/#writeboardconfirm-->
+{%include file="common/browseback.phtml"%}
+{%include file="footer.phtml"%}

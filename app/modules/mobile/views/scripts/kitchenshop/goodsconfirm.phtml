@@ -1,0 +1,86 @@
+{%include file="header.phtml"%}
+
+<div id="zakkaConfirm">
+	<div class="content" style="background:#eeffff;">
+		<div class="headline" style="background:#82bdba;color:#ffffff;text-align:center;">
+			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/zakka.gif" width="230" height="60" /><br />
+			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+			{% $goodsInfo.goods_name %}<br />
+		</div><!--/#headline-->
+		<div class="description">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			こちらのざっかを購入しますか?<br />
+		</div><!--/.description-->
+		<div class="thumb" style="text-align:center;">
+			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/zakka/130x130/{% $goodsInfo.goods_picture %}.gif" width="130" height="130" style="margin:3px 0;" /><br />
+			{% $goodsInfo.goods_introduce %}<br />
+		</div><!--/.thumb-->
+		<div class="account">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			<table width="150" cellpadding="0" cellspacing="0" border="0" align="center" style="text-align:center;">
+				<tr>
+					<td colspan="2"><div class="line" style="background:#82bdba;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="1" /></div></td>
+				</tr>
+				<tr>
+					<td><div style="{% if $ua==1 %}font-size:x-small;{%/if%}text-align:left;">{% if $payType == "gold" %}{% emoji code="F8C8" %}所持M{% else %}{% emoji code="F8E5" %}所持T{% /if %}</div></td>
+					<td><div style="{% if $ua==1 %}font-size:x-small;{%/if%}text-align:right;">{% if $payType == "gold" %}{% $gold %}M{% else %}{% $point %}T{% /if %}</div></td>
+				</tr>
+				<tr>
+					<td><div style="{% if $ua==1 %}font-size:x-small;{%/if%}text-align:left;">{% if $payType == "gold" %}{% emoji code="F8C8" %}{% else %}{% emoji code="F8E5" %}{% /if %}価格</div></td>
+					<td><div style="{% if $ua==1 %}font-size:x-small;{%/if%}text-align:right;">{% if $payType == "gold" %}{% $goodsInfo.goods_price_gold %}M{% else %}{% $goodsInfo.goods_price_point %}T{% /if %}</div></td>
+				</tr>
+				{% if $goodsInfo.disct > 0%}
+				<tr>
+					<td><div style="{% if $ua==1 %}font-size:x-small;{%/if%}text-align:left;">{% if $payType == "gold" %}{% emoji code="F8C8" %}割引M{% else %}{% emoji code="F8E5" %}割引T{% /if %}</div></td>
+					<td><div style="color:#cc0000;{% if $ua==1 %}font-size:x-small;{%/if%}text-align:right;">-{% if $payType == "gold" %}{% $goodsInfo.disct %}M{% else %}{% $goodsInfo.disct %}T{% /if %}</div></td>
+				</tr>
+				{% /if %}
+				{% if $result == 1%}
+					<tr>
+						<td><div style="{% if $ua==1 %}font-size:x-small;{%/if%}text-align:left;">{% if $payType == "gold" %}{% emoji code="F8C8" %}購入後M{% else %}{% emoji code="F8E5" %}購入後T{% /if %}</div></td>
+						<td><div style="{% if $ua==1 %}font-size:x-small;{%/if%}color:#cc0000;text-align:right;">{% if $payType == "gold" %}{% $goodsInfo.money_left %}M{% else %}{% $goodsInfo.money_left %}T{% /if %}</div></td>
+					</tr>
+				{% /if %}
+				<tr>
+					<td><div style="{% if $ua==1 %}font-size:x-small;{%/if%}text-align:left;">{% emoji code="F8D0" %}ｼﾞｬﾝﾙ</div></td>
+					<td><div style="{% if $ua==1 %}font-size:x-small;{%/if%}text-align:right;">{% $genreName %}</div></td>
+				</tr>
+				<tr>
+					<td colspan="2"><div class="line" style="background:#82bdba;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="1" /></div></td>
+				</tr>
+			</table>
+		</div><!--/.account-->
+		{% if $result == 1%}
+			<div class="buy" style="color:#cc0000;text-align:center;">
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+				{% if $payType == "gold" %}{% emoji code="F8C8" %}{% else %}{% emoji code="F8E5" %}{% /if %}<a href='{% "$baseUrl/mobile/kitchenshop/goodsfinish?goods_id=`$goodsInfo.goods_id`&pay=`$payType`&position=`$position`"|mixiurl %}' style="color:#cc0000;"><span style="color:#cc0000;">購入する</span></a><br />
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+			</div><!--/.buy-->
+		{% else %}
+			<div class="buy" style="color:#cc0000;text-align:center;">
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+				{% emoji code="F997" %}{% if $payType == "gold" %}ﾒﾀﾞﾙ{% else %}ﾁｯﾌﾟ{% /if %}が足りません<br />
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+			</div><!--/.buy-->
+		{% /if %}
+
+		<div class="caution">
+			{% emoji code="F9A0" %}ざっかの配置はいつでも自由に変更可能です<br />
+		</div><!--/.caution-->
+
+		{% if $result != 1 %}
+			<div class="footlink">
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				<div style="background:#82bdba;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				{% if $ua!=2 %}{% emoji code="F97E" %}{% else %}{% emoji code="F8F8" %}{% /if %}<a href='{% "$baseUrl/mobile/kitchenshop/goodslist"|mixiurl %}'>ざっか屋に戻る</a><br />
+			</div><!--/.footlink-->
+		{% /if %}
+
+		<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+		<div class="line" style="background:#82bdba;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+	</div><!--/.content-->
+</div><!--/#zakkaConfirm-->
+
+{%include file="common/browseback.phtml"%}
+{%include file="footer.phtml"%}

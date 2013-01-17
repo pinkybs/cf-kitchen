@@ -1,0 +1,92 @@
+{%include file="header.phtml"%}
+
+<div id="addSpice">
+	<div class="content" style="background:#f0f5e0;">
+
+		<div class="headline" style="background:#8bbd82;color:#ffffff;text-align:center;">
+			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+			{%emoji code="F8F5"%}味付けをしました{%emoji code="F8F5"%}<br />
+			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+		</div><!--/.headline-->
+
+		<div class="description">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			{% if $isMyself %}
+				｢{%$rcpName|escape%}｣の味付けをして､<span style="color:#cc0000;">10の経験値</span>を獲得しました{%emoji code="F9CF"%}<br />
+			{% else %}
+				{%$profileInfo.displayName%}さんの店の｢{%$rcpName|escape%}｣に味付けをして､{%emoji code="F8E5"%}<span style="color:#cc0000;">10ﾁｯﾌﾟ</span>のｱﾙﾊﾞｲﾄ代をもらいました{%emoji code="F9CF"%}<br />
+			{% /if %}
+		</div><!--/.description-->
+
+		{%include file="common/ad_middle.phtml"%}
+
+		{% if $isLevUp %}
+
+			<div class="levelUp" style="text-align:center;">
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="5" /><br />
+				<object data="{%$staticUrl%}/apps/kitchen/mobile/img/recipe/levelup.swf" type="application/x-shockwave-flash" width="240" height="106">
+					<param name="bgcolor" value="ffffff" />
+					<param name="loop" value="on" />
+					<param name="quality" value="high" />
+					<embed src="{%$staticUrl%}/apps/kitchen/mobile/img/recipe/levelup.swf" width="240" height="106" loop="on" quality="high" bgcolor="#ffffff"></embed>
+				</object><br />
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				<span style="color:#cc0000;">レベルアップしました!</span><br />
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="5" /><br />
+
+				{% if $step == 3 %}
+					<span style="color:#cc0000;">食材市場でお買い物が<br />できるようになりました!</span><br />
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+					<span style="color:#cc0000;">食材を増やすと<br />{%emoji code="F8E4"%}レシピ開発に有利だよ!</span><br />
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+					食材を充実させよう{%emoji code="F99B"%}<br />
+					<span style="color:#ff9999;">≫</span><a href='{% "$baseUrl/mobile/kitchenshop/foodlist"|mixiurl %}'>食材市場へ</a><span style="color:#ff9999;">≪</span><br />
+				{% elseif $step == 5 %}
+					<span style="color:#cc0000;">不動産屋でお買い物が<br />できるようになりました!</span><br />
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+					<span style="color:#cc0000;">不動産物件を変えると<br />{%emoji code="F8E4"%}新しいｼﾞｬﾝﾙに挑戦できたり<br />キッチンの台数が増えるよ{%emoji code="F99F"%}</span><br />
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+					目指せ!セレブな一流店{%emoji code="F99B"%}<br />
+					<span style="color:#ff9999;">≫</span><a href='{% "$baseUrl/mobile/kitchenshop/estatelist"|mixiurl %}'>不動産屋へ</a><span style="color:#ff9999;">≪</span><br />
+				{% elseif $step == 10 %}
+					<span style="color:#cc0000;">美容室が利用<br />できるようになりました!</span><br />
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+					<span style="color:#cc0000;">シェフの容姿を変更して<br />友達に自慢しよう{%emoji code="F8F5"%}</span><br />
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+					すてきなシェフに大変身{%emoji code="F99B"%}<br />
+					<span style="color:#ff9999;">≫</span><a href='{% "$baseUrl/mobile/kitchenshop/beautylist"|mixiurl %}'>美容室へ</a><span style="color:#ff9999;">≪</span><br />
+				{% else %}
+					<span style="color:#ff9999;">≫</span><a href='{% "$baseUrl/mobile/kitchenitem/mygiftlist"|mixiurl %}'>ごほうびギフトを確認</a><span style="color:#ff9999;">≪</span><br />
+				{% /if %}
+
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+			</div><!--/.levelUp-->
+
+		{% else %}
+
+			<div class="toKitchen" style="text-align:center;">
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+				<span style="color:#ff9999;">≫</span>
+				{% if $isMyself %}
+					<a href='{% "$baseUrl/mobile/kitchenflash/kitchen?CF_uid=`$profileInfo.uid`&opensocial_app_id=`$APP_ID`&opensocial_owner_id=`$uid`&rand=`$rand`"|mobile_flashurl %}' accesskey="5">マイキッチンへ</a>
+				{% else %}
+					<a href='{% "$baseUrl/mobile/kitchen/home?CF_uid=`$profileInfo.uid`"|mixiurl %}'>{%$profileInfo.displayName%}さんのｷｯﾁﾝへ</a>
+				{% /if %}
+				<span style="color:#ff9999;">≪</span><br />
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+			</div><!--/.toKitchen-->
+
+		{% /if %}
+
+		<div class="caution" style="text-align:center;">
+			ﾏｲﾐｸの店で味付け協力しよう!<br />
+			<span style="color:#ff9999;">≫</span><a href='{% "$baseUrl/mobile/kitchen/rankinglist"|mixiurl %}'>マイミクさんの店舗一覧へ</a><span style="color:#ff9999;">≪</span><br />
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+		</div><!--/.caution-->
+
+		<div class="line" style="background:#8bbd82;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+	</div><!--/.content-->
+</div><!--/#addSpice-->
+
+{%include file="common/menu.phtml"%}
+{%include file="footer.phtml"%}

@@ -1,0 +1,57 @@
+{%include file="header.phtml"%}
+{%include file="common/ad_header.phtml"%}
+
+<div id="giftList">
+	<div class="content" style="background:#f0f5e0;">
+		<div class="headline" style="background:#8bbd82;text-align:center;">
+			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/giftlist.gif" width="230" height="60" /><br />
+		</div><!--/#headline-->
+        {% if $giftList %}
+			<div class="count">
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				未開封ギフトが{%$giftCount%}件あります｡<br />
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				<div style="background:#8bbd82;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+			</div><!--/.count-->
+			<div class="inner">
+				{% foreach from=$giftList item=gift %}
+					<div class="section">
+						<table width="100%" cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td style="width:44px;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/gift/40x40/{% $gift.picture %}" width="40" height="40" style="margin:3px 0;" /></td>
+								<td><div style="{% if $ua==1 %}font-size:x-small;{%/if%}">
+									{% $gift.name %}<br />
+									{% if $gift.displayName %}
+										贈り主:<a href='{% "$baseUrl/mobile/kitchen/home?CF_uid=`$gift.uid`"|mixiurl %}'>{% $gift.displayName %}</a><br />
+									{% /if %}
+									<div style="text-align:right;">{%emoji code="F8E6"%}<a href='{% "$baseUrl/mobile/kitchenitem/opengiftfinish?CF_id=`$gift.id`&CF_gift_id=`$gift.gift_id`&CF_type=`$gift.type`"|mixiurl %}'>開封する</a>&nbsp;</div>
+									</div></td>
+							</tr>
+						</table>
+						<div style="background:#8bbd82;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+					</div><!--/.section-->
+				{% /foreach %}
+				{% if $giftCount > 5 %}
+					{%include file="common/pager.phtml"%}
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+					<div style="background:#8bbd82;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+				{% /if %}
+            </div><!--/.inner-->
+		{% else %}
+			<div class="inner">
+				<div class="null" style="text-align:center;">
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+					まだギフトがありません<br />
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="5" /><br />
+					<span style="color:#ff9999;">≫</span><a href='{% "$baseUrl/mobile/kitchen/home"|mixiurl %}' accesskey="3">Myレストランへ</a><span style="color:#ff9999;">≪</span><br />
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="7" /><br />
+				</div><!--/.null-->
+			</div><!--/.inner-->
+		{% /if %}
+		<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+		<div class="line" style="background:#8bbd82;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+	</div><!--/.content-->
+</div><!--/#giftList-->
+
+{%include file="common/browseback.phtml"%}
+{%include file="ad_footer.phtml"%}

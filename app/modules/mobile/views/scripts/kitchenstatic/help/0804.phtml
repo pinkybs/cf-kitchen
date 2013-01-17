@@ -1,0 +1,35 @@
+<div id="help">
+    <div class="content" style="background:#f0f5e0;">
+        <div class="headline" style="background:#8bbd82;color:#ffffff;text-align:center;">
+            <img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/help.gif" width="230" height="60" /><br />
+            <img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+            {% emoji code="F9B8" %}アイテムBOX<br />
+        </div><!--/.headline-->
+		<div class="subHeadline" style="text-align:center;">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			<span style="color:#497d40;">ギフト配送所</span><br />
+			<div class="line" style="background:#8bbd82;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="1" /></div>
+		</div><!--/.subHeadline-->
+        <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+        <div class="inner">
+			ｷﾞﾌﾄ配送所では､購入したｷﾞﾌﾄが全て表示されます｡ｷﾞﾌﾄ配送所に関する説明は､以下の通りとなります｡<br />
+			<br />
+			1.ｷﾞﾌﾄは､ｷﾞﾌﾄ屋での購入で獲得できます｡<br />
+			<br />
+			2.ｷﾞﾌﾄを贈りたい場合は､贈るﾏｲﾐｸを選択すると､ﾏｲﾐｸにｷﾞﾌﾄを贈れます｡<br />
+			<br />
+			3.ｷﾞﾌﾄは､ﾏｲﾐｸに贈ると1個ずつ減り､0個になるとｷﾞﾌﾄ配送所から無くなります｡<br />
+			<br />
+			※ｷﾞﾌﾄは自分宛に贈ることはできません｡<br />
+			※ﾏｲﾐｸのﾚｽﾄﾗﾝ画面からもｷﾞﾌﾄを贈れます｡<br />
+        </div><!--/.inner-->
+        <div class="footlink">
+            <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+            <div style="background:#8bbd82;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+            <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			{% if $ua!=2 %}{% emoji code="F97E" %}{% else %}{% emoji code="F8F8" %}{% /if %}<a href='{% "$baseUrl/mobile/kitchenstatic/help"|mixiurl %}'>ヘルプ:もくじ</a><br />
+        </div><!--/.footlink-->
+        <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+        <div class="line" style="background:#8bbd82;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+    </div><!--/.content-->
+</div><!--/#help-->

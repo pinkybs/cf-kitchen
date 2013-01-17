@@ -1,0 +1,79 @@
+{%include file="header.phtml"%}
+<body id="home">
+	<div id="wrap">
+		<div id="logo">
+			<img src="{%$staticUrl%}/admin/img/logo.gif" alt="" width="239" height="65" />
+		</div>
+
+			<ul id="navi">
+			    {% foreach name=appList from=$appList item=app %}
+					<li class="on"><a href="#">{%$app.app_name%}</a></li>
+				{% /foreach %}
+			    <li class="logout"><a href="{%$baseUrl%}/auth/logout">ログアウト</a></li>
+			</ul>
+	<div id="search">
+		<h2>ユーザー検索</h2>
+		<h3>ユーザー検索&gt;&gt;</h3>
+		<div class="condition">
+			<table border="0" cellspacing="0" cellpadding="0">
+				<form id="frmSearch" name="frmSearch" method="post" action="{%$baseUrl%}/mykitchen/usersearch">
+				  <tr>
+				    	<th>ユーザーID：</th>
+				    	<td colspan="2"><input id="txtUid" type="text" name="txtUid" value="{%$uid%}" />&nbsp;（完全一致）</td>
+				  </tr>
+				  <tr>
+				    	<th>ニックネーム：</th>
+				    	<td colspan="2"><input id="txtName" type="text" name="txtName" value="{%$name%}" />&nbsp;（部分一致）</td>
+				  </tr>
+				  <tr>
+						<td colspan="3" class="subbtn">
+				    	<label><input type="submit" value="　検索　" /></label>
+				    </td>
+				  </tr>
+			    </form>
+			</table>
+		</div>
+	<div class="result">
+		{% if $count > 0 %}
+			<div class="paper"><span>{%$count%}件中</span>{%$startCount%}-{%$searchCount%}件</div>
+			{% if $count > 20 %}
+				{% foreach name=page from=$page item=data %}
+					{% if $data == $pageIndex %}
+						<label id="page">{%$data%}</label>
+					{% else %}
+						<label id="nextPage">
+							<a href="{%$baseUrl%}/mykitchen/usersearch?txtUid={%$uid%}&txtName={%$name%}&pageIndex={%$data%}">{%$data%}</a>
+						</label>
+					{% /if %}
+				{% /foreach %}
+			{% /if %}
+		{% /if %}
+		<table border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<th><span>ユーザーID</span></th>
+				<th><span>ニックネーム</span></th>
+				<th><span>所有メダル</span></th>
+				<th><span>所有チップ</span></th>
+				<th><span>利用ステータス</span></th>
+				<th><span>最終ログイン日時</span></th>
+				<th>&nbsp;</th>
+			</tr>
+			{% foreach from=$userInfo item=user %}
+				<tr>
+					<td class="num"><span>{%$user.uid%}</span></td>
+					<td><span>{%$user.displayName%}</span></td>
+					<td class="num"><span>{%$user.gold%}</span></td>
+					<td class="num"><span>{%$user.point%}</span></td>
+					<td><span>{%if $user.status == 1 %}退会{%else%}利用中{%/if%}</span></td>
+					<td><span>{%$user.last_login_time|date_format:"%Y-%m-%d %H:%M:%S"%}</span></td>
+					<td><span>
+						<a href="{%$baseUrl%}/mykitchen/userinfo?CF_uid={%$user.uid%}">ユーザー詳細</a>
+						<a href="{%$baseUrl%}/mykitchen/buyshop?CF_uid={%$user.uid%}">購入履歴</a>
+						<a href="{%$baseUrl%}/mykitchen/actiondisplay?CF_uid={%$user.uid%}">アクション履歴</a>
+					</span></td>
+				</tr>
+			{% /foreach %}
+		</table>
+	</div>
+</div>
+{%include file="footer.phtml"%}

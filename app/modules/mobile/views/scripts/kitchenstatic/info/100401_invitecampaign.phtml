@@ -1,0 +1,114 @@
+<div id="news">
+	<div class="content" style="background:#f0f5e0;">
+		<div class="headline" style="background:#8bbd82;color:#ffffff;text-align:center;">
+			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+			招待キャンペーン<br />
+			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+		</div><!--/#headline-->
+		<div class="banner" style="text-align:center;">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/campaign/100401_invitecampaign.gif?" width="230" height="80" style="margin-top:3px;" /><br />
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			<span style="color:#cc0000;">今度は全員にﾌﾟﾚｾﾞﾝﾄ！</span><br />
+		</div><!--/.banner-->
+		<div class="header_invite">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			<form method="post" action='{% "invite:friends?callback=$baseUrl/mobile/callback/invite?forward=$baseUrl/mobile/kitchen/invitefinish" %}'>
+				<div class="btn" style="text-align:center;">
+					<input type="submit" value="  マイミクを招待する  " /><br />
+				</div><!--/.btn-->
+			</form>
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+		</div><!--/.header_invite-->
+		<div class="section">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			<div class="headline" style="background:#8bbd82;color:#ffffff;">
+				{% emoji code="F8E6" %}景品<br />
+			</div><!--/.headline-->
+			<div class="inner">
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				ﾒﾀﾞﾙでしか手に入らない強力ｱｲﾃﾑ<br />
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				<div style="background:#8bbd82;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+
+				<div class="section">
+					<table width="100%" cellpadding="0" cellspacing="0" border="0">
+						<tr>
+							<td style="width:64px;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/yorozu/40x40/16.gif?" style="margin:3px 0;" /></td>
+							<td><div style="font-size:x-small;"><a href='{% "$baseUrl/mobile/kitchenshop/itemconfirm?item_id=16&pay=gold"|mixiurl %}'>モダン洋食辞典</a><br />
+							使うだけで特殊な食材を使ったﾚｼﾋﾟ以外のﾚｼﾋﾟをﾗﾝﾀﾞﾑで習得</div></td>
+						</tr>
+					</table>
+				</div><!--/.section-->
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				<div style="background:#8bbd82;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />			
+			</div><!--/.inner-->
+		</div><!--/.section-->
+		
+		<div class="section">
+			<div class="headline" style="background:#8bbd82;color:#ffffff;">
+				{% emoji code="F991" %}プレゼント対象<br />
+			</div><!--/.headline-->
+			<div class="inner">
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				3人以上の<span style="color:#cc0000;">ﾏｲﾐｸ招待が成立した方全員</span><br />
+				<br />
+				以下の場合ﾏｲﾐｸ招待成立になりません｡<br />
+				{% emoji code="F9DC" %}ｱﾌﾟﾘ登録後ﾚｽﾄﾗﾝ開設までｹﾞｰﾑを進めていない<br />
+				{% emoji code="F9DC" %}ｱﾌﾟﾘ招待ﾒｯｾｰｼﾞ以外からｱﾌﾟﾘを登録した人<br />
+				{% emoji code="F9DC" %}ｱﾌﾟﾘ過去に当ｱﾌﾟﾘに登録経験がある人<br />
+			</div><!--/.inner-->
+		</div><!--/.section-->
+		<div class="section">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			<div class="headline" style="background:#8bbd82;color:#ffffff;">
+				{% emoji code="F8EA" %}キャンペーン期間<br />
+			</div><!--/.headline-->
+			<div class="inner">
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				<span style="color:#cc0000;">4月1日～4月30日までの期間限定!</span><br />
+			</div><!--/.inner-->
+		</div><!--/.section-->
+		<div class="section">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			<div class="headline" style="background:#8bbd82;color:#ffffff;">
+				{% emoji code="F8F5" %}プレゼント付与予定<br />
+			</div><!--/.headline-->
+			<div class="inner">
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				<span style="color:#cc0000;">期間中のﾏｲﾐｸ招待成立が3人を超えた時</span><br />
+				{% emoji code="F9DC" %}当選は付与をもって代えさせていただきます<br />
+				{% emoji code="F9DC" %}3人の招待成立後、数日間お待ちいただく場合があります<br />
+				{% emoji code="F9DC" %}付与された旨は通知されません<br />
+				{% emoji code="F9DC" %}付与の有無に関するお問い合わせには応じられません<br />
+			</div><!--/.inner-->
+		</div><!--/.section-->
+		
+		<div class="invite" style="text-align:center;">
+			<br />
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			<table width="220" cellpadding="3" cellspacing="1" border="0" align="center" style="background:#8bbd82;">
+				<tr>
+					<td style="background:#ffffdd;text-align:center;"><div style="{% if $ua==1 %}font-size:x-small;{%/if%}">
+						<span style="color:#cc0000;">3名以上招待するだけ!<br />
+							ﾏｲﾐｸ誘ってみんなで遊ぼう!</span><br />
+						<form method="post" action='{% "invite:friends?callback=$baseUrl/mobile/callback/invite?forward=$baseUrl/mobile/kitchen/invitefinish" %}'>
+							<div class="btn" style="text-align:center;">
+								<input type="submit" value="  マイミクを招待する  " /><br />
+							</div><!--/.btn-->
+						</form>
+					</div></td>
+				</tr>
+			</table>
+		</div><!--/.invite-->
+		
+		<br />
+		<br />
+	    <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+		<div class="line" style="background:#8bbd82;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+	</div><!--/.content-->
+</div><!--/#news-->
+
+{%include file="common/browseback.phtml"%}

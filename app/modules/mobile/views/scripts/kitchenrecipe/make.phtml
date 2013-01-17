@@ -1,0 +1,176 @@
+{% if $step=="start"%}
+
+	{%include file="header.phtml"%}
+	{%include file="common/ad_header.phtml"%}
+
+	<div id="makeRecipe">
+		<div class="content" style="background:#ffffdd;">
+			<div class="headline" style="background:#81623e;color:#ffffff;text-align:center;">
+				<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/make.gif" width="230" height="60" /><br />
+				<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+				{% emoji code="F99F" %}新しいレシピを開発する{% emoji code="F99F" %}<br />
+				<img src="{%$staticUrl%}/apps/kitchen/mobile/img/recipe/labs.gif" width="240" height="105" /><br />
+			</div><!--/.headline-->
+			<div class="inner">
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				冷蔵庫にある<span style="color:#cc0000;">食材を2種類以上配合</span>して「新しいレシピ」を開発してみよう!<br />
+				<div class="select" style="text-align:center;">
+					<img src="{%$staticUrl%}/apps/kitchen/mobile/img/recipe/msg{%$leaveCount%}.gif" width="200" height="50" style="margin-top:3px;" /><br />
+					<a href='{% "$baseUrl/mobile/kitchenflash/selectgenre/CF_kitchen_id/`$kitchenID`?opensocial_app_id=`$APP_ID`&opensocial_owner_id=`$uid`&rand=`$rand`"|mobile_flashurl %}'><img src="{%$staticUrl%}/apps/kitchen/mobile/img/recipe/make{%$leaveCount%}.gif" width="200" height="40" alt="開発する!(残り{%$leaveCount%}回)" style="margin-bottom:3px;" /></a><br />
+					{% emoji code="F9A0" %}<span style="color:#cc0000;">配合した食材は消費されます</span><br />
+					<a href='{% "$baseUrl/mobile/kitchenrecipe/choice/CF_kitchen_id/`$kitchenID`"|mixiurl %}'><img src="{%$staticUrl%}/apps/kitchen/mobile/img/recipe/leave.gif" width="200" height="40" alt="今回はあきらめる…" style="margin-top:10px;" /></a><br />
+				</div><!--/.select-->
+				<div class="caution">
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+					{% emoji code="F9A0" %}成功のヒント<br />
+					{% if $leaveCount == 3 %}
+						経営中のレストランのジャンルで販売可能なレシピが開発対象となります｡<br />
+					{% elseif $leaveCount == 2 %}
+						そもそも冷蔵庫に豊富な種類の食材がないと成功するものも成功しません。<br />
+					{% elseif $leaveCount == 1 %}
+						本当にお料理が苦手という場合はマイミクさんに聞いてみるのも近道かも。<br />
+					{% /if %}
+				</div><!--/.caution-->
+			</div><!--/.inner-->
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			<div class="line" style="background:#81623e;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+		</div><!--/.content-->
+	</div><!--/#makeRecipe-->
+
+	{%include file="common/copyright.phtml"%}
+	{%include file="ad_footer.phtml"%}
+
+{% elseif $step=="success"%}
+
+	{%include file="header.phtml"%}
+	{%include file="common/ad_header.phtml"%}
+
+	<div id="recipeSuccess">
+		<div class="content" style="background:#ffffdd;">
+			<div class="headline" style="background:#81623e;color:#ffffff;text-align:center;">
+				<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/make.gif" width="230" height="60" /><br />
+				<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+				{% emoji code="F99F" %}新レシピ誕生{% emoji code="F99F" %}<br />
+				<img src="{%$staticUrl%}/apps/kitchen/mobile/img/recipe/success.gif" width="240" height="105" /><br />
+			</div><!--/.headline-->
+			<div class="congratulate" style="color:#cc0000;text-align:center;">
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+				おめでとうございます{% emoji code="F99B" %}<br />
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+			</div><!--/.congratulate-->
+			<div class="description">
+				レシピの開発に成功し、新メニュー「<span style="color:#cc0000;">{%$recipe.recipe_name%}</span>」が誕生しました!<br />
+			</div><!--/.description-->
+			<div class="inner">
+				<div class="thumb" style="color:#cc0000;text-align:center;">
+					<img src="{%$staticUrl%}/apps/kitchen/mobile/img/meal/130x130/{%$recipe.f%}/{%$recipe.n%}.gif" width="130" height="130" style="margin:3px 0;" /><br />
+					次の工程まで あと{%$recipe.part1_time%}分<br />
+				</div><!--/.thumb-->
+				<div class="description">
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+					さっそくシェフが新しいレシピを見て、調理を始めました!
+				</div><!--/.description-->
+				<div class="toMyKitchen" style="text-align:center;">
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="5" /><br />
+					味付けを忘れずに{% emoji code="F99B" %}<br />
+					<span style="color:#ff9999;">≫</span><a href='{% "$baseUrl/mobile/kitchenflash/kitchen?CF_uid=`$uid`&opensocial_app_id=`$APP_ID`&opensocial_owner_id=`$uid`&rand=`$rand`"|mobile_flashurl %}'>マイキッチンへ</a><span style="color:#ff9999;">≪</span><br />
+				</div><!--/.toMyKitchen-->
+				<div class="caution" style="color:#cc0000;">
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+					{% emoji code="F9A0" %}経験値やﾁｯﾌﾟは､完成した料理を運んだあとに獲得できます。<br />
+				</div><!--/.caution-->
+			</div><!--/.inner-->
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			<div class="line" style="background:#81623e;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+		</div><!--/.content-->
+	</div><!--/#recipeSuccess-->
+
+	{%include file="common/menu.phtml"%}
+	{%include file="ad_footer.phtml"%}
+
+{% elseif $step=="failure1"%}
+
+	{%include file="header.phtml"%}
+	{%include file="common/ad_header.phtml"%}
+
+	<div id="recipeFailure">
+		<div class="content" style="background:#ffffdd;">
+			<div class="headline" style="background:#81623e;color:#ffffff;text-align:center;">
+				<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/make.gif" width="230" height="60" /><br />
+				<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+				開発失敗<br />
+				<img src="{%$staticUrl%}/apps/kitchen/mobile/img/recipe/failure.gif" width="240" height="105" /><br />
+			</div><!--/.headline-->
+			<div class="congratulate" style="color:#cc0000;text-align:center;">
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+				ざんねん<br />
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+			</div><!--/.congratulate-->
+			<div class="inner">
+				食材の配合に失敗してしまいました…{% emoji code="F998" %}<br />
+				<div class="select" style="text-align:center;">
+					<img src="{%$staticUrl%}/apps/kitchen/mobile/img/recipe/msg{%$leaveCount%}.gif" width="200" height="50" style="margin-top:3px;" /><br />
+					<a href='{% "$baseUrl/mobile/kitchenflash/selectgenre/CF_kitchen_id/`$kitchenID`?opensocial_app_id=`$APP_ID`&opensocial_owner_id=`$uid`&rand=`$rand`"|mobile_flashurl %}'><img src="{%$staticUrl%}/apps/kitchen/mobile/img/recipe/make{%$leaveCount%}.gif" width="200" height="40" alt="開発する!(残り{%$leaveCount%}回)" style="margin-bottom:3px;" /></a><br />
+					{% emoji code="F9A0" %}<span style="color:#cc0000;">配合した食材は消費されます</span><br />
+					<a href='{% "$baseUrl/mobile/kitchenrecipe/choice/CF_kitchen_id/`$kitchenID`"|mixiurl %}'><img src="{%$staticUrl%}/apps/kitchen/mobile/img/recipe/leave.gif" width="200" height="40" alt="今回はあきらめる…" style="margin-top:10px;" /></a><br />
+				</div><!--/.select-->
+				<div class="caution">
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+					{% emoji code="F9A0" %}成功のヒント<br />
+					{% if $leaveCount == 3 %}
+						経営中のレストランのジャンルで販売可能なレシピが開発対象となります｡<br />
+					{% elseif $leaveCount == 2 %}
+						そもそも冷蔵庫に豊富な種類の食材がないと成功するものも成功しません。<br />
+					{% elseif $leaveCount == 1 %}
+						本当にお料理が苦手という場合はマイミクさんに聞いてみるのも近道かも。<br />
+					{% /if %}
+				</div><!--/.caution-->
+			</div><!--/.inner-->
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			<div class="line" style="background:#81623e;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+		</div><!--/.content-->
+	</div><!--/#recipeFailure-->
+
+	{%include file="common/copyright.phtml"%}
+	{%include file="ad_footer.phtml"%}
+
+{% else %}
+
+	{%include file="header.phtml"%}
+	{%include file="common/ad_header.phtml"%}
+
+	<div id="recipeFailure">
+		<div class="content" style="background:#ffffdd;">
+			<div class="headline" style="background:#81623e;color:#ffffff;text-align:center;">
+				<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/make.gif" width="230" height="60" /><br />
+				<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+				開発失敗<br />
+				<img src="{%$staticUrl%}/apps/kitchen/mobile/img/recipe/failure.gif" width="240" height="105" /><br />
+			</div><!--/.headline-->
+			<div class="congratulate" style="color:#cc0000;text-align:center;">
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+				ざんねん<br />
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+			</div><!--/.congratulate-->
+			<div class="inner">
+				食材の配合に3回失敗してしまったため､今回の新レシピ開発は見送りとなりました{% emoji code="F998" %}<br />
+				<div class="toDevelop" style="text-align:center;">
+					<img src="{%$staticUrl%}/apps/kitchen/mobile/img/recipe/angry.gif?100205" width="200" height="130" style="margin-top:5px;" /><br />
+					<span style="color:#cc0000;">温厚な開発部長を<br />怒らせてしまいました</span><br />
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+					失敗は成功のもと!<br />
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="5" /><br />
+					気を取り直して<br />
+					レシピを選びましょう{% emoji code="F9A7" %}<br />
+					<a href='{% "$baseUrl/mobile/kitchenrecipe/choice/CF_kitchen_id/`$kitchenID`"|mixiurl %}'><img src="{%$staticUrl%}/apps/kitchen/mobile/img/recipe/back.gif" width="200" height="40" style="margin-top:5px;" /></a><br />
+				</div><!--/.toDevelop-->
+			</div><!--/.inner-->
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			<div class="line" style="background:#81623e;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+		</div><!--/.content-->
+	</div><!--/#recipeFailure-->
+
+	{%include file="common/copyright.phtml"%}
+	{%include file="ad_footer.phtml"%}
+
+{% /if %}

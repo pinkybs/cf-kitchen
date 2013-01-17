@@ -1,0 +1,98 @@
+{%include file="header.phtml"%}
+{%include file="common/ad_header.phtml"%}
+
+{% if $step=="start" %}
+
+	<div id="editAccess">
+	    <div class="content" style="background:#f0f5e0;">
+	        <div class="headline" style="background:#8bbd82;color:#ffffff;text-align:center;">
+	            <img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+	            公開範囲の設定<br />
+	            <img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+	        </div><!--/.headline-->
+	        <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+	        <div class="inner">
+				ｷｯﾁﾝの公開範囲を設定します｡ﾏｲﾐｸではないﾕｰｻﾞｰから味見をされたくない場合は[限定公開]を選択してください｡<br />
+				<form method="post" action='{% "$baseUrl/mobile/kitchenfirst/editaccess/CF_step/confirm"|mixiurl %}'>
+			        <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+					<input type="radio" name="editAccess" value="0" {% if $nowValue==0 %}checked="checked"{% /if %} />全体公開[誰でも訪問できる]<br />
+					<input type="radio" name="editAccess" value="1" {% if $nowValue==1 %}checked="checked"{% /if %} />限定公開[ﾏｲﾐｸのみ訪問できる]<br />
+			        <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+					<div class="btn" style="text-align:center;">
+						<input type="submit" value=" 変 更 " /><br />
+					</div><!--/.btn-->
+				</form>
+	        </div><!--/.inner-->
+	        <div class="footlink">
+	            <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+	            <div style="background:#8bbd82;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+	            <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				{% if $ua!=2 %}{% emoji code="F97E" %}{% else %}{% emoji code="F8F8" %}{% /if %}<a href='{% "$baseUrl/mobile/kitchen/home"|mixiurl %}'>Myレストラン</a><br />
+	        </div><!--/.footlink-->
+	        <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+	        <div class="line" style="background:#8bbd82;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+	    </div><!--/.content-->
+	</div><!--/#editAccess-->
+
+{% elseif $step=="confirm" %}
+
+	<div id="editAccess">
+	    <div class="content" style="background:#f0f5e0;">
+	        <div class="headline" style="background:#8bbd82;color:#ffffff;text-align:center;">
+	            <img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+	            公開範囲の設定<br />
+	            <img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+	        </div><!--/.headline-->
+	        <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+	        <div class="inner">
+				以下の内容で設定します｡よろしければ[変更]を押してください｡<br />
+				<form method="post" action='{% "$baseUrl/mobile/kitchenfirst/editaccess/CF_step/finish"|mixiurl %}'>
+			        <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+					○公開範囲:<br />
+					<span style="color:#cc0000;">{% if $nowValue==0 %}全体公開[誰でも訪問できる]{% else %}限定公開[ﾏｲﾐｸのみ訪問できる]{% /if %}</span><br />
+			        <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+					<div class="btn" style="text-align:center;">
+					    <input type="hidden" id="nowValue" name="nowValue" value="{% $nowValue %}" />
+						<input type="submit" value=" 変 更 " /><br />
+					</div><!--/.btn-->
+				</form>
+				<form method="post" action='{% "$baseUrl/mobile/kitchenfirst/editaccess/CF_step/start"|mixiurl %}'>
+			    	<div class="btn" style="text-align:center;">
+						<input type="submit" value=" 修 正 " /><br />
+					</div><!--/.btn-->
+				</form>
+	        </div><!--/.inner-->
+	        <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+	        <div class="line" style="background:#8bbd82;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+	    </div><!--/.content-->
+	</div><!--/#editAccess-->
+
+{% else %}
+
+	{%include file="header.phtml"%}
+
+	<div id="editAccess">
+	    <div class="content" style="background:#f0f5e0;">
+	        <div class="headline" style="background:#8bbd82;color:#ffffff;text-align:center;">
+	            <img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+	            公開範囲の設定<br />
+	            <img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+	        </div><!--/.headline-->
+			<div class="inner">
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				公開範囲の設定が完了しました｡<br />
+				{%include file="common/ad_middle.phtml"%}
+				<div class="toRestaurant" style="text-align:center;">
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+					<span style="color:#ff9999;">≫</span><a href='{% "$baseUrl/mobile/kitchen/home"|mixiurl %}'>Myレストランへ</a><span style="color:#ff9999;">≪</span><br />
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+				</div><!--/.toRestaurant-->
+			</div><!--/.inner-->
+			<div class="line" style="background:#8bbd82;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+		</div><!--/.content-->
+	</div><!--/#editAccess-->
+
+{% /if %}
+
+{%include file="common/menu.phtml"%}
+{%include file="footer.phtml"%}

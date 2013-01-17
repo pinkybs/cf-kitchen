@@ -1,0 +1,42 @@
+{%include file="header.phtml"%}
+
+<body id="home">
+	<div id="wrap">
+		<div id="logo">
+			<img src="{%$staticUrl%}/admin/img/logo.gif" alt="" width="239" height="65" />
+		</div>
+		<div id="auth">
+			<p>メールアドレスとパスワードを入力してログインしてください。</p>
+			{% if $errmsg %}
+			<div class=color:red;>
+				<p>{%$errmsg|escape%}</p>
+			</div><!--/.error-->
+			{% /if %}
+			<form id="frmLogin" name="frmLogin" method="post" action="{%$baseUrl%}/auth/login">
+				<ul>
+					<li><label for="">メールアドレス：</label><br />
+						<input type="text" id="txtId" name="txtId" class="required-email validate-email text-field" value="{%$adminId%}" maxlength="200" />
+						<div class="error" id="advice-required-email-txtId1" style="display:none;">ユーザー名を記入して下さい。</div></li>
+					<li><label for="">パスワード：</label><br />
+						<input type="password" id="txtPw" name="txtPw" class='required-password validate-alphanum validate-length-range-6-12 text-field' maxlength="15" />
+						<div class="error" id="advice-required-password-txtPw1" style="display:none;">パスワードを記入して下さい。</div></li>
+					<li><input type="button" value="　ログイン　" onclick="login();" /></li>
+				</ul>
+			</form>
+		</div><!--/#auth-->
+	</div><!--/#wrap-->
+	<script type="text/javascript" language="">
+        var _valid = new Validation('frmLogin', {immediate:true,useTitles:true});
+        /**
+         * submit to login action
+         * @param  null
+         * @return void
+         */
+        function login() {
+            if (!_valid.validate()) {
+                return ;
+            }
+            $('frmLogin').submit();
+        }
+	</script>
+{%include file="footer.phtml"%}

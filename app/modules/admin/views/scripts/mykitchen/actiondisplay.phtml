@@ -1,0 +1,115 @@
+{%include file="header.phtml"%}
+<body id="home">
+	<div id="wrap">
+		<div id="logo">
+			<img src="{%$staticUrl%}/admin/img/logo.gif" alt="" width="239" height="65" />
+		</div>
+		<ul id="navi">
+		    {% foreach name=appList from=$appList item=app %}
+				<li class="on"><a href="#">{%$app.app_name%}</a></li>
+			{% /foreach %}
+		    <li class="logout"><a href="{%$baseUrl%}/auth/logout">ログアウト</a></li>
+		</ul>
+
+	<div id="search">
+		<h2>アクション履歴</h2>
+		<h3>
+			<a href="{%$baseUrl%}/mykitchen/usersearch?txtUid={%$uid%}">ユーザ検索</a>>>
+			<a href="{%$baseUrl%}/mykitchen/userinfo?CF_uid={%$uid%}">ユーザ詳細</a>>>
+			<a href="{%$baseUrl%}/mykitchen/buyshop?CF_uid={%$uid%}">購入履歴画面</a>>>
+			アクション履歴
+		</h3>
+		<div class="history">
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+				    <th>ユーザーID</th>
+						<td>{%$uid%}</td>
+					</tr>
+					<tr>
+						<th>ニックネーム</th>
+						<td>{%$person.displayName%}</td>
+					</tr>
+			</table>
+			<div id="subsearch">
+				<form id="frmSearch" name="frmSearch" method="post" action="{%$baseUrl%}/mykitchen/actiondisplay">
+					<input type="hidden" id="CF_uid" name="CF_uid" value="{%$uid%}">
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+						    <th>期間：</th>
+						    <td>
+						      	<input type="text" id="txtStartTime" name="txtStartTime" value="{%$startTime|date_format:'%Y-%m-%d'%}" />
+						      	&nbsp;～&nbsp;
+								<input type="text" id="txtEndTime" name="txtEndTime" value="{%$endTime|date_format:'%Y-%m-%d'%}" />
+						    </td>
+					  	</tr>
+					  	<tr>
+					    	<th>購入場所：</th>
+						    <td>
+								<select name="shop" id="shop" onchange="changeShop()">
+									<option value="food" {%if $shopType == 'food' %}selected="selected"{%/if%}>食材市場</option>
+									<option value="gacha" {%if $shopType == 'gacha' %}selected="selected"{%/if%}>プレミアガチャ</option>
+									<option value="gold" {%if $shopType == 'gold' %}selected="selected"{%/if%}>マイキチ銀行</option>
+									<option value="goods" {%if $shopType == 'goods' %}selected="selected"{%/if%}>ざっか屋</option>
+									<option value="item" {%if $shopType == 'item' %}selected="selected"{%/if%}>よろず屋</option>
+									<option value="gift" {%if $shopType == 'gift' %}selected="selected"{%/if%}>ギフト屋</option>
+									<option value="beauty" {%if $shopType == 'beauty' %}selected="selected"{%/if%}>美容室</option>
+								</select>
+								<select name="nbshop" id="nbshop">
+									<option value="" ></option><!--
+									 -->{% foreach from=$nblist item=nb %}<!--
+										--><option value="{%$nb.id%}" {%if $nbTypeId == $nb.id %}selected="selected"{%/if%}>{%$nb.name%}</option><!--
+									 -->{% /foreach %}<!--
+								 --></select>
+								 <input type="submit" value="　検索　" />
+						    </td>
+					  	</tr>
+					</table>
+				</form>
+			</div><!-- subsearch end -->
+		</div><!-- history -->
+
+		<div class="result">
+			{% if $count > 0 %}
+				<div class="paper"><span>{%$count%}件中</span>{%$startCount%}-{%$searchCount%}件</div>
+				{% if $count > 20 %}
+					{% foreach name=page from=$page item=data %}
+						{% if $data == $pageIndex %}
+							<label id="page">{%$data%}</label>
+						{% else %}
+							<label id="nextPage">
+								<a href="{%$baseUrl%}/mykitchen/actiondisplay?CF_uid={%$uid%}&shop={%$shopType%}&nbshop={%$nbTypeId%}&txtStartTime={%$startTime%}&txtEndTime={%$endTime%}&pageIndex={%$data%}">{%$data%}</a>
+							</label>
+						{% /if %}
+					{% /foreach %}
+				{% /if %}
+			{% /if %}
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<th><span>商品ID</span></th>
+					<th><span>商品名</span></th>
+					<th><span>利用メダル</span></th>
+					<th><span>利用チップ</span></th>
+					<th><span>mixiポイント</span></th>
+					<th><span>start_count</span></th>
+					<th><span>end_count</span></th>
+					<th><span>購入日時</span></th>
+					<th><span>备注</span></th>
+				</tr><!--
+				{% foreach from=$actionInfo item=action %}
+			 --><tr>
+					<td><span>{%$action.shop_id%}</span></td>
+					<td><span>{%$action.shop_name%}</span></td>
+					<td><span>{%$action.gold%}</span></td>
+					<td><span>{%$action.point%}</span></td>
+					<td><span>{%$action.mixi_gold%}</span></td>
+					<td><span>{%$action.start_count%}</span></td>
+					<td><span>{%$action.end_count%}</span></td>
+					<td><span>{%$action.buy_time|date_format:"%Y-%m-%d %H:%M:%S"%}</span></td>
+					<td><span>{%$action.create_type%}</span></td>
+				</tr><!--
+			 	{% /foreach %}
+		--></table>
+	</div><!-- result	 -->
+<script src="{%$staticUrl%}/admin/js/mykitchen/actiondisplay.js?{%$version.js%}"></script>
+
+{%include file="footer.phtml"%}

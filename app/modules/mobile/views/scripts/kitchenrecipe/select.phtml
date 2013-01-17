@@ -1,0 +1,37 @@
+{%include file="header.phtml"%}
+{%include file="common/ad_header.phtml"%}
+
+<div id="selectRecipe">
+	<div class="content" style="background:#f0f5e0;">
+		<div class="headline" style="background:#8bbd82;color:#ffffff;text-align:center;">
+			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/select_recipe.gif" width="230" height="60" /><br />
+		</div><!--/.headline-->
+		<div class="inner">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			調理するﾚｼﾋﾟを決定します｡次の2つから選択してください｡<br />
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			<div class="select" style="text-align:center;">
+				<a href='{% "$baseUrl/mobile/kitchenrecipe/make/CF_kitchen_id/`$kitchenID`"|mixiurl %}'><img src="{%$staticUrl%}/apps/kitchen/mobile/img/recipe/01.gif" width="230" height="60" /></a><br />
+				<a href='{% "$baseUrl/mobile/kitchenrecipe/choice/CF_kitchen_id/`$kitchenID`"|mixiurl %}'><img src="{%$staticUrl%}/apps/kitchen/mobile/img/recipe/02.gif" width="230" height="60" /></a><br />
+			</div><!--/.select-->
+			<div class="caution">
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				{% emoji code="F9E6" %}ここがポイント<br />
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				新しいﾚｼﾋﾟを作ると、経験値が多くもらえますが、ﾁｯﾌﾟは少量となります。<br />
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				既存ﾚｼﾋﾟを作ると、ﾁｯﾌﾟは多くもらえますが､経験値は少量となります。<br />
+			</div><!--/.caution-->
+			<div class="footlink">
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				<div style="background:#8bbd82;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+				<span style="color:#ff9999;">⇒</span><a href='{% "$baseUrl/mobile/kitchenflash/kitchen?CF_uid=`$uid`&opensocial_app_id=`$APP_ID`&opensocial_owner_id=`$uid`&rand=`$rand`"|mobile_flashurl %}'>キッチンに戻る</a><br />
+			</div><!--/.footlink-->
+		</div><!--/.inner-->
+		<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+		<div class="line" style="background:#8bbd82;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+	</div><!--/.content-->
+</div><!--/#selectRecipe-->
+
+{%include file="common/menu.phtml"%}
+{%include file="ad_footer.phtml"%}

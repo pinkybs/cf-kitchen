@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<app>
+	
+	<version>
+		<js>01:20100105</js>
+		<css>01:20100105</css>
+		<img>01:20100105</img>
+	</version>
+	
+	<module>
+		<mobile>mobile/controllers</mobile>
+	</module>
+	
+	<rewriterouter>
+		
+	</rewriterouter>
+</app>

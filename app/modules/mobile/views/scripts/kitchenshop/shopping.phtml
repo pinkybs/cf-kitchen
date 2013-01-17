@@ -1,0 +1,157 @@
+{%include file="header.phtml"%}
+{%include file="common/ad_header.phtml"%}
+
+<div id="shopIndex">
+	<div class="content" style="background:#eeffff;">
+		<div class="headline" style="background:#82bdba;text-align:center;">
+			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/shopIndex.gif" width="230" height="60" /><br />
+		</div><!--/#headline-->
+		<div class="money">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			<table width="220" cellpadding="3" cellspacing="1" border="0" align="center" style="background:#82bdba;">
+				<tr>
+					<td style="background:#ffffee;text-align:center;"><div style="{% if $ua==1 %}font-size:x-small;{%/if%}">
+						{% if $gold >= 1000000 || $point >= 1000000 %}
+							{% emoji code="F8C8" %}所持M {% $gold|string_format:"%'#7s"|replace:"#":"&nbsp;" %}<br />
+							{% emoji code="F8E5" %}所持T {% $point|string_format:"%'#7s"|replace:"#":"&nbsp;" %}<br />
+						{% elseif $gold >= 100000 || $point >= 100000 %}
+							{% emoji code="F8C8" %}所持M {% $gold|string_format:"%'#6s"|replace:"#":"&nbsp;" %}<br />
+							{% emoji code="F8E5" %}所持T {% $point|string_format:"%'#6s"|replace:"#":"&nbsp;" %}<br />
+						{% else %}
+							{% emoji code="F8C8" %}所持M {% $gold|string_format:"%'#5s"|replace:"#":"&nbsp;" %}<br />
+							{% emoji code="F8E5" %}所持T {% $point|string_format:"%'#5s"|replace:"#":"&nbsp;" %}<br />
+						{% /if %}
+					</div></td>
+				</tr>
+			</table>
+		</div><!--/.money-->
+		<div class="inner">
+			<div class="section">
+				<table width="100%" cellpadding="0" cellspacing="0" border="0">
+					<tr>
+						<td style="width:44px;text-align:center;vertical-align:top;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/depart/bank.gif" width="40" height="40" style="margin:3px 0;" /></td>
+						<td><div style="{% if $ua==1 %}font-size:x-small;{%/if%}">
+							<a href='{% "$baseUrl/mobile/kitchengold/goldlist"|mixiurl %}'>マイキチ銀行</a>{% emoji code="F982" %}<br />
+							銀行でﾒﾀﾞﾙを購入しよう!</div></td>
+					</tr>
+				</table>
+				<div style="background:#82bdba;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+			</div><!--/.section-->
+			<div class="section">
+				<table width="100%" cellpadding="0" cellspacing="0" border="0">
+					<tr>
+						<td style="width:44px;text-align:center;vertical-align:top;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/depart/gacha.gif?100205" width="40" height="40" style="margin:3px 0;" /></td>
+						<td><div style="{% if $ua==1 %}font-size:x-small;{%/if%}">
+							<a href='{% "$baseUrl/mobile/kitchenshop/gachalist"|mixiurl %}'>プレミアガチャ</a><br />
+							非売品ｱｲﾃﾑをお探しなら</div></td>
+					</tr>
+				</table>
+				<div style="background:#82bdba;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+			</div><!--/.section-->
+			<div class="section">
+				<table width="100%" cellpadding="0" cellspacing="0" border="0">
+					<tr>
+						<td style="width:44px;text-align:center;vertical-align:top;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/depart/food.gif?100205" width="40" height="40" style="margin:3px 0;" /></td>
+						<td><div style="{% if $ua==1 %}font-size:x-small;{%/if%}">
+							{% if $level >= 3 %}
+								<a href='{% "$baseUrl/mobile/kitchenshop/foodlist"|mixiurl %}'>食材市場</a><br />
+								食材を調達してﾚｼﾋﾟを増やそう<br />
+							{% else %}
+								<span style="color:#999999;">食材市場</span> <span style="color:#cc0000;">Lv.3～開放</span>{% emoji code="F97D" %}<br />
+								食材を調達してﾚｼﾋﾟを増やそう<br />
+							{% /if %}
+						</div></td>
+					</tr>
+				</table>
+				<div style="background:#82bdba;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+			</div><!--/.section-->
+			<div class="section">
+				<table width="100%" cellpadding="0" cellspacing="0" border="0">
+					<tr>
+						<td style="width:44px;text-align:center;vertical-align:top;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/depart/estate.gif?100205" width="40" height="40" style="margin:3px 0;" /></td>
+						<td><div style="{% if $ua==1 %}font-size:x-small;{%/if%}">
+							{% if $level >= 5 %}
+								<a href='{% "$baseUrl/mobile/kitchenshop/estatelist"|mixiurl %}'>不動産屋</a><br />
+								ｼﾞｬﾝﾙ追加でﾚﾊﾟｰﾄﾘｰの開拓を<br />
+							{% else %}
+								<span style="color:#999999;">不動産屋</span> <span style="color:#cc0000;">Lv.5～開放</span>{% emoji code="F97D" %}<br />
+								ｼﾞｬﾝﾙ追加でﾚﾊﾟｰﾄﾘｰの開拓を<br />
+							{% /if %}
+						</div></td>
+					</tr>
+				</table>
+				<div style="background:#82bdba;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+			</div><!--/.section-->
+			<div class="section">
+				<table width="100%" cellpadding="0" cellspacing="0" border="0">
+					<tr>
+						<td style="width:44px;text-align:center;vertical-align:top;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/depart/zakka.gif?100205" width="40" height="40" style="margin:3px 0;" /></td>
+						<td><div style="{% if $ua==1 %}font-size:x-small;{%/if%}">
+							<a href='{% "$baseUrl/mobile/kitchenshop/goodslist"|mixiurl %}'>ざっか屋</a><br />
+							お洒落なお店づくりに!<br />
+						</div></td>
+					</tr>
+				</table>
+				<div style="background:#82bdba;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+			</div><!--/.section-->
+			<div class="section">
+				<table width="100%" cellpadding="0" cellspacing="0" border="0">
+					<tr>
+						<td style="width:44px;text-align:center;vertical-align:top;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/depart/yorozu.gif?100205" width="40" height="40" style="margin:3px 0;" /></td>
+						<td><div style="{% if $ua==1 %}font-size:x-small;{%/if%}">
+							<a href='{% "$baseUrl/mobile/kitchenshop/itemlist"|mixiurl %}'>よろず屋</a><br />
+							生産/ｽﾋﾟｰﾄﾞ効果をお求めなら<br />
+						</div></td>
+					</tr>
+				</table>
+				<div style="background:#82bdba;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+			</div><!--/.section-->
+			<div class="section">
+				<table width="100%" cellpadding="0" cellspacing="0" border="0">
+					<tr>
+						<td style="width:44px;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/depart/gift.gif?100205" width="40" height="40" style="margin:3px 0;" /></td>
+						<td><div style="{% if $ua==1 %}font-size:x-small;{%/if%}"><a href='{% "$baseUrl/mobile/kitchenshop/giftlist"|mixiurl %}'>ギフト屋</a><br />
+							心をこめて大切な友達に…<br />
+						</div></td>
+					</tr>
+				</table>
+				<div style="background:#82bdba;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+			</div><!--/.section-->
+			<div class="section">
+				<table width="100%" cellpadding="0" cellspacing="0" border="0">
+					<tr>
+						<td style="width:44px;text-align:center;vertical-align:top;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/depart/beauty.gif?100205" width="40" height="40" style="margin:3px 0;" /></td>
+						<td><div style="{% if $ua==1 %}font-size:x-small;{%/if%}">
+							{% if $level >= 2 %}
+								<a href='{% "$baseUrl/mobile/kitchenshop/beautylist"|mixiurl %}'>美容室</a><br />
+								シェフの容姿を変更しよう<br />
+							{% else %}
+								<span style="color:#999999;">美容室</span> <span style="color:#cc0000;">Lv.2～開放</span>{% emoji code="F97D" %}<br />
+								シェフの容姿を変更しよう<br />
+							{% /if %}
+						</div></td>
+					</tr>
+				</table>
+				<div style="background:#82bdba;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+			</div><!--/.section-->
+		</div><!--/.inner-->
+
+		<div class="toInvite" style="text-align:center;">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			{% emoji code="F8E6" %}<a href='{% "$baseUrl/mobile/kitchen/inviteguide"|mixiurl %}'>ﾏｲﾐｸ招待で100M+ﾌﾟﾚﾐｱｶﾞﾁｬ</a><br />
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			<div style="background:#82bdba;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+		</div><!--/.toInvite-->
+		<div class="footlink">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			{% emoji code="F9B8" %}<a href='{% "$baseUrl/mobile/kitchenitem/index"|mixiurl %}'>アイテムBOX</a><br />
+			{% emoji code="F8C4" %}<a href='{% "$baseUrl/mobile/kitchen/home"|mixiurl %}'>Myレストラン</a><br />
+		</div><!--/.footlink-->
+
+		<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+		<div class="line" style="background:#82bdba;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+	</div><!--/.content-->
+</div><!--/#shopIndex-->
+
+{%include file="common/menu.phtml"%}
+{%include file="ad_footer.phtml"%}

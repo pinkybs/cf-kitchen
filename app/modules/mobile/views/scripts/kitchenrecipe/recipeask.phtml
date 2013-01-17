@@ -1,0 +1,54 @@
+{%include file="common/header_shiftjis.phtml"%}
+
+
+<div id="recipeDetail">
+	<div class="content" style="background:#f0f5e0;">
+		<div class="headline" style="background:#8bbd82;color:#ffffff;text-align:center;">
+			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/recipe.gif" width="230" height="60" /><br />
+			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+			{% $recipeInfo.recipe_name %}<br />
+		</div><!--/.headline-->
+		
+		<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+		<div class="description">
+		{% $recipeInfo.recipe_name %}の作り方をﾏｲﾐｸに質問します｡<br />
+		</div><!--/.info-->
+		
+		<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+		<div class="info" style="text-align:center;">
+		<form action="create:activity?callback={%$baseUrl%}/mobile/kitchen/home?CF_uid={%$userInfo.uid%}{% if $ua==1 %}&guid=ON{%/if%}" method="POST" >
+                    <input type="hidden" name="title" value="{%$commFeedTitle%}" />
+                    <input type="hidden" name="mobileUrl" value="http://ma.mixi.net/{%$appId%}/" />
+                    <input type="hidden" name="mediaItem1" value="{%$commFeedUrl%}" />
+                    {% if $userInfo.uid != $uid %}
+                    <input type="hidden" name="recipient1" value="{%$userInfo.uid%}" />
+					{% /if %}
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+                    <input type="submit" value="ﾏｲﾐｸに質問する" />
+        </form>
+		</div><!--/.info-->
+		
+		<div class="toInviteNav" style="text-align:center;">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			<div style="background:#8bbd82;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			{% emoji code="F9A0" %}<a href='{% "invite:friends?callback=$baseUrl/mobile/callback/invite?forward=$baseUrl/mobile/kitchen/invitefinish" %}'>ﾏｲﾐｸと一緒にﾚｼﾋﾟを集めよう</a><br />
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+		</div><!--/.toInviteNav-->
+		<div class="footlink">
+			<div style="background:#8bbd82;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			{% if $ua!=2 %}{% emoji code="F97E" %}{% else %}{% emoji code="F8F8" %}{% /if %}<a href='{% "$baseUrl/mobile/kitchenrecipe/recipelist?CF_uid=`$userInfo.uid`&CF_genre=`$recipeInfo.genre`"|mixiurl %}'>{% $recipeInfo.genre_name|replace:"　":"" %}レシピ一覧</a><br />
+			{% emoji code="F9B8" %}<a href='{% "$baseUrl/mobile/kitchenitem/food"|mixiurl %}'>アイテムBOX:食材冷蔵庫</a><br />
+	        {% emoji code="F8C4" %}<a href='{% "$baseUrl/mobile/kitchen/home?CF_uid=`$userInfo.uid`"|mixiurl %}'>{% $userInfo.displayName%}のお店</a><br />
+		</div><!--/.footlink-->
+
+		<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+		<div class="line" style="background:#8bbd82;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+	</div><!--/.content-->
+
+</div><!--/#recipeDetail-->
+
+
+{%include file="common/menu.phtml"%}
+{%include file="footer.phtml"%}

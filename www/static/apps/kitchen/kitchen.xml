@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+    <ModulePrefs title="My kitche">
+        <Link rel="event.addapp" href="http://mykitchen.mixi.communityfactory.net/lifecycle/addapp" method="GET" />
+        <Link rel="event.removeapp" href="http://mykitchen.mixi.communityfactory.net/lifecycle/removeapp" method="GET" />
+    </ModulePrefs>
+    
+    <Content type="url" view="mobile" href="http://mykitchen.mixi.communityfactory.net/mobile/index" />
+</Module>

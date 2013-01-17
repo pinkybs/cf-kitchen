@@ -1,0 +1,80 @@
+{%include file="header.phtml"%}
+{%include file="common/ad_header.phtml"%}
+
+<div id="zakkaList">
+	<div class="content" style="background:#f0f5e0;">
+		<div class="headline" style="background:#8bbd82;text-align:center;">
+			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/warehouse.gif" width="230" height="60" /><br />
+		</div><!--/#headline-->
+		{% if $goods %}
+			<div class="count">
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				{%$pager.count%}件中 {%$start%}-{%$end%}件<br />
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				<div style="background:#8bbd82;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+			</div><!--/.count-->
+		{%/if%}
+		<div class="inner">
+			{% if $goods %}
+				{% foreach from=$goods item=data%}
+					<div class="section">
+						<table width="100%" cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td style="width:44px;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/zakka/40x40/{%$data.goods_picture%}.gif" width="40" height="40" style="margin:3px 0;" /></td>
+								<td><div style="{% if $ua==1 %}font-size:x-small;{% /if %}">{%$data.goods_name%}<br />
+									{%$data.goods_introduce%}<br />
+									{% if $data.genre != $genre %}
+										<div style="text-align:right;"><span style="color:#cc0000;">設置不可</span>&nbsp;</div>
+									{% else %}
+										{% if $data.position==0 %}
+											<div style="text-align:right;"><span style="color:#cc0000;">未使用</span> {% emoji code="F8F6" %}<a href='{% "$baseUrl/mobile/kitchenflash/setgoods?goodsId=`$data.goods_id`2&opensocial_app_id=`$APP_ID`&opensocial_owner_id=`$osUID`&rand=`$rand`"|mobile_flashurl %}'>お　く</a>&nbsp;</div>
+										{%else%}
+											<div style="text-align:right;"><span style="color:#999999;">設置中</span> {% emoji code="F8F6" %}<a href='{% "$baseUrl/mobile/kitchenitem/delgood/CF_goodId/`$data.goods_id`/CF_gid/`$data.gid`"|mixiurl %}'>しまう</a>&nbsp;</div>
+										{%/if%}
+									{%/if%}
+								</div></td>
+							</tr>
+						</table>
+						<div style="background:#8bbd82;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+					</div><!--/.section-->
+				{% /foreach %}
+				{% if $pager.count > 5 %}
+					{%include file="common/pager.phtml"%}
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+					<div style="background:#8bbd82;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+				{% /if %}
+				<div class="toShopNav" style="text-align:center;">
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+					{% emoji code="F9A0" %}<a href='{% "$baseUrl/mobile/kitchenshop/goodslist"|mixiurl %}'>デパートでざっかを買おう</a><br />
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+					<div style="background:#8bbd82;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+				</div><!--/.toShopNav-->
+				<div class="footlink">
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+					{% if $ua!=2 %}{% emoji code="F97E" %}{% else %}{% emoji code="F8F8" %}{% /if %}<a href='{% "$baseUrl/mobile/kitchenitem/index"|mixiurl %}'>アイテムBOX</a><br />
+					{% emoji code="F8C4" %}<a href='{% "$baseUrl/mobile/kitchen/home"|mixiurl %}'>Myレストラン</a><br />
+				</div><!--/.footlink-->
+			{% else %}
+				<div class="null" style="text-align:center;">
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+					ざっかがありません<br />
+					ざっかを買ってお店をデコろう!<br />
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="5" /><br />
+					<span style="color:#ff9999;">≫</span><a href='{% "$baseUrl/mobile/kitchenshop/goodslist"|mixiurl %}'>ざっか屋へ</a><span style="color:#ff9999;">≪</span><br />
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+					<div style="background:#8bbd82;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+				</div><!--/.null-->
+				<div class="footlink">
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+					{% if $ua!=2 %}{% emoji code="F97E" %}{% else %}{% emoji code="F8F8" %}{% /if %}<a href='{% "$baseUrl/mobile/kitchenitem/index"|mixiurl %}'>アイテムBOX</a><br />
+					{% emoji code="F8C4" %}<a href='{% "$baseUrl/mobile/kitchen/home"|mixiurl %}'>Myレストラン</a><br />
+				</div><!--/.footlink-->
+			{% /if %}
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			<div class="line" style="background:#8bbd82;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+		</div><!--/.inner-->
+	</div><!--/.content-->
+</div><!--/#zakkaList-->
+
+{%include file="common/menu.phtml"%}
+{%include file="ad_footer.phtml"%}

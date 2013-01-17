@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+    <ModulePrefs title="My kitche">
+        <Link rel="event.addapp" href="http://kitchen.mixitest.communityfactory.net/addapp/addapp" method="GET" />
+        <Link rel="event.removeapp" href="http://kitchen.mixitest.communityfactory.net/addapp/removeapp" method="GET" />
+    </ModulePrefs>
+    
+    <Content type="url" view="mobile" href="http://kitchen.mixitest.communityfactory.net/mobile/index" />
+</Module>

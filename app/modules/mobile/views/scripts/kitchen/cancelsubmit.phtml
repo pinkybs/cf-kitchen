@@ -1,0 +1,39 @@
+{%include file="header.phtml"%}
+
+<div id="foodConfirm">
+	<div class="content" style="background:#f0f5e0;">
+		{% if $rst == 1%}
+		<div class="headline" style="background:#8bbd82;color:#ffffff;text-align:center;">
+			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/select_recipe.gif" width="230" height="60" /><br />
+			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+			{% $nbRecipe.recipe_name %}<br />
+		</div><!--/#headline-->
+		
+		<div class="thumb" style="text-align:center;">
+			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/meal/130x130/{% $nbRecipe.f %}/{% $nbRecipe.n %}.gif" width="130" height="130" style="margin:3px 0;" /><br />
+		</div><!--/.thumb-->
+		
+		<div class="description">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			「{% $nbRecipe.recipe_name %}」の調理をやめました｡<br />
+		</div><!--/.description-->
+		{% else %}
+		<div class="description">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			調理中の料理がありませんでした｡<br />
+		</div><!--/.description-->
+		{% /if %}
+		
+		<div class="buy" style="color:#cc0000;text-align:center;">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+			<span style="color:#ff9999;">≫</span><a href='{% "$baseUrl/mobile/kitchenflash/kitchen?CF_uid=`$uid`&opensocial_app_id=`$APP_ID`&opensocial_owner_id=`$uid`&rand=`$rand`"|mobile_flashurl %}' accesskey="5">マイキッチンへ</a><span style="color:#ff9999;">≪</span><br />
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+		</div><!--/.buy-->
+		
+		<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+		<div class="line" style="background:#82bdba;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+	</div><!--/.content-->
+</div><!--/#foodConfirm-->
+
+{%include file="common/menu.phtml"%}
+{%include file="footer.phtml"%}

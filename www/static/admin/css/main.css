@@ -1,0 +1,276 @@
+/* @override http://communityfactory.com/cmn/css/main.css */
+
+@charset "utf-8";
+
+/*
+----------------------------------------------
+CommunityFactory main CSS
+
+Created Date: 2009/07/21
+Author: Yu Uno
+Last Up Date : 2009/10/18
+Author: Taiki Toyosawa
+----------------------------------------------
+*/
+
+
+/*tags
+----------------------------------------------*/
+
+* {
+	outline: none;
+}
+
+body,html {
+}
+
+body {
+	color: #666666;
+	font-size: 12px;
+	/*font-family:'Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック','ヒラギノ角ゴ Pro W3',sans-serif;*/
+}
+a{
+	color: #0a294a;
+}
+a:link{
+	text-decoration: none;
+	}
+a:hover {
+	text-decoration: underline;
+}
+
+img {
+	display: block;
+}
+
+textarea {
+	margin: 0;
+	padding: 3px;
+}
+
+pre {
+	margin: 0;
+	padding: 0;
+}
+
+
+#wrap {
+	margin:0;
+	width:100%;
+}
+
+
+#logo {
+	width: 100%;
+	height:65px;
+	background:url(../img/bar_bg.gif) repeat-x;
+}
+
+
+
+
+#navi{
+	width:100%;
+	clear:both;
+	background:#dfe1e3;
+	border-bottom:1px solid #9a9c9e;
+	}
+#navi li{
+	float:left;
+	display:inline;
+	padding:8px;
+	margin-left:20px;
+	font-size:12px;
+	}
+#navi li a{
+	color:#0a294a;
+	}
+#navi li.on{
+	background:#d4d4d4;
+	}
+#navi li.on a{
+	font-weight:bold;
+	}
+#navi li.logout{
+	float:right;
+	}
+	
+#search{
+	width:900px;
+	margin:20px auto;
+	clear:both;
+	
+	}
+#search h2{
+	background:#dfe1e3 url(../img/bg2.gif) repeat-x;
+	padding:6px 10px;
+	color:#0a294a;
+	font-weight:normal;
+	border-bottom:1px solid #9a9c9e;
+	}
+#search h3{
+	padding:8px 0;
+	font-weight:normal;
+	padding-left:10px;
+	}
+#search h3 span{
+	margin-right:10px;
+	margin-left:10px;
+	}
+#search div.condition{
+	margin-bottom:50px;
+	}
+#search div.paper{
+	text-align:right;
+	}
+#search div.paper span{
+	margin-right:10px;
+	}
+#search table{
+	width:100%;
+	border:1px solid #9a9c9e;
+	}
+#search #subsearch{
+	padding:10px;
+	}
+#search #subsearch table{
+	width:100%;
+	border:1px solid #9a9c9e;
+	}
+#search #subsearch table th{
+	border: none;
+	background:none;
+	width:80px;
+	text-align:left;
+	}
+#search #subsearch table td{
+	border: none;
+	}
+#search table td.subbtn{
+	text-align:center;
+	}
+
+#search table td.subbtn input{
+	font-size:12px;
+	padding:3px;
+	}
+	
+#search table th{
+	padding:8px;
+	text-align:center;
+	background:#dfdfdf;
+	border-bottom:1px solid #9a9c9e;
+	border-right:1px solid #9a9c9e;
+	}
+
+#search table td{
+	text-align: left;
+	padding:5px;
+	border-bottom:1px solid #9a9c9e;
+	}	
+	
+#search div.condition table th{
+	width:100px;
+	}	
+#search div.result table{
+	border-right: none;
+	}	
+#search div.result table td{
+	border-right:1px solid #9a9c9e;
+	text-align:center;
+	}
+#search div table td.num{
+	text-align: right;
+	}
+#search div table th.num{
+	text-align: right;
+	}
+#search div table th.tit{
+	background:#c1c1c1;
+	text-align:center;
+	font-weight:bold;
+	}
+#search div.result a{
+	text-decoration:underline;
+	margin-right:5px;
+	}
+	
+#search div.userDetails{
+	}
+
+#search div.userDetails .left{
+	width:440px;
+	float:left;
+	margin-right:20px;
+	}
+#search div.userDetails .right{
+	width:440px;
+	float:left;
+	}
+#search div.userDetails .right table{
+	border-right: none;
+	}#search div.userDetails .right table td{
+	border-right:1px solid #9a9c9e;
+	}
+#search div.userDetails .right table td.sub{
+	text-align:center;
+	background:#dfdfdf;
+	}	
+#search div.userDetails #userlist{
+	
+	}
+#search div.userDetails #userlist ul{
+	width:100%;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	}
+#search div.userDetails #userlist ul li{
+	width:30%;
+	list-style-type:none;
+	float:left;
+	padding:5px 0;
+	}
+
+#search div.userDetails table th{
+	text-align:left;
+	width:180px;
+	}
+#search div.userDetails table td{
+	text-align:right;
+	}
+
+#search div.userDetails div.subbtn{
+	width:900px;
+	clear:both;
+	text-align:center;
+	}
+#search div.userDetails div.subbtn input{
+	margin:10px;
+	}
+#search div.history table th{
+	width:100px;
+	}
+	
+#search input.button{
+	border:1px solid #9a9c9e;
+	background:#d0d0d0;
+	color:#3f3f3f;
+	padding:3px 30px;
+	}
+#search input.rightbutton{
+	float:right;
+	margin-right:100px;
+	}
+	
+	
+#footer{
+	width:100%;
+	text-align:center;
+	margin-top:30px;
+	padding:10px 0;
+	border-top:1px solid #9a9c9e;
+	background:#d0d0d0;
+	color:#3f3f3f;
+	}
+

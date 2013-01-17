@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" dir="ltr">
+<head>
+{% if $ua!=1 %}
+	<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+{% else %}
+	<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=Shift_JIS" />
+{% /if %}
+	<title>ようこそマイキッチン</title>
+	<style type="text/css"><![CDATA[
+		a:link{color:#006699;}
+		a:visited{color:#006699;}
+		a:focus{}
+		*{
+		{% if $ua==3 %}
+			font-size:5;
+		{% else %}
+			font-size:x-small;
+		{% /if %}
+			color:#333333;
+		}
+	]]></style>
+</head>
+<body style="background:#ffffff;">
+	<div id="container"{% if $ua==1 %} style="font-size:x-small;{%/if%}">

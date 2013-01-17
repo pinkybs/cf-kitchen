@@ -1,0 +1,153 @@
+<bounds>
+          <Rectangle left="58" right="621" top="73" bottom="607"/>
+        </bounds>
+        <styles>
+          <StyleList>
+            <fillStyles>
+              <Solid>
+                <color>
+                  <Color red="255" green="237" blue="13"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="255" green="215" blue="13"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="255" green="197" blue="13"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="255" green="255" blue="255"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="255" green="241" blue="61"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="255" green="244" blue="98"/>
+                </color>
+              </Solid>
+            </fillStyles>
+            <lineStyles/>
+          </StyleList>
+        </styles>
+        <shapes>
+          <Shape>
+            <edges>
+              <ShapeSetup x="523" y="148" fillStyle0="1"/>
+              <CurveTo x1="7" y1="-23" x2="-15" y2="-21"/>
+              <CurveTo x1="-21" y1="-28" x2="-42" y2="11"/>
+              <LineTo x="-121" y="-12"/>
+              <CurveTo x1="-98" y1="-10" x2="-65" y2="43"/>
+              <CurveTo x1="-65" y1="44" x2="-20" y2="99"/>
+              <LineTo x="-19" y="105"/>
+              <CurveTo x1="-14" y1="16" x2="17" y2="21"/>
+              <LineTo x="21" y="16"/>
+              <ShapeSetup fillStyle1="2"/>
+              <LineTo x="-8" y="-5"/>
+              <CurveTo x1="16" y1="-8" x2="25" y2="2"/>
+              <CurveTo x1="13" y1="2" x2="62" y2="-21"/>
+              <CurveTo x1="12" y1="-5" x2="74" y2="-26"/>
+              <ShapeSetup fillStyle1="3"/>
+              <CurveTo x1="12" y1="-25" x2="21" y2="-21"/>
+              <CurveTo x1="52" y1="-51" x2="72" y2="-1"/>
+              <ShapeSetup fillStyle1="2"/>
+              <LineTo x="1" y="-1"/>
+              <CurveTo x1="36" y1="-46" x2="0" y2="-20"/>
+              <CurveTo x1="0" y1="-40" x2="48" y2="-14"/>
+              <LineTo x="-1" y="19"/>
+              <ShapeSetup fillStyle0="0"/>
+              <LineTo x="-2" y="6"/>
+              <LineTo x="-3" y="5"/>
+              <LineTo x="-12" y="102"/>
+              <ShapeSetup fillStyle1="3"/>
+              <CurveTo x1="34" y1="13" x2="29" y2="28"/>
+              <CurveTo x1="52" y1="52" x2="0" y2="74"/>
+              <CurveTo x1="0" y1="74" x2="-52" y2="53"/>
+              <CurveTo x1="-53" y1="52" x2="-74" y2="0"/>
+              <CurveTo x1="-74" y1="0" x2="-53" y2="-52"/>
+              <CurveTo x1="-41" y1="-42" x2="-8" y2="-55"/>
+              <ShapeSetup fillStyle1="2"/>
+              <LineTo x="-66" y="-12"/>
+              <CurveTo x1="-75" y1="-37" x2="-16" y2="2"/>
+              <LineTo x="-21" y="-2"/>
+              <ShapeSetup x="439" y="250" fillStyle0="2" fillStyle1="3"/>
+              <LineTo x="3" y="0"/>
+              <CurveTo x1="34" y1="0" x2="30" y2="11"/>
+              <ShapeSetup x="428" y="300" fillStyle0="5" fillStyle1="4"/>
+              <CurveTo x1="-45" y1="3" x2="-34" y2="29"/>
+              <LineTo x="79" y="79"/>
+              <LineTo x="0" y="-111"/>
+              <ShapeSetup x="597" y="435" fillStyle0="3"/>
+              <CurveTo x1="0" y1="66" x2="-47" y2="47"/>
+              <CurveTo x1="-46" y1="47" x2="-67" y2="0"/>
+              <CurveTo x1="-66" y1="0" x2="-47" y2="-47"/>
+              <CurveTo x1="-47" y1="-47" x2="0" y2="-66"/>
+              <CurveTo x1="0" y1="-67" x2="47" y2="-46"/>
+              <CurveTo x1="47" y1="-47" x2="66" y2="0"/>
+              <CurveTo x1="67" y1="0" x2="46" y2="47"/>
+              <CurveTo x1="47" y1="46" x2="0" y2="67"/>
+              <ShapeSetup x="447" y="411" fillStyle0="5"/>
+              <LineTo x="79" y="-79"/>
+              <CurveTo x1="-36" y1="-29" x2="-43" y2="-3"/>
+              <LineTo x="0" y="111"/>
+              <ShapeSetup x="460" y="444"/>
+              <LineTo x="79" y="79"/>
+              <CurveTo x1="30" y1="-33" x2="3" y2="-46"/>
+              <LineTo x="-112" y="0"/>
+              <ShapeSetup x="539" y="346"/>
+              <LineTo x="-79" y="79"/>
+              <LineTo x="112" y="0"/>
+              <CurveTo x1="-3" y1="-46" x2="-30" y2="-33"/>
+              <ShapeSetup x="375" y="122" fillStyle0="6" fillStyle1="1"/>
+              <CurveTo x1="22" y1="-31" x2="-24" y2="-2"/>
+              <CurveTo x1="-147" y1="-15" x2="-61" y2="57"/>
+              <CurveTo x1="-36" y1="33" x2="-14" y2="56"/>
+              <CurveTo x1="-13" y1="56" x2="28" y2="2"/>
+              <CurveTo x1="55" y1="4" x2="118" y2="-91"/>
+              <CurveTo x1="51" y1="-39" x2="21" y2="-30"/>
+              <ShapeSetup x="132" y="358" fillStyle0="1" fillStyle1="4"/>
+              <CurveTo x1="-9" y1="0" x2="-6" y2="-6"/>
+              <CurveTo x1="-6" y1="-6" x2="0" y2="-8"/>
+              <CurveTo x1="0" y1="-9" x2="6" y2="-6"/>
+              <CurveTo x1="6" y1="-6" x2="9" y2="0"/>
+              <CurveTo x1="8" y1="0" x2="6" y2="6"/>
+              <LineTo x="6" y="15"/>
+              <LineTo x="-6" y="14"/>
+              <LineTo x="-14" y="6"/>
+              <ShapeSetup x="182" y="315"/>
+              <LineTo x="10" y="-2"/>
+              <CurveTo x1="12" y1="4" x2="-3" y2="11"/>
+              <CurveTo x1="-2" y1="12" x2="-13" y2="-2"/>
+              <CurveTo x1="-13" y1="-4" x2="4" y2="-11"/>
+              <LineTo x="5" y="-8"/>
+              <ShapeSetup x="266" y="458" fillStyle0="2" fillStyle1="3"/>
+              <LineTo x="-3" y="-30"/>
+              <CurveTo x1="0" y1="-44" x2="19" y2="-36"/>
+              <ShapeSetup x="302" y="425" fillStyle0="5" fillStyle1="4"/>
+              <LineTo x="112" y="0"/>
+              <LineTo x="-79" y="-79"/>
+              <CurveTo x1="-30" y1="33" x2="-3" y2="46"/>
+              <ShapeSetup x="526" y="537"/>
+              <LineTo x="-79" y="-79"/>
+              <LineTo x="0" y="112"/>
+              <CurveTo x1="44" y1="-3" x2="35" y2="-30"/>
+              <ShapeSetup x="302" y="444"/>
+              <CurveTo x1="3" y1="46" x2="30" y2="33"/>
+              <LineTo x="79" y="-79"/>
+              <LineTo x="-112" y="0"/>
+              <ShapeSetup x="349" y="537"/>
+              <CurveTo x1="33" y1="30" x2="46" y2="3"/>
+              <LineTo x="0" y="-112"/>
+              <LineTo x="-79" y="79"/>
+              <ShapeSetup/>
+            </edges>
+          </Shape>
+        </shapes>

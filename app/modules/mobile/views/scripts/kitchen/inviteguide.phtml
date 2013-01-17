@@ -1,0 +1,89 @@
+{%include file="header.phtml"%}
+{%include file="common/ad_header.phtml"%}
+
+<div id="invite">
+	<div class="content" style="background:#ffffdd;">
+		<div class="headline" style="background:#ff9933;color:#ffffff;text-align:center;">
+			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/invitation.gif?100205" width="230" height="60" /><br />
+		</div><!--/.headline-->
+		<div class="description" style="text-align:left;">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			ようこそマイキッチンでまだお店を開店していないﾏｲﾐｸを誘って<span style="color:#cc0000;">100M+ﾌﾟﾚﾐｱｶﾞﾁｬ権利</span>を手に入れよう!<br />
+		</div><!--/.description-->
+		<div id="goInvite">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			<div class="headline" style="background:#ff9933;color:#ffffff;text-align:center;">
+				<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+				{%emoji code="F977"%}マイミクを招待する{%emoji code="F977"%}<br />
+				<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+			</div><!--/.headline-->
+			<div class="inner">
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				招待したﾏｲﾐｸがお店を開店させるとﾌﾟﾚﾐｱｶﾞﾁｬでこんなｱｲﾃﾑがもらえるよ!<br />
+				<div class="incentive" style="color:#cc0000;text-align:center;">
+					<img src="{%$staticUrl%}/apps/kitchen/mobile/img/invite/incentive.gif" width="230" height="42" style="margin-top:3px;" /><br />
+					{% emoji code="F99F" %}すべて非売品アイテム{% emoji code="F99F" %}<br />
+				</div><!--/.incentive-->
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				<div style="background:#ff9933;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				<div class="invite" style="text-align:center;">
+					たくさんのマイミクを誘って<br />
+					一緒にゲームを楽しもう{% emoji code="F99B" %}<br />
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+					<table width="220" cellpadding="3" cellspacing="1" border="0" style="background:#ff9933;" align="center">
+						<tr>
+							<td style="background:#ffffcc;text-align:center;"><div style="{% if $ua==1 %}font-size:x-small;{%/if%}">
+								≫<a href='{% "invite:friends?callback=$baseUrl/mobile/callback/invite?forward=$baseUrl/mobile/kitchen/invitefinish" %}'>マイミクを招待する</a>≪
+							</div></td>
+						</tr>
+					</table>
+				</div><!--/.invite-->
+			</div><!--/.inner-->
+		</div><!--/#goInvite-->
+		<div id="aboutFlow">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			<div class="headline" style="background:#ff9933;color:#ffffff;text-align:center;">
+				<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+				マイミク招待の流れ<br />
+				<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+			</div><!--/.headline-->
+			<div class="inner">
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				｢<a href='{% "invite:friends?callback=$baseUrl/mobile/callback/invite?forward=$baseUrl/mobile/kitchen/invitefinish" %}'>マイミクを招待する</a>｣をｸﾘｯｸ<br />
+				　　　↓<br />
+				招待するﾏｲﾐｸを選び｢選択完了｣<br />
+				　　　↓<br />
+				ﾒｯｾｰｼﾞを送信する<br />
+				　　　↓<br />
+				招待したﾏｲﾐｸがﾚｽﾄﾗﾝを開店!<br />
+				　　　↓<br />
+				100M+ﾌﾟﾚﾐｱｶﾞﾁｬ権利GET{% emoji code="F8E6" %}<br />
+			</div><!--/.inner-->
+		</div><!--/#aboutFlow-->
+		<div id="caution">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			<div class="headline" style="background:#ff9933;color:#ffffff;text-align:center;">
+				<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+				招待した人が開店すると…<br />
+				<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+			</div><!--/.headline-->
+			<div class="inner">
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				あなたの招待ﾒｯｾｰｼﾞでﾏｲﾐｸがﾚｽﾄﾗﾝを開店すると､<span style="color:#cc0000;">あなたのﾏｲﾍﾟｰｼﾞに通知されます!</span><br />
+				<br />
+				通知をｸﾘｯｸすると､ﾌﾟﾚﾐｱｶﾞﾁｬの画面に移動しますので､挑戦してください｡<br />
+				<div class="caution">
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="5" /><br />
+					<span style="color:#cc0000;">{% emoji code="F9DC" %}ご注意ください</span><br />
+					過去にｱﾌﾟﾘを追加したことがあるﾕｰｻﾞｰを招待しても､上記特典はもらえません<br />
+				</div><!--/.caution-->
+			</div><!--/.inner-->
+		</div><!--/#caution-->
+		<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+		<div class="line" style="background:#ff9933;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+	</div><!--/.content-->
+</div><!--/#invite-->
+
+{%include file="common/browseback.phtml"%}
+{%include file="ad_footer.phtml"%}

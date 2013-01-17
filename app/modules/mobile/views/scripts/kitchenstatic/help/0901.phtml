@@ -1,0 +1,33 @@
+<div id="help">
+    <div class="content" style="background:#f0f5e0;">
+        <div class="headline" style="background:#8bbd82;color:#ffffff;text-align:center;">
+            <img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/help.gif" width="230" height="60" /><br />
+            <img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+            {% emoji code="F99F" %}その他<br />
+        </div><!--/.headline-->
+		<div class="subHeadline" style="text-align:center;">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			<span style="color:#497d40;">お店のジャンルを変更する</span><br />
+			<div class="line" style="background:#8bbd82;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="1" /></div>
+		</div><!--/.subHeadline-->
+        <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+        <div class="inner">
+			お店のｼﾞｬﾝﾙを変更する手順は､以下の通りです｡<br />
+			<br />
+			1.ﾌﾟﾛﾌｨｰﾙ画面の｢経営中のﾚｽﾄﾗﾝ｣に現在持っている店舗物件が表示されます｡<br />
+			<br />
+			2.変更したいｼﾞｬﾝﾙの店舗を選択して､｢使用する｣をｸﾘｯｸすると運営するﾚｽﾄﾗﾝを変更できます｡<br />
+			<br />
+			※店舗物件は不動産屋で購入できます｡<br />
+			※ｼﾞｬﾝﾙを変更すると､現在ｷｯﾁﾝで調理中の料理がﾘｾｯﾄされますので､ご注意ください｡<br />
+        </div><!--/.inner-->
+        <div class="footlink">
+            <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+            <div style="background:#8bbd82;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+            <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			{% if $ua!=2 %}{% emoji code="F97E" %}{% else %}{% emoji code="F8F8" %}{% /if %}<a href='{% "$baseUrl/mobile/kitchenstatic/help"|mixiurl %}'>ヘルプ:もくじ</a><br />
+        </div><!--/.footlink-->
+        <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+        <div class="line" style="background:#8bbd82;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+    </div><!--/.content-->
+</div><!--/#help-->

@@ -1,0 +1,95 @@
+{%include file="header.phtml"%}
+{%include file="common/ad_header.phtml"%}
+
+<div id="recipeConfirm">
+	<div class="content" style="background:#ffffdd;">
+		<div class="headline" style="background:#81623e;color:#ffffff;text-align:center;">
+			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/make.gif" width="230" height="60" /><br />
+			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+			食材配合[確認]<br />
+		</div><!--/.headline-->
+		<div class="stuff">
+			<div class="inner">
+				<div class="description">
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+					配合する食材を確認し､よろしければ[食材を配合する]を押してください。<br />
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+					<div style="background:#81623e;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+				</div><!--/.description-->
+				{% if $foodInfo1.food_id != "" %}
+				<div class="section">
+					<table width="100%" cellpadding="0" cellspacing="0" border="0">
+						<tr>
+							<td style="width:44px;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/food/40x40/{% $foodInfo1.food_picture %}.gif" width="40" height="40" style="margin:3px 0;" /></td>
+							<td><div style="{% if $ua==1 %}font-size:x-small;{%/if%}">
+								{% $foodInfo1.food_name %}<br />
+								<div style="text-align:right;">使用後:{% $userFood1.food_count %}→{% $userFood1.food_count-1 %}&nbsp;</div>
+							</div></td>
+						</tr>
+					</table>
+					<div style="background:#81623e;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+				</div><!--/.section-->
+				{% /if %}
+				{% if $foodInfo2.food_id != "" %}
+				<div class="section">
+					<table width="100%" cellpadding="0" cellspacing="0" border="0">
+						<tr>
+							<td style="width:44px;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/food/40x40/{% $foodInfo2.food_picture %}.gif" width="40" height="40" style="margin:3px 0;" /></td>
+							<td><div style="{% if $ua==1 %}font-size:x-small;{%/if%}">
+								{% $foodInfo2.food_name %}<br />
+								<div style="text-align:right;">使用後:{% $userFood2.food_count-$minus2 %}→{% $userFood2.food_count-$minus2-1 %}&nbsp;</div>
+							</div></td>
+						</tr>
+					</table>
+					<div style="background:#81623e;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+				</div><!--/.section-->
+				{% /if %}
+				{% if $foodInfo3.food_id != "" %}
+				<div class="section">
+					<table width="100%" cellpadding="0" cellspacing="0" border="0">
+						<tr>
+							<td style="width:44px;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/food/40x40/{% $foodInfo3.food_picture %}.gif" width="40" height="40" style="margin:3px 0;" /></td>
+							<td><div style="{% if $ua==1 %}font-size:x-small;{%/if%}">
+								{% $foodInfo3.food_name %}<br />
+								<div style="text-align:right;">使用後:{% $userFood3.food_count-$minus3 %}→{% $userFood3.food_count-$minus3-1 %}&nbsp;</div>
+							</div></td>
+						</tr>
+					</table>
+					<div style="background:#81623e;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+				</div><!--/.section-->
+				{% /if %}
+				{% if $foodInfo4.food_id != "" %}
+				<div class="section">
+					<table width="100%" cellpadding="0" cellspacing="0" border="0">
+						<tr>
+							<td style="width:44px;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/food/40x40/{% $foodInfo4.food_picture %}.gif" width="40" height="40" style="margin:3px 0;" /></td>
+							<td><div style="{% if $ua==1 %}font-size:x-small;{%/if%}">
+								{% $foodInfo4.food_name %}<br />
+								<div style="text-align:right;">使用後:{% $userFood4.food_count-$minus4 %}→{% $userFood4.food_count-$minus4-1 %}&nbsp;</div>
+							</div></td>
+						</tr>
+					</table>
+					<div style="background:#81623e;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+				</div><!--/.section-->
+				{% /if %}
+            </div><!--/.inner-->
+        </div><!--/.stuff-->		
+		<div class="confirm" style="text-align:center;">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="5" /><br />
+			{% emoji code="F9A0" %}<span style="color:#cc0000;">配合した食材は消費されます</span><br />
+			<a href='{% "$baseUrl/mobile/kitchenrecipe/makerecipe/CF_kitchen_id/`$kitchenID``$paramStr`"|mixiurl %}'><img src="{%$staticUrl%}/apps/kitchen/mobile/img/recipe/make.gif" width="200" height="40" alt="食材を配合する!" style="margin:5px 0 3px;" /></a><br />
+			<a href='{% "$baseUrl/mobile/kitchenflash/selectgenre/CF_reset/1/CF_kitchen_id/`$kitchenID`?opensocial_app_id=`$APP_ID`&opensocial_owner_id=`$uid`&rand=`$rand`"|mobile_flashurl %}'><img src="{%$staticUrl%}/apps/kitchen/mobile/img/recipe/reset.gif" width="200" height="40" alt="開発をやりなおす" style="margin-bottom:10px;" /></a><br />
+		</div><!--/.confirm-->
+		<div class="footlink">
+			<div style="background:#81623e;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			{% if $ua!=2 %}{% emoji code="F97E" %}{% else %}{% emoji code="F8F8" %}{% /if %}<a href='{% "$baseUrl/mobile/kitchenrecipe/choice/CF_kitchen_id/`$kitchenID`"|mixiurl %}'>レシピ図鑑から選ぶ</a><br />
+			{% emoji code="F8C4" %}<a href='{% "$baseUrl/mobile/kitchen/home"|mixiurl %}'>Myレストラン</a><br />
+		</div><!--/.footlink-->
+		<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+		<div class="line" style="background:#81623e;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+	</div><!--/.content-->
+</div><!--/#recipeConfirm-->
+
+{%include file="common/copyright.phtml"%}
+{%include file="footer.phtml"%}

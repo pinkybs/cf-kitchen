@@ -1,0 +1,1 @@
+<div style="margin-top:10px;text-align:center;font-size:12px;" >14:00～16:30 システム改修の為サービスを一時中断しております。<br />ご利用の皆様にはご迷惑をおかけしますがサービス再開までいましばらくお待ち下さい。<br /></div>

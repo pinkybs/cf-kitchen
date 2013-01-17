@@ -1,0 +1,140 @@
+{%include file="header.phtml"%}
+
+<body id="home">
+	<div id="wrap">
+		<div id="logo">
+		  <img src="{%$staticUrl%}/admin/img/logo.gif" alt="" width="239" height="65" /></div>
+
+			<ul id="navi">
+			    {% foreach name=appList from=$appList item=app %}
+					<li class="on"><a href="#">{%$app.app_name%}</a></li>
+				{% /foreach %}
+			    <li class="logout"><a href="{%$baseUrl%}/auth/logout">ログアウト</a></li>
+			</ul>
+	<div id="search">
+		<h2>ユーザー詳細</h2>
+		<h3>
+			<a href="{%$baseUrl%}/mykitchen/usersearch?txtUid={%$userInfo.uid%}">ユーザー検索</a>&gt;&gt;ユーザー詳細>>
+			<a href="{%$baseUrl%}/mykitchen/buyshop?CF_uid={%$userInfo.uid%}">購入履歴画面</a>>>
+			<a href="{%$baseUrl%}/mykitchen/actiondisplay?CF_uid={%$userInfo.uid%}">アクション履歴</a>
+		</h3>
+		<div class="userDetails clearfix">
+			<div class="left">
+			  	<table cellspacing="0" cellpadding="0">
+					<tr><td><span>ユーザーID</span></td><td><span>{%$userInfo.uid%}</span></td></tr>
+					<tr><td><span>ニックネーム</span></td><td><span>{%$userInfo.displayName%}</span></td></tr>
+					<tr><td><span>所有メダル</span></td><td><span>{%$userInfo.gold%}</span></td></tr>
+					<tr><td><span>所有チップ</span></td><td><span>{%$userInfo.point%}</span></td></tr>
+					<tr><td><span>利用ステータス</span></td><td><span>{%if $userInfo.status == 1 %}退会{%else%}利用中{%/if%}</span></td></tr>
+					<tr><td><span>最終ログイン日時</span></td><td><span>{%$userInfo.last_login_time|date_format:"%Y-%m-%d %H:%M:%S"%}</span></td></tr>
+					<tr><td><span>ガチャ挑戦権</span></td><td><span>{%$userInfo.gacha_count%}回</span></td></tr>
+					<tr><td><span>選択ジャンル</span></td><td><span>{%$userInfo.used_genre_name%}</span></td></tr>
+				</table>
+			</div><!-- left end -->
+
+	{% if $userInfo.genre %}
+		<div class="right">
+  			<table cellspacing="0" cellpadding="0">
+  				<tr>
+						<th><span>&nbsp&nbsp</span></th>
+						<th><span>レベル</span></th>
+						<th><span>経験値</span></th>
+						<th><span>所有レシピ数</span></th>
+						<th><span>レストランランク</span></th>
+				</tr><!--
+			{% foreach from=$userInfo.genre item=genre key=key%}
+				--><tr>
+						<td>{%$genre.genre_name%}</td>
+						<td>{%$genre.level%}</td>
+						<td>{%$genre.exp%}</td>
+						<td>{%$genre.recipe_count%}</td>
+						<td>{%$genre.estate%}</td>
+					</tr>
+			<!--{%/foreach%}
+			--></table>
+		</div>
+	{% /if %}
+
+<br>
+<br>
+	<div class="subbtn">
+		<a class="button" href="{%$baseUrl%}/mykitchen/usersearch?txtUid={%$userInfo.uid%}">戻る</a>
+		<a class="button" href="{%$baseUrl%}/mykitchen/buyshop?CF_uid={%$userInfo.uid%}">購入履歴</a>
+		<a class="button" href="{%$baseUrl%}/mykitchen/actiondisplay?CF_uid={%$userInfo.uid%}">アクション履歴</a>
+	</div>
+<br>
+<br>
+		<div id="userlist">
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+				    <th>アプリ内マイミク数</th>
+				    <td>
+					    <ul>
+						    <li>{%$userInfo.friends|@count%}</li>
+					    </ul>
+					</td>
+				</tr>
+				<tr>
+					<th>アプリ内マイミク</th>
+				    <td>
+						<ul class="clearfix">
+					      	{% foreach from=$userInfo.friends item=user key=key%}
+					        	<li>
+						        	<a href="{%$baseUrl%}/mykitchen/userinfo?CF_uid={%$user.uid%}">{%$user.displayName%}&nbsp;({%$user.uid%})</a>
+					        	</li>
+							{% /foreach %}
+						</ul>
+					</td>
+				</tr>
+				<tr>
+				    <th>招待してくれたユーザー</th>
+				    <td>
+				    	<ul class="clearfix">
+							<li>
+								{% if $userInfo.invite_user%}
+									<a href="{%$baseUrl%}/mykitchen/userinfo?CF_uid={%$userInfo.invite_user.uid%}">
+									{%$userInfo.invite_user.displayName%}&nbsp;({%$userInfo.invite_user.uid%})</a>
+								{%/if%}
+							</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+				    <th>招待送信先ユーザー</th>
+				    <td>
+				    	<ul class="clearfix"><!--
+					     -->{% foreach from = $userInfo.send_invite_user item=sendUser%}<!--
+							 --><li>
+									<a href="{%$baseUrl%}/mykitchen/userinfo?CF_uid={%$sendUser.target%}">
+									{%$sendUser.displayName%}&nbsp;({%$sendUser.target%})</a>
+								</li><!--
+						 -->{% /foreach %}<!--
+					 --></ul>
+				   </td>
+				</tr>
+				<tr>
+				    <th>招待して登録したユーザー数</th>
+				    <td>
+				    	<ul>
+				      		<li>{%$userInfo.invite_success|@count%}人</li>
+				    	</ul>
+				    </td>
+				</tr>
+				<tr>
+				    <th>招待して登録したユーザー</th>
+				    <td>
+				    	<ul class="clearfix"><!--
+				    	 -->{% foreach from=$userInfo.invite_success item=user key=key%}<!--
+							 --><li>
+									<a href="{%$baseUrl%}/mykitchen/userinfo?CF_uid={%$user.target_uid%}"><!--
+								 -->{%$user.displayName%}&nbsp;({%$user.target_uid%})</a>
+								</li><!--
+						 -->{% /foreach %}<!--
+				    --></ul>
+				    </td>
+				</tr>
+			</table>
+		</div><!-- userList end -->
+	</div>
+</div>
+{%include file="footer.phtml"%}

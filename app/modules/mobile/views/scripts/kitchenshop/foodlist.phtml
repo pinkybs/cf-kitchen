@@ -1,0 +1,87 @@
+{%include file="header.phtml"%}
+{%include file="common/ad_header.phtml"%}
+
+<div id="foodList">
+	<div class="content" style="background:#eeffff;">
+		<div class="headline" style="background:#82bdba;text-align:center;">
+			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/foodlist.gif" width="230" height="60" /><br />
+		</div><!--/#headline-->
+		<div class="money">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			<table width="220" cellpadding="3" cellspacing="1" border="0" align="center" style="background:#82bdba;">
+				<tr>
+					<td style="background:#ffffee;text-align:center;"><div style="{% if $ua==1 %}font-size:x-small;{%/if%}">
+						{% if $gold >= 1000000 || $point >= 1000000 %}
+							{% emoji code="F8C8" %}所持M {% $gold|string_format:"%'#7s"|replace:"#":"&nbsp;" %}<br />
+							{% emoji code="F8E5" %}所持T {% $point|string_format:"%'#7s"|replace:"#":"&nbsp;" %}<br />
+						{% elseif $gold >= 100000 || $point >= 100000 %}
+							{% emoji code="F8C8" %}所持M {% $gold|string_format:"%'#6s"|replace:"#":"&nbsp;" %}<br />
+							{% emoji code="F8E5" %}所持T {% $point|string_format:"%'#6s"|replace:"#":"&nbsp;" %}<br />
+						{% else %}
+							{% emoji code="F8C8" %}所持M {% $gold|string_format:"%'#5s"|replace:"#":"&nbsp;" %}<br />
+							{% emoji code="F8E5" %}所持T {% $point|string_format:"%'#5s"|replace:"#":"&nbsp;" %}<br />
+						{% /if %}
+					</div></td>
+				</tr>
+			</table>
+		</div><!--/.money-->
+		<div class="kind" style="text-align:center;">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			{% if $category == 0 %}すべて{% else %}<a href='{% "$baseUrl/mobile/kitchenshop/foodlist?category=0"|mixiurl %}'>すべて</a>{% /if %}<span style="color:#999999;">|</span>{% if $category == 1 %}魚貝類{% else %}<a href='{% "$baseUrl/mobile/kitchenshop/foodlist?category=1"|mixiurl %}'>魚貝類</a>{% /if %}<span style="color:#999999;">|</span>{% if $category == 4 %}肉類{% else %}<a href='{% "$baseUrl/mobile/kitchenshop/foodlist?category=4"|mixiurl %}'>肉類</a>{% /if %}<span style="color:#999999;">|</span>{% if $category == 6 %}乳卵・豆{% else %}<a href='{% "$baseUrl/mobile/kitchenshop/foodlist?category=6"|mixiurl %}'>乳卵・豆</a>{% /if %}<br />
+			{% if $category == 3 %}調味料{% else %}<a href='{% "$baseUrl/mobile/kitchenshop/foodlist?category=3"|mixiurl %}'>調味料</a>{% /if %}<span style="color:#999999;">|</span>{% if $category == 2 %}穀類{% else %}<a href='{% "$baseUrl/mobile/kitchenshop/foodlist?category=2"|mixiurl %}'>穀類</a>{% /if %}<span style="color:#999999;">|</span>{% if $category == 5 %}野菜{% else %}<a href='{% "$baseUrl/mobile/kitchenshop/foodlist?category=5"|mixiurl %}'>野菜</a>{% /if %}<span style="color:#999999;">|</span>{% if $category == 7 %}フルーツ{% else %}<a href='{% "$baseUrl/mobile/kitchenshop/foodlist?category=7"|mixiurl %}'>フルーツ</a>{% /if %}<br />
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			<div style="background:#82bdba;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+		</div><!--/.kind-->
+		<div class="count">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			{% $count %}件中 {% $start %}-{% if $count <= $start+4 %}{% $count %}{% else %}{% $start+4 %}{% /if %}件<br />
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			<div style="background:#82bdba;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+		</div><!--/.count-->
+		<div class="inner">
+			{% foreach from=$foodlist item=data key=key %}
+				<div class="section">
+					<table width="100%" cellpadding="0" cellspacing="0" border="0">
+						<tr>
+							<td style="width:44px;text-align:center;vertical-align:top;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/food/40x40/{% $data.food_picture %}.gif" width="40" height="40" style="margin:3px 0;" /></td>
+							<td><div style="{% if $ua==1 %}font-size:x-small;{%/if%}">{%$data.food_name%}<br />
+								{%$data.food_introduce%}<br />
+								{% if $level >= $data.level %}
+								<div style="color:#999999;text-align:right;"><a href='{% "$baseUrl/mobile/kitchenshop/foodconfirm?food_id=`$data.food_id`&pay=gold"|mixiurl %}'>{%$data.food_price_gold%}M</a>/{% if $data.type == 1%}<a href='{% "$baseUrl/mobile/kitchenshop/foodconfirm?food_id=`$data.food_id`&pay=point"|mixiurl %}'>{%$data.food_price_point%}T</a>{% else %}非売品{% /if %}&nbsp;</div>
+								{% else %}
+								<div style="color:#ff0000;text-align:right;">Lv.{%$data.level%}～購入可</div>
+								{% /if %}
+							</div></td>
+						</tr>
+					</table>
+					<div style="background:#82bdba;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+				</div><!--/.section-->
+			{% /foreach %}
+			{% if $count > 5 %}
+				<div class="pager" style="color:#006699;text-align:center;">
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+					{%include file="kitchenshop/common/pagerfood.phtml"%}<br />
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+					<div style="background:#82bdba;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+				</div><!--/.pager-->
+			{% /if %}
+			<div class="toInvite" style="text-align:center;">
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				{% emoji code="F99F" %}<a href='{% "$baseUrl/mobile/kitchenshop/gachalist"|mixiurl %}'>ﾚｱな食材をﾌﾟﾚﾐｱｶﾞﾁｬでGET!</a><br />
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				<div style="background:#82bdba;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+			</div><!--/.toInvite-->
+			<div class="footlink">
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				{% if $ua!=2 %}{% emoji code="F97E" %}{% else %}{% emoji code="F8F8" %}{% /if %}<a href='{% "$baseUrl/mobile/kitchenshop/shopping"|mixiurl %}'>マイキチデパート</a><br />
+				{% emoji code="F9B8" %}<a href='{% "$baseUrl/mobile/kitchenitem/food"|mixiurl %}'>アイテムBOX:食材冷蔵庫</a><br />
+				{% emoji code="F8C4" %}<a href='{% "$baseUrl/mobile/kitchen/home"|mixiurl %}'>Myレストラン</a><br />
+			</div><!--/.footlink-->
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			<div class="line" style="background:#82bdba;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+		</div><!--/.content-->
+	</div><!--/.inner-->
+</div><!--/#foodList-->
+
+{%include file="common/menu.phtml"%}
+{%include file="ad_footer.phtml"%}

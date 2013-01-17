@@ -1,0 +1,33 @@
+<div id="help">
+    <div class="content" style="background:#f0f5e0;">
+        <div class="headline" style="background:#8bbd82;color:#ffffff;text-align:center;">
+            <img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/help.gif" width="230" height="60" /><br />
+            <img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+            {% emoji code="F99F" %}その他<br />
+        </div><!--/.headline-->
+		<div class="subHeadline" style="text-align:center;">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			<span style="color:#497d40;">マイミク以外のユーザーの訪問</span><br />
+			<div class="line" style="background:#8bbd82;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="1" /></div>
+		</div><!--/.subHeadline-->
+        <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+        <div class="inner">
+			ﾏｲﾐｸ以外のﾕｰｻﾞｰからの訪問は､｢ｷｯﾁﾝの公開設定｣で設定できます｡設定の手順は､以下の通りとなります｡<br />
+			<br />
+			1.Myﾚｽﾄﾗﾝ画面にある｢ｷｯﾁﾝ公開設定｣をｸﾘｯｸします｡<br />
+			<br />
+			2.希望する公開設定にﾁｪｯｸして｢変更｣をｸﾘｯｸします｡<br />
+			<br />
+			3.公開設定は､｢全体公開[誰でも訪問できる]｣､｢限定公開[ﾏｲﾐｸのみ訪問できる]｣の2種類です｡<br />
+			<br />
+        </div><!--/.inner-->
+        <div class="footlink">
+            <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+            <div style="background:#8bbd82;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+            <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			{% if $ua!=2 %}{% emoji code="F97E" %}{% else %}{% emoji code="F8F8" %}{% /if %}<a href='{% "$baseUrl/mobile/kitchenstatic/help"|mixiurl %}'>ヘルプ:もくじ</a><br />
+        </div><!--/.footlink-->
+        <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+        <div class="line" style="background:#8bbd82;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+    </div><!--/.content-->
+</div><!--/#help-->

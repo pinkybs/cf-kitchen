@@ -1,0 +1,750 @@
+{%include file="header.phtml"%}
+{%include file="common/ad_header.phtml"%}
+{% if $isMyself %}
+    <div id="restaurant">
+    	{% if $myRes.total_level > 1 %}
+	    	<div id="openalert">
+	    		{% foreach from=$listOpen item=open%}
+	    			<a href='{% "$baseUrl/mobile/kitchen/home?CF_open=1&CF_uid=`$open.send_uid`"|mixiurl %}'>■洋食屋{% $open.shop_name %}が新装ｵｰﾌﾟﾝ!</a>&nbsp;<br />
+	    		{% /foreach %}
+	    	</div>
+	        <div class="footNav">
+                {% if $userPro.daily_gift %}
+                {% emoji code="F8E6" %}<a href='{% "$baseUrl/mobile/kitchenitem/freegiftlist"|mixiurl %}'><span style="color:#cc0000;">ﾏｲﾐｸに無料ｷﾞﾌﾄを贈ろう!</span></a><br />
+                {% /if %}
+                {% if $hasGift %}
+	    			{%emoji code="F8E6"%}<a href='{% "$baseUrl/mobile/kitchenitem/mygiftlist?CF_clearDaily=1"|mixiurl %}' style="color:#cc0000;"><span style="color:#cc0000;">ｷﾞﾌﾄが{% $hasGift %}件届いています!</span></a><br />
+	    		{% /if %}
+	    		{% if $hasHistory > 0 %}
+	    			{% emoji code="F8F9" %}<a href='{% "$baseUrl/mobile/kitchen/accesslist?CF_clearDaily=1"|mixiurl %}' >来店履歴が{% $hasHistory %}件あります!</a>&nbsp;<br />
+	    		{% /if %}
+	    		{% if $hasBoard > 0 %}
+	    			{% emoji code="F9BE" %}<a href='{% "$baseUrl/mobile/kitchen/boardlist?CF_clearDaily=1"|mixiurl %}' >伝言板に{% $hasBoard %}件ｶｷｺﾐがあります!</a>&nbsp;<br />
+	    		{% /if %}
+	    		{% if $hasAnnounce > 0 %}
+	    			{% emoji code="F977" %}<a href='{% "$baseUrl/mobile/kitchenstatic/info?CF_clearDaily=1"|mixiurl %}' >マイキチからのお知らせ</a>&nbsp;<br />
+	    		{% /if %}
+	    		{% if $hasInviteSuccess %}
+					{%emoji code="F8F5"%}<a href='{% "$baseUrl/mobile/kitchenshop/gachalist"|mixiurl %}' style="color:#cc0000;"><span style="color:#cc0000;">招待ﾏｲﾐｸがｱﾌﾟﾘを始めました</span></a><br />
+				{% /if %}
+	    	</div><!--/.footNav-->
+    	{% /if %}
+    	<div class="data" style="background:#ffffdd;">
+    		<div class="headline" style="background:#ab9575;color:#ffffff;text-align:center;">
+    			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/c.gif" width="100%" height="1" style="{% if $ua==3 %}margin:3px 0 1px 0;{% else %}margin:1px 0;{% /if %}" /><br />
+    			{%$userRes.name|escape|unescape_emoji%}[{%$userRes.genre_name|escape%}]<br />
+    			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/c.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+    			
+    			<div class="overview" style="background:#ffffff;text-align:center;">
+    				<object data="{%$swfFile%}" type="application/x-shockwave-flash" width="240" height="171">
+    					<param name="bgcolor" value="ffffff" />
+    					<param name="loop" value="on" />
+    					<param name="quality" value="high" />
+    					<embed src="{%$swfFile%}" width="240" height="171" loop="on" quality="high" bgcolor="#ffffff"></embed>
+    				</object><br />
+    			</div><!--/.overview-->
+    			
+    		</div><!--/.headline-->
+    		<div class="voice" style="background:#ffffff;">
+    			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/chef/voice_h.gif" width="100%" height="4" /><br />
+    			<div style="display: -wap-marquee; -wap-marquee-loop: infinite;">{% $msgText %}</div>
+    			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/chef/voice_f.gif" width="100%" height="8" /><br />
+    		</div><!--/.voice-->
+    		<div class="inner">
+    			<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    				<tr>
+    					<td width="44" style="width:44px;text-align:center;">
+    					
+    					<img src='{%"$baseUrl/mobile/kitchen/chefpng?CF_uid=`$userPro.uid`&CF_express=`$express`&rand=`$rand`&opensocial_app_id=`$APP_ID`&opensocial_owner_id=`$uid`" %}' width="40" height="40" />
+    					
+    					</td>
+    					<td><div style="{% if $ua==1 %}font-size:x-small;{% /if %}">{%emoji code="F995"%}{%$userPro.displayName%}<span style="color:#999999;">{% if $myRes.total_level==1 %}[{%emoji code="F9BE"%}]{% else %}[<a href='{% "$baseUrl/mobile/kitchen/profiletwo"|mixiurl %}'>{%emoji code="F8C4"%}ﾌﾟﾛﾌ</a>]{% /if %}</span><br />
+    					{%emoji code="F8D0"%}Lv.{%$userRes.level%} {%emoji code="F8E4"%}{% $allUserRecipe %}/{% $maxSysRecipe %} {% if $myRes.total_level == 1 %}[{% emoji code="F8F6" %}]{% else %}<a href='{% "$baseUrl/mobile/kitchenitem/good"|mixiurl %}'>模様替</a>{% /if %}<br />
+    					{%emoji code="F8E5"%}{%$userPro.point%} {%emoji code="F8C8"%}{%$userPro.gold%}<br />
+    					</div></td>
+    				</tr>
+    			</table>
+    		</div><!--/.inner-->
+    		
+        	<div class="footNav">
+    			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+    		    <div style="background:#ab9575;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+    			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				{% if $myRes.total_level > 2 %}
+				<div style="text-align:center;">
+					<img src="{%$staticUrl%}/apps/kitchen/mobile/img/campaign/100601_r_gacha170x40.gif" width="170" height="40" /><br />
+					{% emoji code="F8E6" %}<a href='{% "$baseUrl/mobile/kitchenshop/gachainfo?gacha_id=7"|mixiurl %}'><span style="color:#cc0000;">ﾊﾜｲｱﾝなﾚｲ!ﾚｱ食材!新規ｶﾞﾁｬ!</span></a><br />
+				</div>
+					{% emoji code="F8E6" %}<a href='{% "$baseUrl/mobile/kitchenstatic/info?CF_info=100429_diary_campaign"|mixiurl %}'><span style="color:#cc0000;">5月:日記投稿で100M&amp;ｶﾞﾁｬｱｲﾃﾑ!</span></a><br />
+					{% emoji code="F99F" %}<a href='{% "$baseUrl/mobile/kitchenstatic/info?CF_info=100429_invite_campaign"|mixiurl %}'><span style="color:#cc0000;">5月:ﾏｲﾐｸ招待で300M&amp;ﾚｼﾋﾟ辞典!</span></a><br />
+				{% /if %}
+    		</div><!--/.footNav-->
+				
+				{%*
+					{% if $hasInviteSuccess %}
+						{%emoji code="F8F5"%}<a href='{% "$baseUrl/mobile/kitchenshop/gachalist"|mixiurl %}' style="color:#cc0000;"><span style="color:#cc0000;">招待ﾏｲﾐｸがｱﾌﾟﾘを始めました</span></a><br />
+					{% /if %}
+				
+					{% if $myRes.total_level == 1 %}
+						{% emoji code="F9A0" %}<a href='{% "$baseUrl/mobile/kitchenfirst/kitchenfirst"|mixiurl %}'>よくわからないときは</a><br />
+					{% /if %}
+					{% if $myRes.total_level > 1  %}
+						{% if $userPro.allow_editchara %}
+							{%emoji code="F8D6"%}<a href='{% "$baseUrl/mobile/kitchenflash/changchara?opensocial_app_id=`$APP_ID`&opensocial_owner_id=`$uid`&rand=`$rand`"|mobile_flashurl %}'>美容室を利用する</a><br />
+						{% /if %}
+						{% emoji code="F8F6" %}<a href='{% "$baseUrl/mobile/kitchenitem/good"|mixiurl %}'>お店の模様替えをする</a><br />
+						{% emoji code="F8C8" %}<a href='{% "$baseUrl/mobile/kitchengold/goldlist"|mixiurl %}'><span style="color:#cc0000;">ﾏｲｷﾁ銀行でﾒﾀﾞﾙをGET!</span></a><br />
+						{% if $myRes.total_level==2 %}
+							{% emoji code="F8E4" %}<a href='{% "$baseUrl/mobile/kitchenstatic/help"|mixiurl %}'>遊び方をおさらいする</a><br />
+						{% /if %}
+						{% emoji code="F8E6" %}<a href='{% "$baseUrl/mobile/kitchenstatic/info?CF_info=100324_campaign"|mixiurl %}'><span style="color:#cc0000;">日記投稿で500T&amp;ｶﾞﾁｬｱｲﾃﾑをGET</span></a><br />
+						{% emoji code="F99F" %}<a href='{% "$baseUrl/mobile/kitchenstatic/info?CF_info=100401_invitecampaign"|mixiurl %}'><span style="color:#cc0000;">ﾏｲﾐｸ招待でﾚｼﾋﾟ辞典ﾌﾟﾚｾﾞﾝﾄ中!</span></a><br />
+					{% /if %}
+				*%}
+    		
+    		<div class="toKitchen" style="text-align:center;">
+    			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+    		    <div style="background:#ab9575;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+    			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+    				<a href='{% "$baseUrl/mobile/kitchenflash/kitchen?CF_uid=`$userPro.uid`&opensocial_app_id=`$APP_ID`&opensocial_owner_id=`$myRes.uid`&rand=`$rand`"|mobile_flashurl %}' accesskey="5"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/recipe/kitchen.gif" width="170" height="30" alt="キッチンに行く" /></a><br />
+    				{% if $myRes.total_level==1 %}
+    					<span style="color:#cc0000;">↑↑まずはココから↑↑<br />調理台は左右に2台あるよ!</span><br />
+    				{% else %}
+    					調理:{% if $teamSelf.cntCooking %}{% $teamSelf.cntCooking %}{% else %}0{% /if %}品&nbsp;完成:{% if $teamSelf.cntFinish %}{% $teamSelf.cntFinish %}{% else %}0{% /if %}品<br />
+    					<span style="color:#999999;">あと</span><span style="color:#91754c;">{%$userRes.remainNext%}</span><span style="color:#999999;">でレベルアップ</span><br />
+    				{% /if %}
+    		</div><!--/.toKitchen-->
+    
+    		<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+    		<div class="line" style="background:#ab9575;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+    	</div><!--/.data-->
+    
+    	{%*
+    	{% if $myRes.total_level==1 %}
+    		<div class="menu" style="color:#999999;text-align:center;">
+    			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+    			{%emoji code="F8C4"%}Myﾚｽﾄﾗﾝ {%emoji code="F995"%}ﾏｲﾐｸ店<br />
+    			{%emoji code="F9B8"%}ｱｲﾃﾑBOX {%emoji code="F9EB"%}ﾃﾞﾊﾟｰﾄ {%emoji code="F8E4"%}ﾚｼﾋﾟ図鑑<br />
+    		</div><!--/.menu-->
+    	{% else %}
+    		<div class="menu" style="text-align:center;">
+    			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+    			{% emoji code="F9CE" %}<a href='{% "invite:friends?callback=$baseUrl/mobile/callback/invite?forward=$baseUrl/mobile/kitchen/invitefinish" %}' style="color:#ea68a2;"><span style="color:#ea68a2;">マイミクをお店に招待</span></a><br />
+    			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+    		    <div style="background:#aaaaaa;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+    			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+    			{%emoji code="F8C4"%}Myﾚｽﾄﾗﾝ {%emoji code="F995"%}<a href='{% "$baseUrl/mobile/kitchen/rankinglist"|mixiurl %}'>ﾏｲﾐｸ店</a><br />
+    			{%emoji code="F9B8"%}<a href='{% "$baseUrl/mobile/kitchenitem/index"|mixiurl %}'>ｱｲﾃﾑBOX</a> {%emoji code="F9EB"%}<a href='{% "$baseUrl/mobile/kitchenshop/shopping"|mixiurl %}'>ﾃﾞﾊﾟｰﾄ</a> {%emoji code="F8E4"%}<a href='{% "$baseUrl/mobile/kitchenrecipe/recipelist"|mixiurl %}'>ﾚｼﾋﾟ図鑑</a><br />
+    		</div><!--/.menu-->
+    	{% /if %}
+    	*%}
+    	
+    </div><!--/#restaurant-->
+    
+    {% if $myRes.total_level>1 %}
+    <div id="cookStatus">
+    	<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+    	<div class="content" style="background:#fff5f5;">
+    		<div class="headline" style="background:#ff9999;color:#ffffff;text-align:center;">
+    			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+    			{%emoji code="F995"%}調理中のレストラン{%emoji code="F995"%}<br />
+				<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+    		</div><!--/.headline-->
+    		{% if $cntCookStatus >= 1 %}
+    			<div class="inner">
+    					<div class="section">
+    						<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    							<tr>
+    								<td style="width:44px;text-align:center;"><img src="{%$teamOne.miniThumbnailUrl%}" style="margin:3px 0;" /></td>
+    								<td><div style="{% if $ua==1 %}font-size:x-small;{% /if %}">{%emoji code="F9D1"%}{% if $myRes.total_level>1 %}<a href='{% "$baseUrl/mobile/kitchen/home?CF_uid=`$teamOne.uid`"|mixiurl %}'>{%$teamOne.displayName%}</a>{% else %}{%$teamOne.displayName%}{% /if %}<br />
+    									調理:{% if $teamOne.cntCooking %}{% $teamOne.cntCooking %}{% else %}0{% /if %}品&nbsp;完成:{% if $teamOne.cntFinish %}{% $teamOne.cntFinish %}{% else %}0{% /if %}品<br />
+    									</div></td>
+    							</tr>
+    						</table>
+    						<div style="background:#ff9999;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+    					</div><!--/.section-->
+    				{% if $cntCookStatus == 2 %}
+    					<div class="section">
+    						<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    							<tr>
+    								<td style="width:44px;text-align:center;"><img src="{%$teamTwo.miniThumbnailUrl%}" style="margin:3px 0;" /></td>
+    								<td><div style="{% if $ua==1 %}font-size:x-small;{% /if %}">{%emoji code="F9D1"%}{% if $myRes.total_level>1 %}<a href='{% "$baseUrl/mobile/kitchen/home?CF_uid=`$teamTwo.uid`"|mixiurl %}'>{%$teamTwo.displayName%}</a>{% else %}{%$teamTwo.displayName%}{% /if %}<br />
+    									調理:{% if $teamTwo.cntCooking %}{% $teamTwo.cntCooking %}{% else %}0{% /if %}品&nbsp;完成:{% if $teamTwo.cntFinish %}{% $teamTwo.cntFinish %}{% else %}0{% /if %}品<br />
+    									</div></td>
+    							</tr>
+    						</table>
+    						<div style="background:#ff9999;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+    					</div><!--/.section-->
+    				{% /if %}
+    				<div class="more" style="text-align:right;">
+    					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+    					<span style="color:#cc6666;">⇒</span><a href='{% "$baseUrl/mobile/kitchen/rankinglist?CF_uid=`$userPro.uid`"|mixiurl %}'>もっと見る</a>&nbsp;<br />
+    				</div><!--/.more-->
+    			</div><!--/.inner-->
+    		{% else %}
+				<div class="null" style="text-align:center;">
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+					調理中のﾚｽﾄﾗﾝがありません!<br />他のﾚｽﾄﾗﾝでナデナデしよう!<br />
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+					{% if $myRes.total_level>1 %}
+						<a href='{% "$baseUrl/mobile/kitchen/home?CF_uid=`$userPro.prev_uid`"|mixiurl %}'>←隣のお店</a>&nbsp;<a href='{% "$baseUrl/mobile/kitchen/home?CF_uid=`$userPro.next_uid`"|mixiurl %}'>隣のお店→</a><br />
+						<span style="color:#cc6666;">≫</span><a href='{% "$baseUrl/mobile/kitchen/rankinglist"|mixiurl %}'>マイミクさんの店舗一覧へ</a><span style="color:#cc6666;">≪</span><br />
+					{% /if %}
+				</div><!--/.null-->
+    		{% /if %}
+    		<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+    		<div class="line" style="background:#ff9999;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+    	</div><!--/.content-->
+    </div><!--/#cookStatus-->
+    {% /if %}
+    
+    {% if $myRes.total_level>1 %}
+    {% if $board %}
+    <div id="board">
+    	<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+    	<div class="content" style="background:#fff5f5;">
+    		<div class="headline" style="background:#ff9999;color:#ffffff;text-align:center;">
+    			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+    			{%emoji code="F9BE"%}ご近所さんのカキコミ{%emoji code="F9BE"%}<br />
+				<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+    		</div><!--/.headline-->
+    		
+    			<div class="inner">
+    					<div class="section">
+    						<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    							<tr>
+    								<td style="width:44px;text-align:center;"><img src="{%$board.miniThumbnailUrl%}" style="margin:3px 0;" /></td>
+    								<td><div style="{% if $ua==1 %}font-size:x-small;{% /if %}">{%emoji code="F9D1"%}{% if $board.is_f %}<a href='{% "$baseUrl/mobile/kitchen/home?CF_uid=`$board.uid`"|mixiurl %}'>{% $board.displayName %}</a>{% else %}{% $board.displayName %}{% /if %}<br />
+    									{% $board.txt|unescape_emoji %}<br />
+    									<div style="color:#999999;text-align:right;">{%emoji code="F95E"%}{% $board.datetime %}&nbsp;</div>
+    									</div></td>
+    							</tr>
+    						</table>
+    						<div style="background:#ff9999;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+    					</div><!--/.section-->
+    				<div class="more" style="text-align:right;">
+    					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+    					<span style="color:#cc6666;">⇒</span><a href='{% "$baseUrl/mobile/kitchen/boardlist?CF_uid=`$userPro.uid`"|mixiurl %}'>もっと見る</a>&nbsp;<br />
+    				</div><!--/.more-->
+    			</div><!--/.inner-->
+    		
+    		<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+    		<div class="line" style="background:#ff9999;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+    	</div><!--/.content-->
+    </div><!--/#board-->
+    {% else %}
+    <div id="board">
+    	<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+    	<div class="content" style="background:#fff5f5;">
+    		<div class="headline" style="background:#ff9999;color:#ffffff;text-align:center;">
+    			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+    			{%emoji code="F9BE"%}ご近所さんのカキコミ{%emoji code="F9BE"%}<br />
+				<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+    		</div><!--/.headline-->
+			<div id="inner">
+				<div style="text-align:center;">
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+					まだカキコミがありません!<br />他のﾚｽﾄﾗﾝにカキコミしよう!<br />
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+					<a href='{% "$baseUrl/mobile/kitchen/home?CF_uid=`$userPro.prev_uid`"|mixiurl %}'>←隣のお店</a>&nbsp;<a href='{% "$baseUrl/mobile/kitchen/home?CF_uid=`$userPro.next_uid`"|mixiurl %}'>隣のお店→</a><br />
+					<span style="color:#cc6666;">≫</span><a href='{% "$baseUrl/mobile/kitchen/rankinglist"|mixiurl %}'>マイミクさんの店舗一覧へ</a><span style="color:#cc6666;">≪</span><br />
+				</div>
+			</div><!--/.inner-->
+    		<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+    		<div class="line" style="background:#ff9999;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+    	</div><!--/.content-->
+    </div><!--/#board-->
+    {% /if %}
+    {% /if %}
+    
+    
+    <div id="access">
+    	<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+    	<div class="content" style="background:#fff5f5;">
+    		<div class="headline" style="background:#ff9999;color:#ffffff;text-align:center;">
+    			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+    			{%emoji code="F8F9"%}ご近所さんの来店履歴{%emoji code="F8F9"%}<br />
+    			<div class="line" style="background:#ffffff;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="1" /></div>
+    			来店:{%$cntVisit%}<!--[本日:{%$cntVisitToday%} 昨日:{%$cntVisitYesterday%}]--><br />
+    			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+    		</div><!--/.headline-->
+    		{% if $lstVisit %}
+    			<div class="inner">
+    				{% foreach name=visitlist from=$lstVisit item=vdata key=key %}
+    					<div class="section">
+    						<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    							<tr>
+    								<td style="width:44px;text-align:center;"><img src="{%$vdata.miniThumbnailUrl%}" style="margin:3px 0;" /></td>
+    								<td><div style="{% if $ua==1 %}font-size:x-small;{% /if %}">{%emoji code="F9D1"%}{% if $myRes.total_level>1 %}<a href='{% "$baseUrl/mobile/kitchen/home?CF_uid=`$vdata.visit_uid`"|mixiurl %}'>{%$vdata.displayName%}</a>{% else %}{%$vdata.displayName%}{% /if %}<br />
+    									{%$vdata.action_name|escape%}<br />
+    									<div style="color:#999999;text-align:right;">{%emoji code="F95E"%}{%$vdata.format_time%}&nbsp;</div>
+    									</div></td>
+    							</tr>
+    						</table>
+    						<div style="background:#ff9999;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+    					</div><!--/.section-->
+    				{% /foreach %}
+    				{% if $myRes.total_level > 1 %}
+	    				<div class="more" style="text-align:right;">
+	    					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+							
+							<span style="color:#cc6666;">⇒</span><a href='{% "$baseUrl/mobile/kitchen/accesslist?CF_uid=`$userPro.uid`"|mixiurl %}'>続きを見る</a>&nbsp;<br />
+	    				</div><!--/.more-->
+    				{% /if %}
+    			</div><!--/.inner-->
+    		{% else %}
+    			<div class="null" style="text-align:center;">
+    				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+    				まだ誰も来店していません<br />他のﾚｽﾄﾗﾝに行ってみよう<br />
+    				{% if $myRes.total_level>1 %}
+    					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+    					<span style="color:#cc6666;">≫</span><a href='{% "$baseUrl/mobile/kitchen/rankinglist"|mixiurl %}'>マイミクさんの店舗一覧へ</a><span style="color:#cc6666;">≪</span><br />
+    				{% /if %}
+    			</div><!--/.null-->
+    			{% if $myRes.total_level > 1 %}
+    				<div class="more" style="text-align:right;">
+    					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+    					<div style="background:#ff9999;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+    					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+						
+    				</div><!--/.more-->
+    			{% /if %}
+    		{% /if %}
+    		<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+    		<div class="line" style="background:#ff9999;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+    	</div><!--/.content-->
+    </div><!--/#access-->
+    
+    
+    {% if $myRes.total_level > 1 %}
+    <div id="minifeed">
+    	<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+    	<div class="content" style="background:#fff5f5;">
+    		<div class="headline" style="background:#ff9999;color:#ffffff;text-align:center;">
+    			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+    			{%emoji code="F8F9"%}ご近所さんのうごき{%emoji code="F8F9"%}<br />
+    		</div><!--/.headline-->
+    		{% if $lstMiniFeed %}
+    			<div class="inner">
+    				{% foreach name=visitlist from=$lstMiniFeed item=vdata key=key %}
+    					<div class="section">
+    						<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    							<tr>
+    								<td style="width:44px;text-align:center;"><img src="{%$vdata.miniThumbnailUrl%}" style="margin:3px 0;" /></td>
+    								<td><div style="{% if $ua==1 %}font-size:x-small;{% /if %}">{%emoji code="F9D1"%}{% if $vdata.is_f %}<a href='{% "$baseUrl/mobile/kitchen/home?CF_uid=`$vdata.send_uid`"|mixiurl %}'>{%$vdata.displayName%}</a>{% else %}{%$vdata.displayName%}{% /if %}<br />
+    									{%$vdata.feed|escape%}<br />
+    									<div style="color:#999999;text-align:right;">{%emoji code="F95E"%}{%$vdata.format_time%}&nbsp;</div>
+    									</div></td>
+    							</tr>
+    						</table>
+    						<div style="background:#ff9999;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+    					</div><!--/.section-->
+    				{% /foreach %}
+    				{% if $myRes.total_level > 1 %}
+	    				<div class="more" style="text-align:right;">
+	    					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+							<span style="color:#cc6666;">⇒</span><a href='{% "$baseUrl/mobile/kitchen/minifeedlist?CF_uid=`$userPro.uid`"|mixiurl %}'>続きを見る</a>&nbsp;<br />
+	    				</div><!--/.more-->
+    				{% /if %}
+    			</div><!--/.inner-->
+    		{% else %}
+    			<div class="null" style="text-align:center;">
+    				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+    				まだうごきがありません<br />他のﾚｽﾄﾗﾝを手伝ってみよう<br />
+    				{% if $myRes.total_level>1 %}
+    					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+    					<a href='{% "$baseUrl/mobile/kitchen/home?CF_uid=`$userPro.prev_uid`"|mixiurl %}'>←隣のお店</a>&nbsp;<a href='{% "$baseUrl/mobile/kitchen/home?CF_uid=`$userPro.next_uid`"|mixiurl %}'>隣のお店→</a><br />
+    					<span style="color:#cc6666;">≫</span><a href='{% "$baseUrl/mobile/kitchen/rankinglist"|mixiurl %}'>マイミクさんの店舗一覧へ</a><span style="color:#cc6666;">≪</span><br />
+    				{% /if %}
+    			</div><!--/.null-->
+    			{% if $myRes.total_level > 1 %}
+    				<div class="more" style="text-align:right;">
+    					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+    					<div style="background:#ff9999;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+    					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+						
+    				</div><!--/.more-->
+    			{% /if %}
+    		{% /if %}
+    		<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+    		<div class="line" style="background:#ff9999;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+    	</div><!--/.content-->
+    </div><!--/#minifeed-->
+    {% /if %}
+    
+    {% if $myRes.total_level>1 %}
+	<div class="invite" style="text-align:center;">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			{% emoji code="F8E6" %}<a href='{% "$baseUrl/mobile/kitchen/inviteguide"|mixiurl %}'>ﾏｲﾐｸ招待で100M+ﾌﾟﾚﾐｱｶﾞﾁｬ</a><br />
+	</div><!--/.invite-->
+	<div id="homemenu">
+    	<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+    	<div class="content" style="background:#f0f5e0;">
+    		<div class="headline" style="background:#8bbd82;color:#ffffff;text-align:center;">
+    			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+    			マイキチメニュー<br />
+    			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+    		</div><!--/.headline-->
+			<div class="inner">
+				{% emoji code="F8E4" %}<a href='{% "$baseUrl/mobile/kitchenrecipe/recipelist"|mixiurl %}'>ﾚｼﾋﾟ図鑑</a>:新しいﾚｼﾋﾟに挑戦!<br />
+				{% emoji code="F995" %}<a href='{% "$baseUrl/mobile/kitchen/rankinglist"|mixiurl %}'>ﾏｲﾐｸの店</a>:みんなで味見しよう<br />
+				{% emoji code="F8E6" %}<a href='{% "$baseUrl/mobile/kitchenitem/gift"|mixiurl %}'>ｷﾞﾌﾄ送付</a>:日頃の感謝を込めて<br />
+				{% emoji code="F9EB" %}<a href='{% "$baseUrl/mobile/kitchenshop/shopping"|mixiurl %}'>デパート</a>:何でも売ってます<br />
+				{% emoji code="F9B8" %}<a href='{% "$baseUrl/mobile/kitchenitem/index"|mixiurl %}'>アｲﾃﾑBOX</a>:調理を効率よく<br />
+				{% emoji code="F8C8" %}<a href='{% "$baseUrl/mobile/kitchengold/goldlist"|mixiurl %}'>ﾏｲｷﾁ銀行</a>:ﾒﾀﾞﾙをGETしよう<br />
+                {% emoji code="F9BF" %}<a href='{% "$baseUrl/mobile/kitchenshop/gachalist"|mixiurl %}'>ガチャ&nbsp;&nbsp;</a>:非売品ｱｲﾃﾑをGET!<br />
+				{% emoji code="F948" %}<a href='{% "$baseUrl/mobile/kitchenitem/good"|mixiurl %}'>模様替え</a>:ﾚｽﾄﾗﾝをにぎやかに<br />
+				{% emoji code="F977" %}<a href='{% "$baseUrl/mobile/kitchenstatic/info"|mixiurl %}'>おしらせ</a>:ﾏｲｷﾁの動きをﾁｪｯｸ<br />
+				{% emoji code="F9F4" %}<a href="http://m.mixi.jp/view_community.pl?id=4809835&guid=ON">コミｭﾆﾃｨ</a>:攻略情報&amp;ﾚｼﾋﾟ要望<br />
+			</div><!--/.inner-->
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+            <div class="line" style="background:#8bbd82;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+		</div><!--/.content-->
+	</div><!--/.homemenu-->
+	{% /if %}
+    
+{% else %}
+    <div id="restaurant">
+        	<div class="footNav">
+                <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+                {% if $myRes.total_level>1 %}
+                    {% emoji code="F8E6" %}<a href='{% "$baseUrl/mobile/kitchenitem/gift?taruid=`$userPro.uid`"|mixiurl %}'>無料ギフトを贈ろう!</a><br />
+                    {%*
+                    {% emoji code="F8F6" %}<span style="color:#999999;">お店の模様替えを手伝う</span><br />
+                    *%}
+                {% /if %}
+                <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+            </div><!--/.footNav-->
+ 
+		<div class="data" style="background:#ffffdd;">
+            <div class="headline" style="background:#ab9575;color:#ffffff;text-align:center;">
+                <img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/c.gif" width="100%" height="1" style="{% if $ua==3 %}margin:3px 0 1px 0;{% else %}margin:1px 0;{% /if %}" /><br />
+                {%$userRes.name|escape|unescape_emoji%}[{%$userRes.genre_name|escape%}]<br />
+                <img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/c.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+                <div class="overview" style="background:#ffffff;text-align:center;">
+                    <object data="{%$swfFile%}" type="application/x-shockwave-flash" width="240" height="171">
+                        <param name="bgcolor" value="ffffff" />
+                        <param name="loop" value="on" />
+                        <param name="quality" value="high" />
+                        <embed src="{%$swfFile%}" width="240" height="171" loop="on" quality="high" bgcolor="#ffffff"></embed>
+                    </object><br />
+                </div><!--/.overview-->
+            </div><!--/.headline-->
+            <div class="voice" style="background:#ffffff;">
+                <img src="{%$staticUrl%}/apps/kitchen/mobile/img/chef/voice_h.gif" width="100%" height="4" /><br />
+                <div style="display: -wap-marquee; -wap-marquee-loop: infinite;">{% $userPro.speech|escape|unescape_emoji %}</div>
+                <img src="{%$staticUrl%}/apps/kitchen/mobile/img/chef/voice_f.gif" width="100%" height="8" /><br />
+            </div><!--/.voice-->
+            <div class="inner">
+                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <td width="44" style="width:44px;text-align:center;vertical-align:top;">
+                        
+                        <img src='{%"$baseUrl/mobile/kitchen/chefpng?CF_uid=`$userPro.uid`&CF_express=`$express`&rand=`$rand`&opensocial_app_id=`$APP_ID`&opensocial_owner_id=`$uid`" %}' width="40" height="40" />
+                        
+                        </td>
+                        <td><div style="{% if $ua==1 %}font-size:x-small;{% /if %}">{%emoji code="F995"%}{%$userPro.displayName%}<br />
+                        {%emoji code="F8D0"%}Lv.{%$userRes.level%}&nbsp;{% emoji code="F8E4" %}{% $allUserRecipe %}/{% $maxSysRecipe %}<br />
+						{%*
+						{%emoji code="F8E5"%}{%$userPro.point%} {%emoji code="F8C8"%}{%$userPro.gold%}<br />
+							{% emoji code="F8E4" %}ﾚｼﾋﾟ開発:{%$allUserRecipe%}件<br />
+							{% emoji code="F8E6" %}ｷﾞﾌﾄ送付:{%$rowUserPro.gift_count%}件<br />
+						*%}
+                        </div></td>
+                    </tr>
+                </table>
+            </div><!--/.inner-->
+            
+            {%*
+            <div class="toKitchen" style="text-align:center;">
+                <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+                <div style="background:#ab9575;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+                <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+                {% if $canAccess == 1 %}
+                    {% if $myRes.total_level<2 %}
+                        <span style="color:#cc0000;">{% emoji code="F97D" %}Lv.2～開放↓</span><br />
+                        <img src="{%$staticUrl%}/apps/kitchen/mobile/img/recipe/kitchen_disable.gif" width="170" height="30" alt="キッチンに行く" /><br />
+                    {% else %}
+                        <a href='{% "$baseUrl/mobile/kitchenflash/kitchen?CF_uid=`$userPro.uid`&opensocial_app_id=`$APP_ID`&opensocial_owner_id=`$myRes.uid`&rand=`$rand`"|mobile_flashurl %}' accesskey="5"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/recipe/kitchen.gif" width="170" height="30" alt="キッチンに行く" /></a><br />
+                    {% /if %}
+                {% else %}
+                    <span style="color:#cc0000;">{% emoji code="F97D" %}鍵が掛かってます↓</span><br />
+                    <img src="{%$staticUrl%}/apps/kitchen/mobile/img/recipe/kitchen_disable.gif" width="170" height="30" alt="キッチンに行く" /><br />
+                {% /if %}<a href="#">
+                <a href='{% "$baseUrl/mobile/kitchen/home?CF_uid=`$userPro.prev_uid`"|mixiurl %}'>←隣のお店</a>&nbsp;<a href='{% "$baseUrl/mobile/kitchen/home?CF_uid=`$userPro.next_uid`"|mixiurl %}'>隣のお店→</a><br />
+            </div><!--/.toKitchen-->
+			*%}
+			
+            {% if $myRes.total_level>1 %}
+            <div class="null" style="text-align:center;">
+    			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+    			{% if $canCheerTwo %}
+    				<span style="color:#cc0000;text-decoration:blink;">≫</span><a href='{% "$baseUrl/mobile/kitchen/cheertwo?CF_uid=`$userPro.uid`"|mixiurl %}'><span style="color:#cc0000;">ナデナデする</span></a><span style="color:#cc0000;text-decoration:blink;">≪</span><br />
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+    			{% else %}
+    				<span style="color:#999999;">ナデナデ済み</span><br />
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+    			{% /if %}
+				<div class="line" style="background:#ab9575;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+			</div><!--/.null-->
+		</div><!--/.data-->
+		<div style="text-align:center;">
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+<a href='{% "$baseUrl/mobile/kitchen/home?CF_uid=`$userPro.prev_uid`"|mixiurl %}'>←隣のお店</a>&nbsp;<a href='{% "$baseUrl/mobile/kitchen/home?CF_uid=`$userPro.next_uid`"|mixiurl %}'>隣のお店→</a><br />
+		</div>
+            {% /if %}
+		
+
+		
+		{% if $myRes.total_level>1 %}
+		<div id="cookStatus">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			<div class="content" style="background:#f0f5e0;">
+				<div class="headline" style="background:#8bbd82;color:#ffffff;text-align:center;">
+					<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+					{% emoji code="F8D0" %}調理中のメニュー{% emoji code="F8D0" %}<br />
+					<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+				</div><!--/.headline-->
+					<div class="inner">
+						{% foreach from=$lstKitchen item=data%}
+						<div class="section">
+							<table width="100%" cellpadding="0" cellspacing="0" border="0">
+								<tr>
+									<td style="width:44px;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/meal/40x40/{% $data.pic %}" width="40" height="40" style="margin:3px 0;" /></td>
+									{% if $data.blank != 1 %}
+										<td><div style="{% if $ua==1 %}font-size:x-small;{% /if %}">{%emoji code="F9D1"%}<a href='{% "$baseUrl/mobile/kitchenrecipe/recipedetail?CF_uid=`$userPro.uid`&CF_recipe_id=`$data.cooking_recipe_id`"|mixiurl %}'>{%$data.rcpName%}</a><br />
+										{% if $data.cooking == 1 %}
+											調理中&nbsp;{% if $data.need_spice %}<a href='{% "$baseUrl/mobile/kitchen/addspice?CF_uid=`$userPro.uid`&CF_kitchen_id=`$data.kitchen_id`"|mixiurl %}'>味付け</a>{% else %}<span style="color:#999999;">味付け済み</span>{% /if %}
+											{% if $data.has_fly%}
+												{% if $data.can_remove %}<a href='{% "$baseUrl/mobile/kitchen/removefly?CF_uid=`$userPro.uid`&CF_kitchen_id=`$data.kitchen_id`"|mixiurl %}'>ﾊｴ撃退</a>{% else %}<span style="color:#999999;">ﾊｴ設置済み</span>{% /if %}<br />
+											{% else %}
+												<a href='{% "$baseUrl/mobile/kitchen/setfly?CF_uid=`$userPro.uid`&CF_kitchen_id=`$data.kitchen_id`"|mixiurl %}'><span style="color:#9999999;">ﾊｴ投入</span></a><br />
+											{% /if %}
+										{% else %}
+											完成済み&nbsp;{% if $data.can_taste %}<a href='{% "$baseUrl/mobile/kitchen/tryfood?CF_uid=`$userPro.uid`&CF_kitchen_id=`$data.kitchen_id`"|mixiurl %}'>味見する</a>{% else %}<span style="color:#999999;">味見済み</span>{% /if %}<br />
+										{% /if %}
+										</div></td>
+									{% else %}
+										<td><div style="{% if $ua==1 %}font-size:x-small;{% /if %}">{%emoji code="F9D1"%}調理台が空いています<br />
+										未調理&nbsp;{% if $data.can_order %}<a href='{% "$baseUrl/mobile/kitchen/orderconfirm?CF_uid=`$userPro.uid`&CF_kitchen_id=`$data.kitchen_id`"|mixiurl %}'>注文する</a>{% else %}<span style="color:#999999;">注文済み</span>{% /if %}<br />
+										</div></td>
+									{% /if %}
+								</tr>
+							</table>
+							<div class="line" style="background:#8bbd82;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+						</div><!--/.section-->
+						{% /foreach %}
+					</div><!--/.inner-->
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				<div class="line" style="background:#8bbd82;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+			</div><!--/.content-->
+		</div><!--/#cookStatus-->
+		{% /if %}
+		
+		<div id="writeBoard">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			<div class="content" style="background:#fff5f5;">
+				<div class="headline" style="background:#ff9999;color:#ffffff;text-align:center;">
+					<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+					{%emoji code="F9BE"%}伝言板にカキコミ{%emoji code="F9BE"%}<br />
+					<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+				</div><!--/.headline-->
+				<form method="post" action='{% "$baseUrl/mobile/kitchen/writeboard/CF_uid/`$userPro.uid`"|mixiurl %}' id="formWriteBoard">
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+					<input type="text" name="CF_txt" id="CF_txt" value="" width="90%" /><br />
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+					<div style="text-align:left;">※全角50文字以内&nbsp;<input type="submit" value=" カキコミ " /><br /></div>
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				</form><!--/#formWriteBoard-->
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				<div class="line" style="background:#ff9999;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+			</div><!--./content-->
+		</div><!--/#writeBoard-->
+		
+		{% if $boardtwo %}
+		<div id="board">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			<div class="content" style="background:#fff5f5;">
+				<div class="headline" style="background:#ff9999;color:#ffffff;text-align:center;">
+					<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+					{%emoji code="F9BE"%}ご近所さんのカキコミ{%emoji code="F9BE"%}<br />
+					<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+				</div><!--/.headline-->
+				
+					<div class="inner">
+						{% foreach from=$boardtwo item=board %}
+						<div class="section">
+							<table width="100%" cellpadding="0" cellspacing="0" border="0">
+								<tr>
+									<td style="width:44px;text-align:center;"><img src="{%$board.miniThumbnailUrl%}" style="margin:3px 0;" /></td>
+									<td><div style="{% if $ua==1 %}font-size:x-small;{% /if %}">{%emoji code="F9D1"%}{% if $board.is_f %}<a href='{% "$baseUrl/mobile/kitchen/home?CF_uid=`$board.uid`"|mixiurl %}'>{% $board.displayName %}</a>{% else %}{% $board.displayName %}{% /if %}<br />
+										{% $board.txt|unescape_emoji %}<br />
+										<div style="color:#999999;text-align:right;">{%emoji code="F95E"%}{% $board.datetime %}&nbsp;</div>
+										</div></td>
+								</tr>
+							</table>
+							<div style="background:#ff9999;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+						</div><!--/.section-->
+						{% /foreach %}
+						<div class="more" style="text-align:right;">
+							<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+							<span style="color:#cc6666;">⇒</span><a href='{% "$baseUrl/mobile/kitchen/boardlist?CF_uid=`$userPro.uid`"|mixiurl %}'>もっと見る</a>&nbsp;<br />
+						</div><!--/.more-->
+					</div><!--/.inner-->
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				<div class="line" style="background:#ff9999;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+			</div><!--/.content-->
+		</div><!--/#board-->
+		{% else %}
+		<div id="board">
+	    	<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+	    	<div class="content" style="background:#fff5f5;">
+	    		<div class="headline" style="background:#ff9999;color:#ffffff;text-align:center;">
+	    			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+	    			{%emoji code="F9BE"%}ご近所さんのカキコミ{%emoji code="F9BE"%}<br />
+					<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+	    		</div><!--/.headline-->
+				<div id="inner">
+					<div style="text-align:center;">
+						<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+						まだカキコミがありません!<br />{% emoji code="F99A" %}からカキコミしよう!<br />
+						<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+						<a href='{% "$baseUrl/mobile/kitchen/home?CF_uid=`$userPro.prev_uid`"|mixiurl %}'>←隣のお店</a>&nbsp;<a href='{% "$baseUrl/mobile/kitchen/home?CF_uid=`$userPro.next_uid`"|mixiurl %}'>隣のお店→</a><br />
+						<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+						<span style="color:#cc6666;">≫</span><a href='{% "$baseUrl/mobile/kitchen/rankinglist"|mixiurl %}'>マイミクさんの店舗一覧へ</a><span style="color:#cc6666;">≪</span><br />
+					</div>
+				</div><!--/.inner-->
+	    		<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+	    		<div class="line" style="background:#ff9999;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+	    	</div><!--/.content-->
+	    </div><!--/#board-->
+		{% /if %}
+		
+		{%*
+		{% if $myRes.total_level > 1 %}
+	    <div id="minifeed">
+	    	<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+	    	<div class="content" style="background:#fff5f5;">
+	    		<div class="headline" style="background:#ff9999;color:#ffffff;text-align:center;">
+	    			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+	    			{%emoji code="F8F9"%}ご近所さんのうごき{%emoji code="F8F9"%}<br />
+	    		</div><!--/.headline-->
+	    		{% if $lstMiniFeed %}
+	    			<div class="inner">
+	    				{% foreach name=visitlist from=$lstMiniFeed item=vdata key=key %}
+	    					<div class="section">
+	    						<table width="100%" cellpadding="0" cellspacing="0" border="0">
+	    							<tr>
+	    								<td style="width:44px;text-align:center;"><img src="{%$vdata.miniThumbnailUrl%}" style="margin:3px 0;" /></td>
+	    								<td><div style="{% if $ua==1 %}font-size:x-small;{% /if %}">{%emoji code="F9D1"%}{% if $vdata.is_f %}<a href='{% "$baseUrl/mobile/kitchen/home?CF_uid=`$vdata.send_uid`"|mixiurl %}'>{%$vdata.displayName%}</a>{% else %}{%$vdata.displayName%}{% /if %}<br />
+	    									{%$vdata.feed|escape%}<br />
+	    									<div style="color:#999999;text-align:right;">{%emoji code="F95E"%}{%$vdata.format_time%}&nbsp;</div>
+	    									</div></td>
+	    							</tr>
+	    						</table>
+	    						<div style="background:#ff9999;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+	    					</div><!--/.section-->
+	    				{% /foreach %}
+	    				{% if $myRes.total_level > 1 %}
+		    				<div class="more" style="text-align:right;">
+		    					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+								<span style="color:#cc6666;">⇒</span><a href='{% "$baseUrl/mobile/kitchen/minifeedlist?CF_uid=`$userPro.uid`"|mixiurl %}'>続きを見る</a>&nbsp;<br />
+		    				</div><!--/.more-->
+	    				{% /if %}
+	    			</div><!--/.inner-->
+	    		{% else %}
+	    			<div class="null" style="text-align:center;">
+	    				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+	    				まだうごきがありません<br />他のﾚｽﾄﾗﾝを手伝ってみよう<br />
+	    				{% if $myRes.total_level>1 %}
+	    					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+	    					<a href='{% "$baseUrl/mobile/kitchen/home?CF_uid=`$userPro.prev_uid`"|mixiurl %}'>←隣のお店</a>&nbsp;<a href='{% "$baseUrl/mobile/kitchen/home?CF_uid=`$userPro.next_uid`"|mixiurl %}'>隣のお店→</a><br />
+	    					<span style="color:#cc6666;">≫</span><a href='{% "$baseUrl/mobile/kitchen/rankinglist"|mixiurl %}'>マイミクさんの店舗一覧へ</a><span style="color:#cc6666;">≪</span><br />
+	    				{% /if %}
+	    			</div><!--/.null-->
+	    			{% if $myRes.total_level > 1 %}
+	    				<div class="more" style="text-align:right;">
+	    					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+	    					<div style="background:#ff9999;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+	    					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+							
+	    				</div><!--/.more-->
+	    			{% /if %}
+	    		{% /if %}
+	    		<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+	    		<div class="line" style="background:#ff9999;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+	    	</div><!--/.content-->
+	    </div><!--/#minifeed-->
+	    {% /if %}
+		*%}
+		
+		<div id="restaurantList">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			<div class="content" style="background:#f0f5e0;">
+				<div class="headline" style="background:#8bbd82;color:#ffffff;text-align:center;">
+					<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+					経営中のレストラン<br />
+					<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+				</div><!--/.headline-->
+				<div class="inner">
+					{% foreach from=$rest item=data%}
+						<div class="section">
+							<table width="100%" cellpadding="0" cellspacing="0" border="0">
+								<tr>
+									<td style="width:44px;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/{%$data.img_path%}" width="40" height="40" style="margin:3px 0;" /></td>
+									<td><div style="{% if $ua==1 %}font-size:x-small;{%/if%}">
+										[{%$data.rest_name%}]{%$data.name%}<br />
+										{% emoji code="F8E4" %}ﾚｼﾋﾟ図鑑:<a href='{% "$baseUrl/mobile/kitchenrecipe/recipelist?CF_genre=`$data.genre`&CF_uid=`$data.uid`"|mixiurl %}'>{%$data.recipe_count%}/{%$data.total_recipe%}</a><br />
+									</div></td>
+								</tr>
+							</table>
+							<div class="line" style="background:#8bbd82;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+						</div><!--/.section-->
+					{% /foreach %}
+				</div><!--/.inner-->
+				{%*
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				<div class="headline" style="background:#8bbd82;color:#ffffff;text-align:center;">
+					<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+					作ったレシピの数<br />
+					<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+				</div><!--/.headline-->
+				<div class="inner">
+					<div class="description">
+						<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+						全{%$totalRecipeCount%}種類のうち<span style="color:#cc0000;">{%$allUserRecipe%}</span>種類<br />
+						{% foreach from=$rest item=data%}
+							{%$data.rest_name%}:<a href='{% "$baseUrl/mobile/kitchenrecipe/recipelist?CF_genre=`$data.genre`&CF_uid=`$data.uid`"|mixiurl %}'>{%$data.recipe_count%}/{%$data.total_recipe%}</a><br />
+						{% /foreach %}
+					</div><!--/.description-->
+					
+					<div class="about" style="text-align:right;">
+						<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+						<div class="line" style="background:#8bbd82;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+						<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+						<span style="color:#ff9999;">⇒</span><a href='{% "$baseUrl/mobile/kitchenstatic/helpdetail"|mixiurl %}'>レシピ図鑑について</a><br />
+					</div><!--/.about-->
+					
+				</div><!--/.inner-->
+				*%}
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				<div class="line" style="background:#8bbd82;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+			</div><!--/.content-->
+		</div><!--/#restaurantList-->
+		<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+		<div class="passage">
+			<span style="color:#999999";>レストラン開設から{% $openDays %}日目 {% if $inviteByUid != 0 %}(招待User:{% $inviteByName %}){% /if %}</span><br />
+		</div><!--/.passage-->
+		<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+		<div style="background:#aaaaaa;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+		<div class="toMypage">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			{% if $ua!=2 %}{% emoji code="F97E" %}{% else %}{% emoji code="F8F8" %}{% /if %}<a href='{% "$baseUrl/mobile/kitchen/home"|mixiurl %}' accesskey="3">Myレストラン</a><br />
+			{% emoji code="F995" %}<a href='{% "$baseUrl/mobile/kitchen/rankinglist"|mixiurl %}'>マイミクさんの店舗一覧</a><br />
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+            <div class="line" style="background:#8bbd82;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+		</div><!--/.toMypage-->
+    </div><!--/#restaurant-->
+{% /if %}
+{%include file="common/menu.phtml"%}
+{%include file="ad_footer.phtml"%}

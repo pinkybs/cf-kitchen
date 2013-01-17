@@ -1,0 +1,802 @@
+<bounds>
+          <Rectangle left="111" right="1490" top="363" bottom="1235"/>
+        </bounds>
+        <styles>
+          <StyleList>
+            <fillStyles>
+              <Solid>
+                <color>
+                  <Color red="255" green="255" blue="255"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="255" green="251" blue="207"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="247" green="227" blue="174"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="252" green="222" blue="101"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="255" green="244" blue="110"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="225" green="87" blue="101"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="173" green="194" blue="62"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="252" green="210" blue="58"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="237" green="154" blue="163"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="243" green="188" blue="193"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="231" green="144" blue="63"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="227" green="126" blue="32"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="192" green="120" blue="55"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="235" green="162" blue="92"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="240" green="181" blue="123"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="243" green="202" blue="2"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="217" green="177" blue="0"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="245" green="212" blue="50"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="249" green="231" blue="142"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="222" green="169" blue="8"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="225" green="197" blue="15"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="255" green="210" blue="61"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="211" green="169" blue="15"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="197" green="144" blue="0"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="216" green="227" blue="235"/>
+                </color>
+              </Solid>
+              <LinearGradient>
+                <matrix>
+                  <Transform scaleX="0.006179809570312500" scaleY="-0.006179809570312500" skewX="0.008560180664062500" skewY="0.008560180664062500" transX="638" transY="377"/>
+                </matrix>
+                <gradientColors>
+                  <GradientItem position="0">
+                    <color>
+                      <Color red="255" green="255" blue="255"/>
+                    </color>
+                  </GradientItem>
+                  <GradientItem position="255">
+                    <color>
+                      <Color red="216" green="227" blue="235"/>
+                    </color>
+                  </GradientItem>
+                </gradientColors>
+              </LinearGradient>
+              <LinearGradient>
+                <matrix>
+                  <Transform scaleX="0.01699829101562500" scaleY="-0.01699829101562500" transX="378" transY="937"/>
+                </matrix>
+                <gradientColors>
+                  <GradientItem position="0">
+                    <color>
+                      <Color red="255" green="255" blue="255"/>
+                    </color>
+                  </GradientItem>
+                  <GradientItem position="255">
+                    <color>
+                      <Color red="216" green="227" blue="235"/>
+                    </color>
+                  </GradientItem>
+                </gradientColors>
+              </LinearGradient>
+              <LinearGradient>
+                <matrix>
+                  <Transform scaleX="0.009963989257812500" scaleY="-0.009963989257812500" transX="1068" transY="1205"/>
+                </matrix>
+                <gradientColors>
+                  <GradientItem position="0">
+                    <color>
+                      <Color red="255" green="255" blue="255"/>
+                    </color>
+                  </GradientItem>
+                  <GradientItem position="255">
+                    <color>
+                      <Color red="216" green="227" blue="235"/>
+                    </color>
+                  </GradientItem>
+                </gradientColors>
+              </LinearGradient>
+              <LinearGradient>
+                <matrix>
+                  <Transform scaleX="0.01022338867187500" scaleY="-0.01022338867187500" transX="1334" transY="591"/>
+                </matrix>
+                <gradientColors>
+                  <GradientItem position="0">
+                    <color>
+                      <Color red="255" green="255" blue="255"/>
+                    </color>
+                  </GradientItem>
+                  <GradientItem position="255">
+                    <color>
+                      <Color red="216" green="227" blue="235"/>
+                    </color>
+                  </GradientItem>
+                </gradientColors>
+              </LinearGradient>
+              <Solid>
+                <color>
+                  <Color red="188" green="158" blue="118"/>
+                </color>
+              </Solid>
+              <LinearGradient>
+                <matrix>
+                  <Transform scaleX="0.008544921875000000" scaleY="-0.008544921875000000" skewX="0.005096435546875000" skewY="0.005096435546875000" transX="734" transY="682"/>
+                </matrix>
+                <gradientColors>
+                  <GradientItem position="0">
+                    <color>
+                      <Color red="255" green="255" blue="255"/>
+                    </color>
+                  </GradientItem>
+                  <GradientItem position="255">
+                    <color>
+                      <Color red="188" green="158" blue="118"/>
+                    </color>
+                  </GradientItem>
+                </gradientColors>
+              </LinearGradient>
+              <Solid>
+                <color>
+                  <Color red="164" green="124" blue="75"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="172" green="136" blue="91"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="204" green="181" blue="150"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="221" green="207" blue="133"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="234" green="225" blue="179"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="255" green="250" blue="167"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="255" green="235" blue="159"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="211" green="194" blue="15"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="240" green="234" blue="173"/>
+                </color>
+              </Solid>
+              <LinearGradient>
+                <matrix>
+                  <Transform scaleX="0.003082275390625000" scaleY="-0.003082275390625000" skewX="0.002029418945312500" skewY="0.002029418945312500" transX="746" transY="495"/>
+                </matrix>
+                <gradientColors>
+                  <GradientItem position="3">
+                    <color>
+                      <Color red="249" green="246" blue="232"/>
+                    </color>
+                  </GradientItem>
+                  <GradientItem position="255">
+                    <color>
+                      <Color red="234" green="225" blue="179"/>
+                    </color>
+                  </GradientItem>
+                </gradientColors>
+              </LinearGradient>
+              <Solid>
+                <color>
+                  <Color red="205" green="239" blue="233"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="187" green="74" blue="85"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="144" green="66" blue="55"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="165" green="102" blue="93"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="242" green="38" blue="66"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="184" green="38" blue="66"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="212" green="38" blue="66"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="200" green="184" blue="168"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="214" green="202" blue="190"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="218" green="207" blue="196"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="237" green="232" blue="227"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="248" green="246" blue="244"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="228" green="220" blue="212"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="69" green="66" blue="31"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="111" green="49" blue="53"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="230" green="169" blue="57"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="197" green="151" blue="15"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="255" green="237" blue="13"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="255" green="217" blue="13"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="255" green="248" blue="161"/>
+                </color>
+              </Solid>
+              <LinearGradient>
+                <matrix>
+                  <Transform scaleX="0.0000000000000000" scaleY="0.0000000000000000" skewX="0.007675170898437500" skewY="0.007675170898437500" transX="1075" transY="286"/>
+                </matrix>
+                <gradientColors>
+                  <GradientItem position="0">
+                    <color>
+                      <Color red="249" green="221" blue="224"/>
+                    </color>
+                  </GradientItem>
+                  <GradientItem position="255">
+                    <color>
+                      <Color red="237" green="154" blue="163"/>
+                    </color>
+                  </GradientItem>
+                </gradientColors>
+              </LinearGradient>
+              <LinearGradient>
+                <matrix>
+                  <Transform scaleX="0.0000000000000000" scaleY="0.0000000000000000" skewX="0.006347656250000000" skewY="0.006347656250000000" transX="525" transY="640"/>
+                </matrix>
+                <gradientColors>
+                  <GradientItem position="0">
+                    <color>
+                      <Color red="249" green="221" blue="224"/>
+                    </color>
+                  </GradientItem>
+                  <GradientItem position="255">
+                    <color>
+                      <Color red="237" green="154" blue="163"/>
+                    </color>
+                  </GradientItem>
+                </gradientColors>
+              </LinearGradient>
+              <LinearGradient>
+                <matrix>
+                  <Transform scaleX="0.004440307617187500" scaleY="-0.004440307617187500" skewX="0.004440307617187500" skewY="0.004440307617187500" transX="770" transY="1162"/>
+                </matrix>
+                <gradientColors>
+                  <GradientItem position="0">
+                    <color>
+                      <Color red="249" green="221" blue="224"/>
+                    </color>
+                  </GradientItem>
+                  <GradientItem position="255">
+                    <color>
+                      <Color red="237" green="154" blue="163"/>
+                    </color>
+                  </GradientItem>
+                </gradientColors>
+              </LinearGradient>
+              <RadialGradient>
+                <matrix>
+                  <Transform scaleX="0.03288269042968750" scaleY="-0.03288269042968750" transX="555" transY="586"/>
+                </matrix>
+                <gradientColors>
+                  <GradientItem position="0">
+                    <color>
+                      <Color red="250" green="233" blue="217"/>
+                    </color>
+                  </GradientItem>
+                  <GradientItem position="255">
+                    <color>
+                      <Color red="244" green="207" blue="172"/>
+                    </color>
+                  </GradientItem>
+                </gradientColors>
+              </RadialGradient>
+              <Solid>
+                <color>
+                  <Color red="242" green="194" blue="157"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="250" green="233" blue="217"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="244" green="207" blue="172"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="243" green="237" blue="230"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="227" green="215" blue="198"/>
+                </color>
+              </Solid>
+              <RadialGradient>
+                <matrix>
+                  <Transform scaleX="0.04629516601562500" scaleY="-0.04629516601562500" transX="1013" transY="778"/>
+                </matrix>
+                <gradientColors>
+                  <GradientItem position="0">
+                    <color>
+                      <Color red="250" green="233" blue="217"/>
+                    </color>
+                  </GradientItem>
+                  <GradientItem position="255">
+                    <color>
+                      <Color red="244" green="207" blue="172"/>
+                    </color>
+                  </GradientItem>
+                </gradientColors>
+              </RadialGradient>
+              <LinearGradient>
+                <matrix>
+                  <Transform scaleX="0.005706787109375000" scaleY="-0.005706787109375000" transX="1007" transY="932"/>
+                </matrix>
+                <gradientColors>
+                  <GradientItem position="0">
+                    <color>
+                      <Color red="255" green="255" blue="255"/>
+                    </color>
+                  </GradientItem>
+                  <GradientItem position="255">
+                    <color>
+                      <Color red="250" green="233" blue="217"/>
+                    </color>
+                  </GradientItem>
+                </gradientColors>
+              </LinearGradient>
+              <LinearGradient>
+                <matrix>
+                  <Transform scaleX="0.005874633789062500" scaleY="-0.005874633789062500" transX="481" transY="613"/>
+                </matrix>
+                <gradientColors>
+                  <GradientItem position="0">
+                    <color>
+                      <Color red="255" green="255" blue="255"/>
+                    </color>
+                  </GradientItem>
+                  <GradientItem position="255">
+                    <color>
+                      <Color red="250" green="233" blue="217"/>
+                    </color>
+                  </GradientItem>
+                </gradientColors>
+              </LinearGradient>
+              <LinearGradient>
+                <matrix>
+                  <Transform scaleX="0.002090454101562500" scaleY="-0.002090454101562500" transX="675" transY="484"/>
+                </matrix>
+                <gradientColors>
+                  <GradientItem position="0">
+                    <color>
+                      <Color red="255" green="255" blue="255"/>
+                    </color>
+                  </GradientItem>
+                  <GradientItem position="255">
+                    <color>
+                      <Color red="250" green="233" blue="217"/>
+                    </color>
+                  </GradientItem>
+                </gradientColors>
+              </LinearGradient>
+              <LinearGradient>
+                <matrix>
+                  <Transform scaleX="0.002609252929687500" scaleY="-0.002609252929687500" transX="390" transY="1036"/>
+                </matrix>
+                <gradientColors>
+                  <GradientItem position="0">
+                    <color>
+                      <Color red="255" green="255" blue="255"/>
+                    </color>
+                  </GradientItem>
+                  <GradientItem position="255">
+                    <color>
+                      <Color red="250" green="233" blue="217"/>
+                    </color>
+                  </GradientItem>
+                </gradientColors>
+              </LinearGradient>
+              <LinearGradient>
+                <matrix>
+                  <Transform scaleX="0.002761840820312500" scaleY="-0.002761840820312500" transX="202" transY="1028"/>
+                </matrix>
+                <gradientColors>
+                  <GradientItem position="0">
+                    <color>
+                      <Color red="255" green="255" blue="255"/>
+                    </color>
+                  </GradientItem>
+                  <GradientItem position="255">
+                    <color>
+                      <Color red="250" green="233" blue="217"/>
+                    </color>
+                  </GradientItem>
+                </gradientColors>
+              </LinearGradient>
+            </fillStyles>
+            <lineStyles>
+              <LineStyle width="25">
+                <color>
+                  <Color red="243" green="188" blue="193"/>
+                </color>
+              </LineStyle>
+            </lineStyles>
+          </StyleList>
+        </styles>
+        <shapes>
+          <Shape>
+            <edges>
+              <ShapeSetup x="1286" y="416" fillStyle0="69" fillStyle1="1"/>
+              <CurveTo x1="-7" y1="-6" x2="0" y2="-10"/>
+              <CurveTo x1="0" y1="-9" x2="7" y2="-7"/>
+              <CurveTo x1="6" y1="-7" x2="9" y2="0"/>
+              <CurveTo x1="10" y1="0" x2="6" y2="7"/>
+              <CurveTo x1="7" y1="7" x2="0" y2="9"/>
+              <CurveTo x1="0" y1="10" x2="-7" y2="6"/>
+              <CurveTo x1="-6" y1="7" x2="-10" y2="0"/>
+              <CurveTo x1="-9" y1="0" x2="-6" y2="-7"/>
+              <ShapeSetup x="1275" y="546" fillStyle0="0" fillStyle1="69"/>
+              <LineTo x="40" y="-74"/>
+              <CurveTo x1="-20" y1="-5" x2="-15" y2="-13"/>
+              <CurveTo x1="-30" y1="-25" x2="23" y2="-37"/>
+              <CurveTo x1="28" y1="-44" x2="44" y2="23"/>
+              <CurveTo x1="45" y1="23" x2="-16" y2="51"/>
+              <LineTo x="31" y="-37"/>
+              <CurveTo x1="34" y1="-27" x2="31" y2="32"/>
+              <ShapeSetup fillStyle1="70"/>
+              <LineTo x="5" y="6"/>
+              <CurveTo x1="35" y1="42" x2="-45" y2="23"/>
+              <CurveTo x1="-41" y1="21" x2="-29" y2="-12"/>
+              <LineTo x="-53" y="89"/>
+              <ShapeSetup fillStyle1="66"/>
+              <CurveTo x1="19" y1="33" x2="-12" y2="61"/>
+              <LineTo x="-28" y="120"/>
+              <CurveTo x1="19" y1="71" x2="-2" y2="97"/>
+              <CurveTo x1="-3" y1="150" x2="-68" y2="54"/>
+              <CurveTo x1="-78" y1="62" x2="-105" y2="0"/>
+              <LineTo x="-12" y="0"/>
+              <LineTo x="-18" y="-1"/>
+              <LineTo x="-42" y="-5"/>
+              <LineTo x="-11" y="-1"/>
+              <CurveTo x1="-204" y1="-36" x2="-109" y2="8"/>
+              <LineTo x="-19" y="3"/>
+              <ShapeSetup fillStyle1="68"/>
+              <LineTo x="-21" y="10"/>
+              <CurveTo x1="-93" y1="42" x2="-122" y2="-23"/>
+              <LineTo x="-9" y="-1"/>
+              <LineTo x="-6" y="-2"/>
+              <ShapeSetup fillStyle1="66"/>
+              <LineTo x="-82" y="3"/>
+              <LineTo x="-3" y="0"/>
+              <LineTo x="-3" y="0"/>
+              <LineTo x="-4" y="0"/>
+              <LineTo x="-4" y="0"/>
+              <CurveTo x1="-181" y1="-3" x2="-26" y2="-104"/>
+              <ShapeSetup fillStyle1="65"/>
+              <LineTo x="-1" y="-5"/>
+              <CurveTo x1="-17" y1="-78" x2="74" y2="-104"/>
+              <CurveTo x1="90" y1="-128" x2="12" y2="-57"/>
+              <CurveTo x1="27" y1="-122" x2="120" y2="-96"/>
+              <CurveTo x1="127" y1="-102" x2="168" y2="-20"/>
+              <CurveTo x1="323" y1="-36" x2="152" y2="165"/>
+              <ShapeSetup fillStyle1="66"/>
+              <LineTo x="23" y="28"/>
+              <ShapeSetup fillStyle1="71"/>
+              <CurveTo x1="32" y1="-20" x2="30" y2="1"/>
+              <ShapeSetup fillStyle0="69"/>
+              <LineTo x="30" y="6"/>
+              <ShapeSetup fillStyle1="66"/>
+              <CurveTo x1="14" y1="6" x2="11" y2="9"/>
+              <ShapeSetup fillStyle1="70"/>
+              <LineTo x="51" y="-86"/>
+              <CurveTo x1="29" y1="12" x2="41" y2="-21"/>
+              <CurveTo x1="45" y1="-23" x2="-35" y2="-42"/>
+              <LineTo x="-3" y="-3"/>
+              <LineTo x="12" y="9"/>
+              <ShapeSetup x="1213" y="565" fillStyle0="71" fillStyle1="66"/>
+              <LineTo x="-43" y="35"/>
+              <LineTo x="-22" y="24"/>
+              <ShapeSetup fillStyle1="65"/>
+              <CurveTo x1="-42" y1="49" x2="-9" y2="44"/>
+              <CurveTo x1="-3" y1="15" x2="-41" y2="32"/>
+              <LineTo x="-84" y="69"/>
+              <CurveTo x1="-116" y1="107" x2="16" y2="127"/>
+              <CurveTo x1="4" y1="29" x2="9" y2="25"/>
+              <ShapeSetup fillStyle1="66"/>
+              <LineTo x="19" y="35"/>
+              <CurveTo x1="-15" y1="-23" x2="-9" y2="-29"/>
+              <CurveTo x1="66" y1="46" x2="104" y2="-11"/>
+              <CurveTo x1="96" y1="-10" x2="61" y2="-49"/>
+              <CurveTo x1="68" y1="-54" x2="2" y2="-150"/>
+              <CurveTo x1="2" y1="-99" x2="-19" y2="-69"/>
+              <CurveTo x1="-3" y1="-11" x2="16" y2="-55"/>
+              <CurveTo x1="19" y1="-62" x2="1" y2="-32"/>
+              <LineTo x="15" y="4"/>
+              <ShapeSetup x="1060" y="802" fillStyle0="72" fillStyle1="71"/>
+              <CurveTo x1="-70" y1="46" x2="-37" y2="46"/>
+              <CurveTo x1="-63" y1="79" x2="37" y2="68"/>
+              <CurveTo x1="57" y1="102" x2="108" y2="-272"/>
+              <CurveTo x1="16" y1="-39" x2="-12" y2="-24"/>
+              <CurveTo x1="-12" y1="-23" x2="-24" y2="17"/>
+              <ShapeSetup x="1342" y="582" fillStyle0="66" fillStyle1="70"/>
+              <LineTo x="-9" y="-11"/>
+              <LineTo x="-3" y="-4"/>
+              <ShapeSetup x="1190" y="537" fillStyle1="65"/>
+              <CurveTo x1="-56" y1="-58" x2="-82" y2="-35"/>
+              <CurveTo x1="68" y1="76" x2="28" y2="104"/>
+              <ShapeSetup x="667" y="463" fillStyle0="74"/>
+              <CurveTo x1="-46" y1="22" x2="30" y2="19"/>
+              <CurveTo x1="43" y1="27" x2="15" y2="-64"/>
+              <CurveTo x1="8" y1="-27" x2="-50" y2="23"/>
+              <ShapeSetup x="440" y="574" fillStyle0="73"/>
+              <CurveTo x1="-59" y1="56" x2="4" y2="55"/>
+              <CurveTo x1="3" y1="42" x2="47" y2="-48"/>
+              <CurveTo x1="66" y1="-65" x2="17" y2="-4"/>
+              <CurveTo x1="37" y1="-8" x2="18" y2="-41"/>
+              <CurveTo x1="17" y1="-41" x2="-35" y2="0"/>
+              <CurveTo x1="-58" y1="0" x2="-57" y2="54"/>
+              <ShapeSetup x="580" y="913" fillStyle0="68"/>
+              <LineTo x="2" y="-8"/>
+              <LineTo x="0" y="-2"/>
+              <LineTo x="2" y="-67"/>
+              <LineTo x="-6" y="-21"/>
+              <LineTo x="-4" y="-10"/>
+              <LineTo x="-17" y="-26"/>
+              <ShapeSetup fillStyle1="67"/>
+              <CurveTo x1="-10" y1="-10" x2="-13" y2="-6"/>
+              <CurveTo x1="23" y1="44" x2="-12" y2="58"/>
+              <CurveTo x1="-14" y1="68" x2="-14" y2="35"/>
+              <CurveTo x1="-18" y1="49" x2="-29" y2="24"/>
+              <CurveTo x1="-31" y1="26" x2="9" y2="21"/>
+              <CurveTo x1="9" y1="23" x2="57" y2="-33"/>
+              <LineTo x="1" y="-1"/>
+              <ShapeSetup fillStyle1="65"/>
+              <LineTo x="32" y="-74"/>
+              <ShapeSetup fillStyle1="67"/>
+              <LineTo x="4" y="-11"/>
+              <LineTo x="29" y="-79"/>
+              <ShapeSetup fillStyle0="65"/>
+              <LineTo x="-33" y="90"/>
+              <ShapeSetup x="557" y="779" fillStyle0="67" fillStyle1="65"/>
+              <CurveTo x1="-16" y1="-17" x2="-23" y2="-3"/>
+              <CurveTo x1="-12" y1="-1" x2="-16" y2="65"/>
+              <CurveTo x1="-20" y1="80" x2="-48" y2="42"/>
+              <CurveTo x1="-97" y1="86" x2="-15" y2="62"/>
+              <CurveTo x1="-7" y1="30" x2="6" y2="23"/>
+              <ShapeSetup fillStyle1="66"/>
+              <CurveTo x1="15" y1="56" x2="94" y2="22"/>
+              <ShapeSetup fillStyle1="68"/>
+              <CurveTo x1="-29" y1="-7" x2="-25" y2="-13"/>
+              <CurveTo x1="-33" y1="-16" x2="-10" y2="-19"/>
+              <LineTo x="75" y="21"/>
+              <CurveTo x1="122" y1="23" x2="93" y2="-42"/>
+              <CurveTo x1="87" y1="-41" x2="-5" y2="-63"/>
+              <CurveTo x1="32" y1="9" x2="6" y2="25"/>
+              <ShapeSetup fillStyle1="65"/>
+              <CurveTo x1="-9" y1="-46" x2="-105" y2="7"/>
+              <LineTo x="-102" y="15"/>
+              <ShapeSetup x="669" y="1198" fillStyle0="68" fillStyle1="66"/>
+              <CurveTo x1="65" y1="-38" x2="-3" y2="-55"/>
+              <LineTo x="0" y="-4"/>
+              <ShapeSetup fillStyle0="65"/>
+              <LineTo x="125" y="19"/>
+              <LineTo x="26" y="1"/>
+              <ShapeSetup x="619" y="1087" fillStyle0="67" fillStyle1="1"/>
+              <CurveTo x1="7" y1="-7" x2="9" y2="0"/>
+              <CurveTo x1="10" y1="0" x2="6" y2="7"/>
+              <CurveTo x1="7" y1="7" x2="0" y2="9"/>
+              <CurveTo x1="0" y1="10" x2="-7" y2="6"/>
+              <CurveTo x1="-6" y1="7" x2="-10" y2="0"/>
+              <CurveTo x1="-9" y1="0" x2="-7" y2="-7"/>
+              <CurveTo x1="-7" y1="-6" x2="0" y2="-10"/>
+              <CurveTo x1="0" y1="-9" x2="7" y2="-7"/>
+              <ShapeSetup x="596" y="1109"/>
+              <CurveTo x1="0" y1="13" x2="-13" y2="0"/>
+              <CurveTo x1="-13" y1="0" x2="0" y2="-13"/>
+              <CurveTo x1="0" y1="-13" x2="13" y2="0"/>
+              <CurveTo x1="13" y1="0" x2="0" y2="13"/>
+              <ShapeSetup x="529" y="1130"/>
+              <CurveTo x1="-13" y1="0" x2="0" y2="-13"/>
+              <CurveTo x1="0" y1="-13" x2="13" y2="0"/>
+              <CurveTo x1="13" y1="0" x2="0" y2="13"/>
+              <CurveTo x1="0" y1="13" x2="-13" y2="0"/>
+              <ShapeSetup x="361" y="1097" fillStyle0="75" fillStyle1="67"/>
+              <CurveTo x1="15" y1="-10" x2="57" y2="-115"/>
+              <LineTo x="-40" y="42"/>
+              <CurveTo x1="-30" y1="35" x2="-8" y2="18"/>
+              <CurveTo x1="-19" y1="44" x2="25" y2="-14"/>
+              <ShapeSetup x="239" y="1009" fillStyle0="76" fillStyle1="65"/>
+              <CurveTo x1="18" y1="-71" x2="-23" y2="4"/>
+              <CurveTo x1="-34" y1="7" x2="-26" y2="50"/>
+              <CurveTo x1="-26" y1="49" x2="12" y2="33"/>
+              <CurveTo x1="10" y1="30" x2="19" y2="2"/>
+              <CurveTo x1="18" y1="2" x2="5" y2="-18"/>
+              <LineTo x="27" y="-88"/>
+              <ShapeSetup x="309" y="1146" fillStyle0="66"/>
+              <CurveTo x1="-127" y1="25" x2="-67" y2="-51"/>
+              <ShapeSetup x="1168" y="1033" fillStyle0="71" fillStyle1="1"/>
+              <CurveTo x1="0" y1="13" x2="-13" y2="0"/>
+              <CurveTo x1="-13" y1="0" x2="0" y2="-13"/>
+              <CurveTo x1="0" y1="-13" x2="13" y2="0"/>
+              <CurveTo x1="13" y1="0" x2="0" y2="13"/>
+              <ShapeSetup x="1125" y="1070"/>
+              <CurveTo x1="-7" y1="7" x2="-9" y2="0"/>
+              <CurveTo x1="-10" y1="0" x2="-6" y2="-7"/>
+              <CurveTo x1="-7" y1="-6" x2="0" y2="-10"/>
+              <CurveTo x1="0" y1="-9" x2="7" y2="-6"/>
+              <CurveTo x1="6" y1="-7" x2="10" y2="0"/>
+              <CurveTo x1="9" y1="0" x2="7" y2="7"/>
+              <LineTo x="6" y="15"/>
+              <LineTo x="-6" y="16"/>
+              <ShapeSetup x="1049" y="1072"/>
+              <CurveTo x1="0" y1="13" x2="-13" y2="0"/>
+              <CurveTo x1="-13" y1="0" x2="0" y2="-13"/>
+              <CurveTo x1="0" y1="-13" x2="13" y2="0"/>
+              <CurveTo x1="13" y1="0" x2="0" y2="13"/>
+              <ShapeSetup/>
+            </edges>
+          </Shape>
+        </shapes>

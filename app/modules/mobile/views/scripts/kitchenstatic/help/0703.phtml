@@ -1,0 +1,37 @@
+<div id="help">
+    <div class="content" style="background:#f0f5e0;">
+        <div class="headline" style="background:#8bbd82;color:#ffffff;text-align:center;">
+            <img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/help.gif" width="230" height="60" /><br />
+            <img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+            {% emoji code="F9EB" %}デパートでお買いもの<br />
+        </div><!--/.headline-->
+		<div class="subHeadline" style="text-align:center;">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			<span style="color:#497d40;">ざっか屋</span><br />
+			<div class="line" style="background:#8bbd82;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="1" /></div>
+		</div><!--/.subHeadline-->
+        <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+        <div class="inner">
+			<ざっか屋>では､ﾚｽﾄﾗﾝをﾃﾞｺﾚｰｼｮﾝする<ざっか>を購入できます｡<ざっか>を購入する手順は､以下の通りです｡<br />
+			<br />
+			1.<ざっか屋>で欲しい<ざっか>を選択して､その値段をｸﾘｯｸします｡<br />
+			<br />
+			2.設置したい場所を選択します｡<br />
+			<br />
+			3.確認画面で｢購入する｣をｸﾘｯｸすると､購入が完了します｡<br />
+			<br />
+			4.購入した<ざっか>は､ｱｲﾃﾑBOXの<ざっか置き場>に入ります｡<br />
+			<br />
+			※現在運営中のﾚｽﾄﾗﾝ用の<ざっか>しか購入できません｡<br />
+			※ﾚｽﾄﾗﾝのﾚﾍﾞﾙによって､購入できない<ざっか>があります｡<br />
+        </div><!--/.inner-->
+        <div class="footlink">
+            <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+            <div style="background:#8bbd82;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+            <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			{% if $ua!=2 %}{% emoji code="F97E" %}{% else %}{% emoji code="F8F8" %}{% /if %}<a href='{% "$baseUrl/mobile/kitchenstatic/help"|mixiurl %}'>ヘルプ:もくじ</a><br />
+        </div><!--/.footlink-->
+        <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+        <div class="line" style="background:#8bbd82;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+    </div><!--/.content-->
+</div><!--/#help-->

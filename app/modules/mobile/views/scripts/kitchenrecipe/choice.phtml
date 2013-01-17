@@ -1,0 +1,284 @@
+{% if $step=="start" %}
+
+	{% if $maxLevel > 1 %}
+
+		{%include file="header.phtml"%}
+		{%include file="common/ad_header.phtml"%}
+		<div id="choiceRecipe">
+			<div class="content" style="background:#f0f5e0;">
+
+				{% if $leaveCount > 0 %}
+                    <div class="headline" style="background:#8bbd82;color:#ffffff;text-align:center;">
+                        <img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/select_recipe.gif" width="230" height="60" /><br />
+                    </div><!--/.headline-->
+                    <div class="make" style="text-align:right;">
+						<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+                        <span style="color:#cc6666;">⇒</span><a href='{% "$baseUrl/mobile/kitchenrecipe/make/CF_kitchen_id/`$kitchenID`"|mixiurl %}'>新しいﾚｼﾋﾟを開発する</a><br />
+						<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+                    </div><!--/.footlink-->
+                    <div class="headline" style="background:#8bbd82;color:#ffffff;text-align:center;">
+                        <img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+                        {% emoji code="F8E4" %}レシピ図鑑から選択<br />
+                        <img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+                    </div><!--/.headline-->
+                    <div class="kind" style="text-align:center;">
+                        <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+                        {%if $ordertype=="point" %}
+                            {% emoji code="F8E5" %}値段が高い<span style="color:#999999;">|</span>{% emoji code="F95E" %}<a href='{% "$baseUrl/mobile/kitchenrecipe/choice/CF_ordertype/total_time/CF_order/ASC/CF_kitchen_id/`$kitchenID`"|mixiurl %}'>調理時間が短い</a><br />
+                        {% else %}
+                            {% emoji code="F8E5" %}<a href='{% "$baseUrl/mobile/kitchenrecipe/choice/CF_ordertype/point/CF_order/DESC/CF_kitchen_id/`$kitchenID`"|mixiurl %}'>値段が高い</a><span style="color:#999999;">|</span>{% emoji code="F95E" %}調理時間が短い<br />
+                        {% /if %}
+                        <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+                        <div style="background:#8bbd82;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+                    </div><!--/.kind-->
+                    <div class="count">
+                        <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+                        {%$pager.count%}件中 {%$start%}-{%$end%}件<br />
+                        <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+                        <div style="background:#8bbd82;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+                    </div><!--/.count-->
+                    <div class="inner">
+                        {% foreach from=$recipeList item=data%}
+                            <div class="section">
+                                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                        <td style="width:44px;text-align:center;vertical-align:top;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/meal/40x40/{%$data.f%}/{%$data.n%}.gif" width="40" height="40" style="margin:3px 0;" /></td>
+                                        <td><div style="{% if $ua==1 %}font-size:x-small;{%/if%}">
+                                            {%$data.recipe_name%}<br />
+                                            {% emoji code="F8E5" %}{%$data.point%}T {% emoji code="F95E" %}{%$data.total_time%}分<br />
+                                            <div style="text-align:right;"><a href='{% "$baseUrl/mobile/kitchenrecipe/choice/CF_step/finish/CF_recipe/`$data.recipe_id`/CF_kitchen_id/`$kitchenID`"|mixiurl %}'>このレシピを選択</a>&nbsp;</div>
+                                        </div></td>
+                                    </tr>
+                                </table>
+                                <div style="background:#8bbd82;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+                            </div><!--/.section-->
+                        {% /foreach %}
+                        {% if $pager.count > 5 %}
+                            {%include file="common/pager.phtml"%}
+                            <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+                            <div style="background:#8bbd82;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+                        {% /if %}
+                        <div class="caution">
+                            <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+                            {% emoji code="F8E5" %}…獲得予定ﾁｯﾌﾟ<br />
+                            {% emoji code="F95E" %}…調理に必要な時間<br />
+                            <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+                        </div><!--/.caution-->
+                    </div><!--/.inner-->
+                    <a name="research"></a>
+					<div class="headline" style="background:#8bbd82;color:#ffffff;text-align:center;">
+						<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+						{% emoji code="F99F" %}新しいレシピを開発する{% emoji code="F99F" %}<br />
+					</div><!--/#headline-->
+					<div class="inner">
+						<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+						冷蔵庫にある<span style="color:#cc0000;">食材を2種類以上配合</span>して「新しいレシピ」を開発してみよう!成功すると<span style="color:#cc0000;">たくさんの経験値</span>がもらえるかも!?<br />
+						<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="5" /><br />
+						<div class="forDebug" style="text-align:center">
+							<img src="{%$staticUrl%}/apps/kitchen/mobile/img/recipe/choice01.gif" width="200" height="50" /><br />
+							<a href='{% "$baseUrl/mobile/kitchenrecipe/make/CF_kitchen_id/`$kitchenID`"|mixiurl %}'><img src="{%$staticUrl%}/apps/kitchen/mobile/img/recipe/choice02.gif" width="200" height="40" alt="レシピ開発に挑戦" /></a><br />
+						</div><!--/.forDebug-->
+						<div class="caution" style="text-align:center;">
+							<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+							あと<span style="color:#cc0000;">{%$leaveCount%}回</span>挑戦できます<br />
+						</div><!--/.caution-->
+						{% if $maxLevel==2 %}
+							<div class="caution">
+								<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="5" /><br />
+								{% emoji code="F9A0" %}まずは[ウィンナー]と[ポテト]を配合して【ジャーマンポテト】を作ってみよう!<br />
+							</div><!--/.caution-->
+						{% /if %}
+					</div><!--/.inner-->
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+                    <div class="footlink">
+                        <div style="background:#8bbd82;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+                        <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+                        {% if $ua!=2 %}{% emoji code="F97E" %}{% else %}{% emoji code="F8F8" %}{% /if %}<a href='{% "$baseUrl/mobile/kitchenflash/kitchen?CF_uid=`$uid`&opensocial_app_id=`$APP_ID`&opensocial_owner_id=`$uid`&rand=`$rand`"|mobile_flashurl %}' accesskey="5">マイキッチンに戻る</a><br />
+                    </div><!--/.footlink-->
+                    <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+                    <div class="line" style="background:#8bbd82;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+				{% else %}
+					<div class="headline" style="background:#8bbd82;color:#ffffff;text-align:center;">
+						<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/select_recipe.gif" width="230" height="60" /><br />
+						<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+						{% emoji code="F8E4" %}レシピ図鑑から選択<br />
+					</div><!--/#headline-->
+					<div class="kind" style="text-align:center;">
+						<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+						{%if $ordertype=="point" %}
+							{% emoji code="F8E5" %}値段が高い<span style="color:#999999;">|</span>{% emoji code="F95E" %}<a href='{% "$baseUrl/mobile/kitchenrecipe/choice/CF_ordertype/total_time/CF_order/ASC/CF_kitchen_id/`$kitchenID`"|mixiurl %}'>調理時間が短い</a><br />
+						{% else %}
+							{% emoji code="F8E5" %}<a href='{% "$baseUrl/mobile/kitchenrecipe/choice/CF_ordertype/point/CF_order/DESC/CF_kitchen_id/`$kitchenID`"|mixiurl %}'>値段が高い</a><span style="color:#999999;">|</span>{% emoji code="F95E" %}調理時間が短い<br />
+						{% /if %}
+						<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+						<div style="background:#8bbd82;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+					</div><!--/.kind-->
+					<div class="count">
+						<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+						{%$pager.count%}件中 {%$start%}-{%$end%}件<br />
+						<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+						<div style="background:#8bbd82;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+					</div><!--/.count-->
+					<div class="inner">
+						{% foreach from=$recipeList item=data%}
+							<div class="section">
+								<table width="100%" cellpadding="0" cellspacing="0" border="0">
+									<tr>
+										<td style="width:44px;text-align:center;vertical-align:top;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/meal/40x40/{%$data.f%}/{%$data.n%}.gif" width="40" height="40" style="margin:3px 0;" /></td>
+										<td><div style="{% if $ua==1 %}font-size:x-small;{%/if%}">
+											{%$data.recipe_name%}<br />
+											{% emoji code="F8E5" %}{%$data.point%}T {% emoji code="F95E" %}{%$data.total_time%}分<br />
+											<div style="text-align:right;"><a href='{% "$baseUrl/mobile/kitchenrecipe/choice/CF_step/finish/CF_recipe/`$data.recipe_id`/CF_kitchen_id/`$kitchenID`"|mixiurl %}'>このレシピを選択</a>&nbsp;</div>
+										</div></td>
+									</tr>
+								</table>
+								<div style="background:#8bbd82;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+							</div><!--/.section-->
+						{% /foreach %}
+						{% if $pager.count > 5 %}
+							{%include file="common/pager.phtml"%}
+							<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+							<div style="background:#8bbd82;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+						{% /if %}
+						<div class="caution">
+							<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+							{% emoji code="F8E5" %}…獲得予定ﾁｯﾌﾟ<br />
+							{% emoji code="F95E" %}…調理に必要な時間<br />
+						</div><!--/.caution-->
+						<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+						<div class="line" style="background:#8bbd82;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+					</div><!--/.inner-->
+				{% /if %}
+
+			</div><!--/.content-->
+		</div><!--/#choiceRecipe-->
+
+		{%include file="common/copyright.phtml"%}
+		{%include file="footer.phtml"%}
+
+	{% else %}
+
+		{%include file="header.phtml"%}
+		{%include file="common/ad_header.phtml"%}
+		<div id="choiceRecipe">
+			<div class="content" style="background:#f0f5e0;">
+				<div class="headline" style="background:#8bbd82;color:#ffffff;text-align:center;">
+					<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/select_recipe.gif" width="230" height="60" /><br />
+				</div><!--/#headline-->
+				<div class="inner" style="text-align:center;">
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+					レシピを選択する前に<br />
+					料理を運んでみよう!<br />
+					<br />
+					ﾏｲｷｯﾁﾝで{% emoji code="F98A" %}{% emoji code="F98C" %}ｷｰを押すと<br />左右の調理台に移動できるよ!</span><br />
+					<div class="toRestaurant" style="text-align:center;">
+						<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+						<span style="color:#ff9999;">≫</span><a href='{% "$baseUrl/mobile/kitchenflash/kitchen?CF_uid=`$uid`&opensocial_app_id=`$APP_ID`&opensocial_owner_id=`$uid`&rand=`$rand`"|mobile_flashurl %}' accesskey="5">マイキッチンに戻る</a><span style="color:#ff9999;">≪</span><br />
+						<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+					</div><!--/.toRestaurant-->
+				</div><!--/.inner-->
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				<div class="line" style="background:#8bbd82;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+			</div><!--/.content-->
+		</div><!--/#choiceRecipe-->
+		{%include file="common/copyright.phtml"%}
+		{%include file="footer.phtml"%}
+
+	{% /if %}
+
+{% elseif $step=="finish" %}
+
+	{%include file="header.phtml"%}
+	{%include file="common/ad_header.phtml"%}
+
+	<div id="recipeFinish">
+		<div class="content" style="background:#f0f5e0;">
+			<div class="headline" style="background:#8bbd82;color:#ffffff;text-align:center;">
+				<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/select_recipe.gif" width="230" height="60" /><br />
+				<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+				調理開始!<br />
+			</div><!--/.headline-->
+			<div class="description">
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+				{%$recipe.recipe_name%}の調理を開始しました！<br />
+			</div><!--/.description-->
+			<div class="inner">
+				<div class="thumb" style="color:#cc0000;text-align:center;">
+					<img src="{%$staticUrl%}/apps/kitchen/mobile/img/meal/130x130/{%$recipe.f%}/{%$recipe.n%}.gif" width="130" height="130" style="margin:3px 0;" /><br />
+					次の工程まで あと{%$recipe.part1_time%}分<br />
+				</div><!--/.thumb-->
+				<div class="info">
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+					調理の途中でハエが飛んだり、味つけを忘れると、生産量が減るので注意してください｡<br />
+				</div><!--/.info-->
+				<div class="toMyKitchen" style="text-align:center;">
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="5" /><br />
+					味付けを忘れずに{% emoji code="F99B" %}<br />
+					<span style="color:#ff9999;">≫</span><a href='{% "$baseUrl/mobile/kitchenflash/kitchen?CF_uid=`$uid`&opensocial_app_id=`$APP_ID`&opensocial_owner_id=`$uid`&rand=`$rand`"|mobile_flashurl %}' accesskey="5">マイキッチンへ</a><span style="color:#ff9999;">≪</span><br />
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+				</div><!--/.toMyKitchen-->
+				<div class="caution" style="color:#cc0000;">
+					{% emoji code="F9A0" %}完成した料理を運ぶと経験値やﾁｯﾌﾟが獲得できます。<br />
+				</div><!--/.caution-->
+			</div><!--/.inner-->
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			<div class="line" style="background:#8bbd82;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+		</div><!--/.content-->
+	</div><!--/#recipeFinish-->
+
+	{%include file="common/menu.phtml"%}
+	{%include file="footer.phtml"%}
+
+{% else %}
+
+	{%include file="header.phtml"%}
+	{%include file="common/ad_header.phtml"%}
+
+	<div id="choiceRecipe">
+		<div class="content" style="background:#f0f5e0;">
+
+			<div class="headline" style="background:#8bbd82;color:#ffffff;text-align:center;">
+				<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/select_recipe.gif" width="230" height="60" /><br />
+			</div><!--/#headline-->
+
+			<div class="description">
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				レシピ選択後､調理がはじまるよ{% emoji code="F995" %}<br />
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				<div style="background:#8bbd82;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+			</div><!--/.description-->
+
+			<div class="inner">
+
+			    {% foreach from=$recipe item=data%}
+					<div class="section">
+						<table width="100%" cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td style="width:44px;text-align:center;vertical-align:top;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/meal/40x40/{%$data.f%}/{%$data.n%}.gif" width="40" height="40" style="margin:3px 0;" /></td>
+								<td><div style="{% if $ua==1 %}font-size:x-small;{%/if%}">
+									{%$data.recipe_name%}<br />
+									{% emoji code="F8E5" %}{%$data.gain_exp%} {% emoji code="F95E" %}{%$data.total_time%}<br />
+									<div style="text-align:right;"><a href='{% "$baseUrl/mobile/kitchenrecipe/choice/CF_step/finish/CF_recipe/`$data.recipe_id`/CF_kitchen_id/`$kitchenID`"|mixiurl %}'>このレシピを選択</a>&nbsp;</div>
+								</div></td>
+							</tr>
+						</table>
+						<div style="background:#8bbd82;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+					</div><!--/.section-->
+				{% /foreach %}
+
+				<div class="caution">
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+					{% emoji code="F8E5" %}…獲得予定ﾁｯﾌﾟ<br />
+					{% emoji code="F95E" %}…調理に必要な時間(分)<br />
+				</div><!--/.caution-->
+
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+				<div class="line" style="background:#8bbd82;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+			</div><!--/.content-->
+		</div><!--/.inner-->
+	</div><!--/#choiceRecipe-->
+
+	{%include file="common/browseback.phtml"%}
+	{%include file="ad_footer.phtml"%}
+
+{% /if %}

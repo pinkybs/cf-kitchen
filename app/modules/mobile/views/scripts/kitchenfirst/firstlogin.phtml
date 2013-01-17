@@ -1,0 +1,81 @@
+{%include file="header.phtml"%}
+
+<div id="title" style="text-align:center;">
+	<object data="{%$staticUrl%}/apps/kitchen/mobile/img/title/title.swf" type="application/x-shockwave-flash" width="240" height="106">
+		<param name="bgcolor" value="ffffff" />
+		<param name="loop" value="on" />
+		<param name="quality" value="high" />
+		<embed src="{%$staticUrl%}/apps/kitchen/mobile/img/title/title.swf" width="240" height="106" loop="on" quality="high" bgcolor="#ffffff"></embed>
+	</object><br />
+	<div class="description" style="color:#497d40;">
+		<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+		{% emoji code="F8D0" %}ようこそマイキッチン{% emoji code="F8D0" %}は<br />
+		手軽に遊べるﾚｽﾄﾗﾝ育成ｹﾞｰﾑだよ<br />
+	</div><!--/.description-->
+</div><!--/#title-->
+
+<div id="firsttime">
+	<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+	<div class="content" style="background:#f0f5e0;">
+		<div class="headline" style="background:#8bbd82;color:#ffffff;text-align:center;">
+			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+			ようこそマイキッチン！<br />
+			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+		</div><!--/.headline-->
+		<div class="inner">
+			<div class="section">
+				<table width="100%" cellpadding="0" cellspacing="0" border="0">
+					<tr>
+						<td style="width:64px;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/firsttime/01.jpg" width="60" height="60" style="margin:3px 0;" /></td>
+						<td><img src="{%$staticUrl%}/apps/kitchen/mobile/img/firsttime/01.gif" width="165" height="60" /></td>
+					</tr>
+				</table>
+				かわいいｼｪﾌと一流ﾚｽﾄﾗﾝを目指し､いろんな料理を作っていこう{% emoji code="F995" %}<br />
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				<div style="background:#8bbd82;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+			</div><!--/.section-->
+			<div class="section">
+				<table width="100%" cellpadding="0" cellspacing="0" border="0">
+					<tr>
+						<td style="width:64px;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/firsttime/02.jpg" width="60" height="60" style="margin:3px 0;" /></td>
+						<td><img src="{%$staticUrl%}/apps/kitchen/mobile/img/firsttime/02.gif" width="165" height="60" /></td>
+					</tr>
+				</table>
+				ざっかを並べて､お店をステキに模様替えしよう{% emoji code="F99F" %}ﾏｲﾐｸさんにも協力してもらえるﾖ!<br />
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				<div class="line" style="background:#8bbd82;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+			</div><!--/.section-->
+			<div class="section">
+				<table width="100%" cellpadding="0" cellspacing="0" border="0">
+					<tr>
+						<td style="width:64px;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/firsttime/03.jpg" width="60" height="60" style="margin:3px 0;" /></td>
+						<td><img src="{%$staticUrl%}/apps/kitchen/mobile/img/firsttime/03.gif" width="165" height="60" /></td>
+					</tr>
+				</table>
+				食材を配合して新しいﾚｼﾋﾟを作ろう{% emoji code="F8D0" %}配合が難しいときはﾏｲﾐｸさんに聞いてみよう{% emoji code="F9CC" %}<br />
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				<div class="line" style="background:#8bbd82;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+			</div><!--/.section-->
+			<div class="next" style="text-align:center;">
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+				<span style="color:#cc0000;">まずはアナタといっしょに<br />お店を経営するｼｪﾌを設定しよう!<br />↓↓↓↓↓↓</span><br />
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="5" /><br />
+                <table width="230" cellpadding="3" cellspacing="1" border="0" align="center" style="background:#8bbd82;">
+					<tr>
+						<td style="background:#ffffcc;text-align:center;"><div style="{% if $ua==1 %}font-size:x-small;{%/if%}">
+							<span style="color:#006699;">≫</span><a href='{% "$baseUrl/mobile/kitchenfirst/selectchara"|mixiurl %}'>[Myレストランへ]</a><span style="color:#006699;">≪</span><br />
+						</div></td>
+					</tr>
+				</table>
+			</div><!--/.next-->
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="20" /><br />
+			<div class="line" style="background:#8bbd82;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+        </div><!--/.inner-->
+    </div><!--/.content-->
+</div><!--/#firsttime-->
+
+{%* banner_log *%}
+<img src="http://admin.jp.apps.communityfactory.net/track/banner/mykitchen/?user={% $smarty.get.opensocial_owner_id %}&apps={% $smarty.get.opensocial_app_id %}" width="1" height="1" /><br />
+
+{%include file="common/copyright.phtml"%}
+{%include file="footer.phtml"%}

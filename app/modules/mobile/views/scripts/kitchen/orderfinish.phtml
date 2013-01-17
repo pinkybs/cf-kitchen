@@ -1,0 +1,42 @@
+{%include file="header.phtml"%}
+
+<div id="inviteFinish">
+    <div class="content" style="background:#fff5f5;">
+        <div class="headline" style="background:#ff9999;color:#ffffff;text-align:center;">
+            <img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+            注文しました！<br />
+			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+        </div><!--/.headline-->
+        <div class="inner">
+			<div class="description">
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				{%$profileUidInfo.displayName%}さんのﾚｽﾄﾗﾝに注文し､<font style="color:#cc0000">10ﾁｯﾌﾟ</font>を獲得しました！<br />
+			</div><!--/.description-->
+			
+			{%include file="common/ad_middle.phtml"%}
+			
+            <div class="caution" style="text-align:center;">
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+                <span style="color:#ff9933;">≫</span><a href='{% "$baseUrl/mobile/kitchen/home?CF_uid=`$profileUidInfo.uid`"|mixiurl %}'>{%$profileUidInfo.displayName%}さんのレストランへ</a><span style="color:#ff9933;">≪</span><br />
+                <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+				他の店でも注文しよう！<br />
+                <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+                <a href='{% "$baseUrl/mobile/kitchen/home?CF_uid=`$prev_uid`"|mixiurl %}'>←隣のお店</a>&nbsp;<a href='{% "$baseUrl/mobile/kitchen/home?CF_uid=`$next_uid`"|mixiurl %}'>隣のお店→</a><br />
+                <span style="color:#cc6666;">≫</span><a href='{% "$baseUrl/mobile/kitchen/rankinglist"|mixiurl %}'>マイミクさんの店舗一覧へ</a><span style="color:#cc6666;">≪</span><br />
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+			</div><!--/.caution-->
+			<div class="line" style="background:#ff9999;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+            {% emoji code="F9DC" %}注文は1つの調理台が未使用中に１回まで注文できます｡<br />
+        </div><!--/.inner-->
+		<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+        <div class="line" style="background:#ff9999;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+		<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+        {% emoji code="F8C4" %}<a href='{% "$baseUrl/mobile/kitchen/home"|mixiurl %}'>Myレストラン</a><br />
+        <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+        <div class="line" style="background:#ff9999;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+    </div><!--/.content-->
+</div><!--/#inviteFinish-->
+
+{%include file="common/menu.phtml"%}
+{%include file="footer.phtml"%}

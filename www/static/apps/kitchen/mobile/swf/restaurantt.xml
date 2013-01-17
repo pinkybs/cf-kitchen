@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<swf version="4" compressed="0">
+  <Header framerate="12" frames="1">
+    <size>
+      <Rectangle left="0" right="4800" top="0" bottom="3400"/>
+    </size>
+    <tags>
+      <SetBackgroundColor>
+        <color>
+          <Color red="255" green="255" blue="255"/>
+        </color>
+      </SetBackgroundColor>
+      <DefineShape objectID="1">
+          {%bg%}
+      </DefineShape>
+      <DefineSprite objectID="2" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="1" objectID="1">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <PlaceObject2 replace="0" depth="1" objectID="2" name="bg">
+        <transform>
+          <Transform transX="0" transY="0"/>
+        </transform>
+      </PlaceObject2>
+      <DefineShape objectID="3">
+        <bounds>
+          <Rectangle left="0" right="4800" top="0" bottom="420"/>
+        </bounds>
+        <styles>
+          <StyleList>
+            <fillStyles>
+              <Solid>
+                <color>
+                  <Color red="255" green="255" blue="255"/>
+                </color>
+              </Solid>
+            </fillStyles>
+            <lineStyles/>
+          </StyleList>
+        </styles>
+        <shapes>
+          <Shape>
+            <edges>
+              <ShapeSetup x="4800" y="420" fillStyle1="1"/>
+              <LineTo x="-4800" y="0"/>
+              <LineTo x="0" y="-420"/>
+              <LineTo x="4800" y="0"/>
+              <LineTo x="0" y="420"/>
+              <ShapeSetup/>
+            </edges>
+          </Shape>
+        </shapes>
+      </DefineShape>
+      <DefineShape objectID="9">
+          {%building%}
+      </DefineShape>
+      <DefineSprite objectID="10" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="1" objectID="9">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <PlaceObject2 replace="0" depth="7" objectID="10" name="building">
+        <transform>
+          <Transform scaleX="1" scaleY="1" transX="1580" transY="360"/>
+        </transform>
+      </PlaceObject2>
+
+      <!--[b01-b30]-->
+      {%b01_30%}
+
+      <DefineSprite objectID="12" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="2" objectID="11">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="20" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="1" objectID="19">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="36" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="35">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="54" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="1" objectID="53">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="16" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="1" objectID="15">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="28" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="1" objectID="27">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="46" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="45">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="64" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="1" objectID="63">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="22" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="1" objectID="21">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="38" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="37">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="56" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="55">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="30" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="29">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="48" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="47">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="66" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="65">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="40" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="39">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="58" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="57">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="32" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="31">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="50" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="49">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="68" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="67">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="24" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="23">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="42" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="41">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="60" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="59">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="18" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="17">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="34" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="33">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="52" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="51">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="70" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="69">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="14" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="13">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="26" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="25">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="44" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="43">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="62" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="61">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="71" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="1" objectID="12" name="b01">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="14" objectID="20" name="b02">
+            <transform>
+              <Transform transX="0" transY="400"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="40" objectID="36" name="b03">
+            <transform>
+              <Transform transX="0" transY="800"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="76" objectID="54" name="b04">
+            <transform>
+              <Transform transX="0" transY="1200"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="8" objectID="16" name="b05">
+            <transform>
+              <Transform transX="480" transY="200"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="26" objectID="28" name="b06">
+            <transform>
+              <Transform transX="480" transY="600"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="60" objectID="46" name="b07">
+            <transform>
+              <Transform transX="480" transY="1000"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="94" objectID="64" name="b08">
+            <transform>
+              <Transform transX="480" transY="1400"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="16" objectID="22" name="b09">
+            <transform>
+              <Transform transX="960" transY="400"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="44" objectID="38" name="b10">
+            <transform>
+              <Transform transX="960" transY="800"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="78" objectID="56" name="b11">
+            <transform>
+              <Transform transX="960" transY="1200"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="28" objectID="30" name="b12">
+            <transform>
+              <Transform transX="1440" transY="600"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="64" objectID="48" name="b13">
+            <transform>
+              <Transform transX="1440" transY="1000"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="96" objectID="66" name="b14">
+            <transform>
+              <Transform transX="1440" transY="1400"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="48" objectID="40" name="b15">
+            <transform>
+              <Transform transX="1920" transY="800"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="82" objectID="58" name="b16">
+            <transform>
+              <Transform transX="1920" transY="1200"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="32" objectID="32" name="b17">
+            <transform>
+              <Transform transX="2400" transY="600"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="68" objectID="50" name="b18">
+            <transform>
+              <Transform transX="2400" transY="1000"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="100" objectID="68" name="b19">
+            <transform>
+              <Transform transX="2400" transY="1400"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="18" objectID="24" name="b20">
+            <transform>
+              <Transform transX="2880" transY="400"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="52" objectID="42" name="b21">
+            <transform>
+              <Transform transX="2880" transY="800"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="86" objectID="60" name="b22">
+            <transform>
+              <Transform transX="2880" transY="1200"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="10" objectID="18" name="b23">
+            <transform>
+              <Transform transX="3360" transY="200"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="36" objectID="34" name="b24">
+            <transform>
+              <Transform transX="3360" transY="600"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="72" objectID="52" name="b25">
+            <transform>
+              <Transform transX="3360" transY="1000"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="104" objectID="70" name="b26">
+            <transform>
+              <Transform transX="3360" transY="1400"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="4" objectID="14" name="b27">
+            <transform>
+              <Transform transX="3840" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="22" objectID="26" name="b28">
+            <transform>
+              <Transform transX="3840" transY="400"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="56" objectID="44" name="b29">
+            <transform>
+              <Transform transX="3840" transY="800"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="90" objectID="62" name="b30">
+            <transform>
+              <Transform transX="3840" transY="1200"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <PlaceObject2 replace="0" depth="9" objectID="71">
+        <transform>
+          <Transform scaleX="1.000000000000000" scaleY="0.9997100830078125" transX="140" transY="1480"/>
+        </transform>
+      </PlaceObject2>
+      <DefineShape objectID="72">
+        <bounds>
+          <Rectangle left="0" right="165" top="0" bottom="178"/>
+        </bounds>
+        <styles>
+          <StyleList>
+            <fillStyles>
+              <Solid>
+                <color>
+                  <Color red="0" green="0" blue="0"/>
+                </color>
+              </Solid>
+            </fillStyles>
+            <lineStyles/>
+          </StyleList>
+        </styles>
+        <shapes>
+          <Shape>
+            <edges>
+              <ShapeSetup x="6" y="24" fillStyle0="1"/>
+              <CurveTo x1="-11" y1="11" x2="10" y2="11"/>
+              <LineTo x="110" y="126"/>
+              <LineTo x="22" y="1"/>
+              <LineTo x="22" y="-19"/>
+              <CurveTo x1="11" y1="-9" x2="-9" y2="-13"/>
+              <LineTo x="-111" y="-126"/>
+              <LineTo x="-22" y="-1"/>
+              <LineTo x="-22" y="19"/>
+              <ShapeSetup/>
+            </edges>
+          </Shape>
+        </shapes>
+      </DefineShape>
+      <ShowFrame/>
+      <End/>
+    </tags>
+  </Header>
+</swf>

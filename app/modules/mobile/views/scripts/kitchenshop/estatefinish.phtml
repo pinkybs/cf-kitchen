@@ -1,0 +1,42 @@
+{%include file="header.phtml"%}
+
+<div id="estateFinish">
+	<div class="content" style="background:#eeffff;">
+		<div class="headline" style="background:#82bdba;color:#ffffff;text-align:center;">
+			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/estate.gif" width="230" height="60" /><br />
+			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+			購入完了<br />
+		</div><!--/.headline-->
+		<div class="inner">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			不動産を購入しました!<br />
+			{%include file="common/ad_middle.phtml"%}
+			<div class="toShop" style="text-align:center;">
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+				{% if  $genreNow == $genreBuy %}
+				<span style="color:#ff9999;">≫</span><a href='{% "$baseUrl/mobile/kitchen/home"|mixiurl %}'>Myレストランへ</a><span style="color:#ff9999;">≪</span><br />
+				{% else %}
+				<span style="color:#ff9999;">≫</span><a href='{% "$baseUrl/mobile/kitchen/changerestaurant?CF_genre=`$genreBuy`"|mixiurl %}'>今すぐ購入物件を利用する</a><span style="color:#ff9999;">≪</span><br />
+				{% /if %}
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+			</div><!--/.toShop-->
+			<div class="toInvite" style="text-align:center;">
+				<div style="background:#82bdba;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				{% emoji code="F8E6" %}<a href='{% "$baseUrl/mobile/kitchen/inviteguide"|mixiurl %}'>ﾏｲﾐｸ招待で100M+ﾌﾟﾚﾐｱｶﾞﾁｬ</a><br />
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			</div><!--/.toInvite-->
+			<div class="footlink">
+				<div style="background:#82bdba;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				{% if $ua!=2 %}{% emoji code="F97E" %}{% else %}{% emoji code="F8F8" %}{% /if %}<a href='{% "$baseUrl/mobile/kitchenshop/shopping"|mixiurl %}'>マイキチデパート</a><br />
+				{% emoji code="F8C4" %}<a href='{% "$baseUrl/mobile/kitchen/home"|mixiurl %}'>Myレストラン</a><br />
+			</div><!--/.footlink-->
+		</div><!--/.inner-->
+		<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+		<div class="line" style="background:#82bdba;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+	</div><!--/.content-->
+</div><!--/#estateFinish-->
+
+{%include file="common/menu.phtml"%}
+{%include file="footer.phtml"%}

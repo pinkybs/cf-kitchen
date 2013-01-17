@@ -1,0 +1,121 @@
+{%include file="header.phtml"%}
+{%include file="common/ad_header.phtml"%}
+
+{% if $step=="start" %}
+
+	<div id="editName">
+		<div class="content" style="background:#f0f5e0;">
+			<div class="headline" style="background:#8bbd82;color:#ffffff;text-align:center;">
+				<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+				お店の名前を{% if $changeFlag == 1 %}変更{%else%}設定{%/if%}する<br />
+				<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+			</div><!--/.headline-->
+			<div class="inner">
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				お店の名前を{% if $changeFlag == 1 %}変更{%else%}設定{%/if%}します｡お店の名前を入力し､[確認]を押してください｡<br />
+				{% if $error %}
+					<div class="caution" style="color:#cc0000;">
+						<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+						{% emoji code="F9DC" %}入力エラー:<br />
+						{% if $error == 1 %}
+							･入力欄が未入力です<br />
+						{% elseif $error == 2 %}
+							･15文字以内で入力してください<br />
+						{% elseif $error == 3 %}
+							･絵文字は入力できません<br />
+						{% /if %}
+					</div><!--/.caution-->
+				{% /if %}
+				<form method="post" action='{% "$baseUrl/mobile/kitchenfirst/editname/CF_step/confirm/CF_genre/`$genre`"|mixiurl %}' id="editNameConfirm">
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+					{% emoji code="F8C4" %}お店の名前<br />
+					<input type="text" name="CF_restaurant_name" id="CF_restaurant_name" value="{%$name%}" /><br />
+					<input type="hidden" name="CF_changeFlag" id="CF_changeFlag" value="{%$changeFlag%}" />
+					<div style="text-align:right;">※最大15文字･絵文字不可</div>
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+					<div class="btn" style="text-align:center;">
+						<input type="submit" value=" 確 認 " /><br />
+					</div><!--/.btn-->
+				</form><!--/#editNameConfirm-->
+                {% if $changeFlag == 1 %}
+					<form method="POST" action='{% "$baseUrl/mobile/kitchen/profile"|mixiurl %}' id="cancel">
+						<div class="btn" style="text-align:center;">
+							<input type="submit" value=" ｷｬﾝｾﾙ " /><br />
+						</div><!--/.btn-->
+					</form><!--/#cancel-->
+				{% else %}
+					<form method="post" action='{% "$baseUrl/mobile/kitchen/home"|mixiurl %}' id="skip">
+						<div class="btn" style="text-align:center;">
+							<input type="submit" value=" ｽｷｯﾌﾟ " /><br />
+						</div><!--/.btn-->
+					</form><!--/#skip-->
+				{%/if%}
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+				<div class="line" style="background:#8bbd82;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+			</div><!--/.inner-->
+		</div><!--/.content-->
+	</div><!--/#editName-->
+
+{% elseif $step=="confirm" %}
+
+	<div id="editNameConfirm">
+		<div class="content" style="background:#f0f5e0;">
+			<div class="headline" style="background:#8bbd82;color:#ffffff;text-align:center;">
+				<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+				お店の名前を{% if $changeFlag == 1 %}変更{%else%}設定{%/if%}する<br />
+				<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+			</div><!--/.headline-->
+			<div class="inner">
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				入力内容を確認し､よろしければ [決定]を押してください｡<br />
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				{% emoji code="F8C4" %}お店の名前<br />
+				<span style="color:#cc0000;">{%$name%}</span><br />
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				<form method="post" action='{% "$baseUrl/mobile/kitchenfirst/editname/CF_step/complete/CF_genre/`$genre`"|mixiurl %}' id="editNameFinish">
+					<input type="hidden" name="CF_restaurant_name" id="CF_restaurant_name" value="{%$name%}" />
+					<input type="hidden" name="CF_changeFlag" id="CF_changeFlag" value="{%$changeFlag%}" />
+					<div class="btn" style="text-align:center;">
+						<input type="submit" value=" 決 定 " /><br />
+					</div><!--/.btn-->
+				</form><!--/#editNameFinish-->
+				<form method="post" action='{% "$baseUrl/mobile/kitchenfirst/editname/CF_genre/`$genre`"|mixiurl %}' id="editNameModify">
+					<input type="hidden" name="CF_restaurant_name" id="CF_restaurant_name" value="{%$name%}" />
+					<input type="hidden" name="CF_changeFlag" id="CF_changeFlag" value="{%$changeFlag%}" />
+					<div class="btn" style="text-align:center;">
+						<input type="submit" value=" 修 正 " /><br />
+					</div><!--/.btn-->
+				</form><!--/#editNameModify-->
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+				<div class="line" style="background:#8bbd82;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+			</div><!--/.inner-->
+		</div><!--/.content-->
+	</div><!--/#editNameConfirm-->
+
+{% else %}
+
+	<div id="editNameFinish">
+		<div class="content" style="background:#f0f5e0;">
+			<div class="headline" style="background:#8bbd82;color:#ffffff;text-align:center;">
+				<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+				{% if $changeFlag == 1 %}変更{%else%}設定{%/if%}完了<br />
+				<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+			</div><!--/.headline-->
+			<div class="inner">
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				お店の名前を設定しました!<br />
+				{%include file="common/ad_192x106.phtml"%}
+				<div class="toRestaurant" style="text-align:center;">
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+					<span style="color:#ff9999;">≫</span><a href='{% "$baseUrl/mobile/kitchen/home"|mixiurl %}'>[Myレストランへ]</a><span style="color:#ff9999;">≪</span><br />
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+				</div><!--/.toRestaurant-->
+				<div class="line" style="background:#8bbd82;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+			</div><!--/.inner-->
+		</div><!--/.content-->
+	</div><!--/#editNameFinish-->
+
+{% /if %}
+
+{%include file="common/copyright.phtml"%}
+{%include file="footer.phtml"%}

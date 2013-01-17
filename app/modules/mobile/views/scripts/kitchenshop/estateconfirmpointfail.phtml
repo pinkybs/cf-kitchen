@@ -1,0 +1,65 @@
+{%include file="header.phtml"%}
+
+<div id="estateConfirm">
+	<div class="content" style="background:#eeffff;"> 
+		<div class="headline" style="background:#82bdba;color:#ffffff;text-align:center;">
+			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/estate.gif" width="230" height="60" /><br />
+			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+			{% $estateInfo.estate_name %}<br />
+		</div><!--/#headline-->
+		<div class="description">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			こちらの不動産を購入しますか?<br />
+		</div><!--/.description-->
+		<div class="thumb" style="text-align:center;">
+			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/estate/130x130/{% $estateInfo.estate_picture %}.gif" width="130" height="130" style="margin:3px 0;" /><br />
+			{% $estateInfo.estate_introduce %}<br />
+		</div><!--/.thumb-->
+		<div class="account">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			<table width="150" cellpadding="0" cellspacing="0" border="0" align="center" style="text-align:center;">
+				<tr>
+					<td colspan="2"><div class="line" style="background:#82bdba;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="1" /></div></td>
+				</tr>
+				<tr>
+					<td><div style="{% if $ua==1 %}font-size:x-small;{%/if%}text-align:left;">{% emoji code="F8E5" %}所持T</div></td>
+					<td><div style="{% if $ua==1 %}font-size:x-small;{%/if%}text-align:right;">{% $point %}T</div></td>
+				</tr>
+				<tr>
+					<td><div style="{% if $ua==1 %}font-size:x-small;{%/if%}text-align:left;">{% emoji code="F8E5" %}価格</div></td>
+					<td><div style="{% if $ua==1 %}font-size:x-small;{%/if%}text-align:right;">{% $estateInfo.estate_price_point %}T</div></td>
+				</tr>
+				{% if $estateInfo.disct > 0%}
+					<tr>
+						<td><div style="{% if $ua==1 %}font-size:x-small;{%/if%}text-align:left;">{% emoji code="F8E5" %}割引T</div></td>
+						<td><div style="color:#cc0000;{% if $ua==1 %}font-size:x-small;{%/if%}text-align:right;">-{% $estateInfo.disct %}T</div></td>
+					</tr>
+				{% /if %}
+				<tr>
+					<td><div style="{% if $ua==1 %}font-size:x-small;{%/if%}text-align:left;">{% emoji code="F8C4" %}ｼﾞｬﾝﾙ</div></td>
+					<td><div style="{% if $ua==1 %}font-size:x-small;{%/if%}text-align:right;">{% $genreName %}</div></td>
+				</tr>
+				<tr>
+					<td><div style="{% if $ua==1 %}font-size:x-small;{%/if%}text-align:left;">{% emoji code="F8D0" %}調理台</div></td>
+					<td><div style="{% if $ua==1 %}font-size:x-small;{%/if%}text-align:right;">{% $estateInfo.estate_id %}台</div></td>
+				</tr>
+				<tr>
+					<td colspan="2"><div class="line" style="background:#82bdba;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="1" /></div></td>
+				</tr>
+			</table>
+		</div><!--/.account-->
+		<div class="buy" style="color:#cc0000;text-align:center;">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+			{% emoji code="F997" %}ﾁｯﾌﾟが足りません<br />
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+		</div><!--/.buy-->
+		<div class="caution">
+			{% emoji code="F9DC" %}異なるｼﾞｬﾝﾙの不動産を購入すると､調理できる料理が変わります｡<br />
+		</div><!--/.caution-->
+		<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+		<div class="line" style="background:#82bdba;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+	</div><!--/.content-->
+</div><!--/#estateConfirm-->
+
+{%include file="common/browseback.phtml"%}
+{%include file="footer.phtml"%}

@@ -1,0 +1,28 @@
+	
+	<div class="campaign">
+		<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />	
+		{% emoji code="F8E6" %}<a href='{% "$baseUrl/mobile/kitchenstatic/info?CF_info=100429_diary_campaign"|mixiurl %}' style="color:#ff3399;"><span style="color:#ff3399;">5月:日記投稿で100M&amp;ｶﾞﾁｬｱｲﾃﾑ!</span></a><br />
+		{% emoji code="F99F" %}<a href='{% "$baseUrl/mobile/kitchenstatic/info?CF_info=100429_invite_campaign"|mixiurl %}' style="color:#cc33ff;"><span style="color:#cc33ff;">5月:ﾏｲﾐｸ招待で300M&amp;ﾚｼﾋﾟ辞典!</span></a><br />
+	</div><!--/.campaign-->
+	
+    <div id="common">
+		<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="6" /><br />
+	    {% if $myRes.total_level > 1 %}
+			{%emoji code="F8C4"%}<a href='{% "$baseUrl/mobile/kitchen/home"|mixiurl %}' accesskey="3">Myﾚｽﾄﾗﾝ</a>&nbsp;&nbsp;{%emoji code="F8D0"%}<a href='{% "$baseUrl/mobile/kitchenflash/kitchen?opensocial_app_id=`$APP_ID`&opensocial_owner_id=`$uid`&rand=`$rand`"|mobile_flashurl %}' accesskey="5">ﾏｲｷｯﾁﾝ</a>&nbsp;&nbsp;{%emoji code="F995"%}<a href='{% "$baseUrl/mobile/kitchen/rankinglist"|mixiurl %}'>ﾏｲﾐｸ店</a><br />
+			{%emoji code="F8E4"%}<a href='{% "$baseUrl/mobile/kitchenrecipe/recipelist"|mixiurl %}'>ﾚｼﾋﾟ図鑑</a> {%emoji code="F9B8"%}<a href='{% "$baseUrl/mobile/kitchenitem/index"|mixiurl %}'>ｱｲﾃﾑBOX</a> {%emoji code="F9EB"%}<a href='{% "$baseUrl/mobile/kitchenshop/shopping"|mixiurl %}'>ﾃﾞﾊﾟｰﾄ</a><br />
+		{% else %}
+		    {% if $myRes.level && $myRes.level==1 %}
+				{%emoji code="F987"%}<span style="color:#999999;">ｱﾌﾟﾘﾄｯﾌﾟ</span> {%emoji code="F8C4"%}<span style="color:#999999;">Myﾚｽﾄﾗﾝ</span> {%emoji code="F995"%}<span style="color:#999999;">ﾏｲﾐｸ店</span><br />
+				{%emoji code="F8E4"%}<span style="color:#999999;">ﾚｼﾋﾟ図鑑</span> {%emoji code="F9B8"%}<span style="color:#999999;">ｱｲﾃﾑBOX</span> {%emoji code="F9EB"%}<span style="color:#999999;">ﾃﾞﾊﾟｰﾄ</span><br />
+		    {% else %}
+				{%emoji code="F8C4"%}<a href='{% "$baseUrl/mobile/kitchen/home"|mixiurl %}' accesskey="3">Myﾚｽﾄﾗﾝ</a>&nbsp;&nbsp;{%emoji code="F8D0"%}<a href='{% "$baseUrl/mobile/kitchenflash/kitchen?opensocial_app_id=`$APP_ID`&opensocial_owner_id=`$uid`&rand=`$rand`"|mobile_flashurl %}' accesskey="5">ﾏｲｷｯﾁﾝ</a>&nbsp;&nbsp;{%emoji code="F995"%}<a href='{% "$baseUrl/mobile/kitchen/rankinglist"|mixiurl %}'>ﾏｲﾐｸ店</a><br />
+				{%emoji code="F8E4"%}<a href='{% "$baseUrl/mobile/kitchenrecipe/recipelist"|mixiurl %}'>ﾚｼﾋﾟ図鑑</a> {%emoji code="F9B8"%}<a href='{% "$baseUrl/mobile/kitchenitem/index"|mixiurl %}'>ｱｲﾃﾑBOX</a> {%emoji code="F9EB"%}<a href='{% "$baseUrl/mobile/kitchenshop/shopping"|mixiurl %}'>ﾃﾞﾊﾟｰﾄ</a><br />
+			{% /if %}
+		{% /if %}
+		<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+		<div class="line" style="background:#d0d0d0;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+		<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+		{%emoji code="F973"%}<a href='{% "invite:friends?callback=$baseUrl/mobile/callback/invite?forward=$baseUrl/mobile/kitchen/invitefinish" %}'>マイミクを招待する</a><br />
+		{%emoji code="F981"%}<a href='{% "$baseUrl/mobile/kitchenstatic/help"|mixiurl %}'>ヘルプ･よくある質問</a><br />
+	</div><!--/#common-->
+{%include file="common/copyright.phtml"%}

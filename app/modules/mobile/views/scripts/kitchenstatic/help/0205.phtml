@@ -1,0 +1,31 @@
+<div id="help">
+    <div class="content" style="background:#f0f5e0;">
+        <div class="headline" style="background:#8bbd82;color:#ffffff;text-align:center;">
+            <img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/help.gif" width="230" height="60" /><br />
+            <img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+            {% emoji code="F9BE" %}基本ルールと知識<br />
+        </div><!--/.headline-->
+		<div class="subHeadline" style="text-align:center;">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			<span style="color:#497d40;">レベルアップ</span><br />
+			<div class="line" style="background:#8bbd82;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="1" /></div>
+		</div><!--/.subHeadline-->
+        <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+        <div class="inner">
+			｢ようこそﾏｲｷｯﾁﾝ｣でのﾚﾍﾞﾙｱｯﾌﾟの説明は以下の通りです｡<br />
+			<br />
+			1.経験値を獲得し､一定数に達するとﾚﾍﾞﾙｱｯﾌﾟします｡<br />
+			<br />	2.ﾚﾍﾞﾙが上がるに連れて､ﾚｼﾋﾟ開発ができるようになったり､ﾏｲﾐｸのｷｯﾁﾝへ訪問できるようになったり､購入可能なｱｲﾃﾑが増えるなど､ｹﾞｰﾑの幅が増えていきます｡<br />
+			<br />
+			3.経験値・ﾚﾍﾞﾙは､ﾚｽﾄﾗﾝのｼﾞｬﾝﾙごとに別々にｶｳﾝﾄされます｡<br />
+        </div><!--/.inner-->
+        <div class="footlink">
+            <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+            <div style="background:#8bbd82;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+            <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			{% if $ua!=2 %}{% emoji code="F97E" %}{% else %}{% emoji code="F8F8" %}{% /if %}<a href='{% "$baseUrl/mobile/kitchenstatic/help"|mixiurl %}'>ヘルプ:もくじ</a><br />
+        </div><!--/.footlink-->
+        <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+        <div class="line" style="background:#8bbd82;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+    </div><!--/.content-->
+</div><!--/#help-->

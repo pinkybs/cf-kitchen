@@ -1,0 +1,32 @@
+<div id="help">
+    <div class="content" style="background:#f0f5e0;">
+        <div class="headline" style="background:#8bbd82;color:#ffffff;text-align:center;">
+            <img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/help.gif" width="230" height="60" /><br />
+            <img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+            {% emoji code="F9BE" %}基本ルールと知識<br />
+        </div><!--/.headline-->
+		<div class="subHeadline" style="text-align:center;">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			<span style="color:#497d40;">マイミクのキッチンを訪問</span><br />
+			<div class="line" style="background:#8bbd82;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="1" /></div>
+		</div><!--/.subHeadline-->
+        <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+        <div class="inner">
+			｢ようこそﾏｲｷｯﾁﾝ｣では､ﾏｲﾐｸのｷｯﾁﾝを訪問したときにお手伝いができます｡詳しくは以下の通りです｡<br />
+			<br />
+			1.ﾏｲﾐｸが運営するﾚｽﾄﾗﾝには､<a href='{% "$baseUrl/mobile/kitchen/home"|mixiurl %}'>Myﾚｽﾄﾗﾝ</a>の左右の矢印をｸﾘｯｸするか､<a href='{% "$baseUrl/mobile/kitchen/rankinglist"|mixiurl %}'>ﾏｲﾐｸ店</a>ﾘﾝｸから訪問できます｡<br />
+			<br />
+			2.ﾚﾍﾞﾙ2以上になると､ﾏｲﾐｸのｷｯﾁﾝの中に入って､完成した料理の味見をしたり､ﾊｴを飛ばす・ﾊｴ撃退・味付けなど､調理を手伝うことができるようになります｡<br />
+			<br />
+			3.ﾏｲﾐｸのｷｯﾁﾝを訪問すると､そのﾏｲﾐｸの来店履歴に手伝った内容が履歴として残ります｡<br />
+        </div><!--/.inner-->
+        <div class="footlink">
+            <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+            <div style="background:#8bbd82;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+            <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			{% if $ua!=2 %}{% emoji code="F97E" %}{% else %}{% emoji code="F8F8" %}{% /if %}<a href='{% "$baseUrl/mobile/kitchenstatic/help"|mixiurl %}'>ヘルプ:もくじ</a><br />
+        </div><!--/.footlink-->
+        <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+        <div class="line" style="background:#8bbd82;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+    </div><!--/.content-->
+</div><!--/#help-->

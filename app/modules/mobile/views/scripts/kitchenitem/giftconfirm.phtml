@@ -1,0 +1,42 @@
+{%include file="header.phtml"%}
+
+<div id="giftConfirm">
+	<div class="content" style="background:#f0f5e0;">
+		<div class="headline" style="background:#8bbd82;color:#ffffff;text-align:center;">
+			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/giftcenter.gif" width="230" height="60" /><br />
+			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+			{% $giftInfo.name %}<br />
+		</div><!--/.headline-->
+		<div class="description">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			このギフトを{% $tarName %}さんに贈りますか?<br />
+		</div><!--/.description-->
+		<div class="thumb" style="text-align:center;">
+			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/gift/130x130/{% $giftInfo.picture %}" width="130" height="130" style="margin:3px 0;" /><br />
+			{% $giftInfo.introduce %}<br />
+		</div><!--/.thumb-->
+		<div class="action">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+			<form id="fmok" method="post" action='{% "$baseUrl/mobile/kitchenitem/giftfinish"|mixiurl %}'>
+				<input type="hidden" name="hidgid" id="hidgid" value="{% $gid %}" />
+				<input type="hidden" name="hidtar" id="hidtar" value="{% $taruid %}" />
+				<div class="btn" style="text-align:center;">
+					<input type="submit" value=" 決 定 " />
+				</div><!--/.btn-->
+			</form>
+			<form id="fmcancel" method="post" action='{% "$baseUrl/mobile/kitchenitem/giftselect/giftId/`$giftInfo.gift_id`"|mixiurl %}'>
+				<input type="hidden" name="hidgid" id="hidgid" value="{% $gid %}" />
+				<input type="hidden" name="hidtar" id="hidtar" value="{% $taruid %}" />
+				<div class="btn" style="text-align:center;">
+					<input type="submit" value=" ｷｬﾝｾﾙ " />
+				</div><!--/.btn-->
+			</form>
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+		</div><!--/.action-->
+		<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+		<div class="line" style="background:#8bbd82;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+	</div><!--/.content-->
+</div><!--/#giftConfirm-->
+
+{%include file="common/browseback.phtml"%}
+{%include file="footer.phtml"%}

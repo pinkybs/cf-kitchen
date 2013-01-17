@@ -1,0 +1,133 @@
+{%include file="header.phtml"%}
+{%include file="common/ad_header.phtml"%}
+
+<div id="profile">
+
+	<div class="thumb" style="text-align:center;">
+		<object data='{% "$baseUrl/mobile/kitchenwrapper/profileswf?$paramStr&opensocial_app_id=`$APP_ID`&opensocial_owner_id=`$uid`&rand=`$rand`"|mobile_flashurl %}' type="application/x-shockwave-flash" width="130" height="130">
+			<param name="bgcolor" value="FFFFFF" />
+			<param name="loop" value="on" />
+			<param name="quality" value="high" />
+			<embed src='{% "$baseUrl/mobile/kitchenwrapper/profileswf?$paramStr&opensocial_app_id=`$APP_ID`&opensocial_owner_id=`$uid`&rand=`$rand`"|mobile_flashurl %}' width="130" height="130" loop="on" quality="high" bgcolor="#FFFFFF"></embed>
+		</object><br />
+		<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+	</div><!--/.thumb-->
+
+	{% if $ismine %}
+		<div class="diary">
+			{% assign var="diary_title" value="マイキチ日記:ようこそマイキッチン" %}
+			{% assign var="diary_body" value="◎きょうの出来事\n\n\n-----------------\nようこそマイキッチン\nhttp://mixi.jp/view_appli.pl?id=16235" %}
+			<form method="get" action="http://m.mixi.jp/add_diary.pl">
+				<input type="hidden" name="diary_title" value="{% $diary_title %}" />
+				<input type="hidden" name="diary_body" value="{% $diary_body %}" />
+				<input type="hidden" name="guid" value="ON" />
+				<div class="btn" style="text-align:center;">
+					<input type="submit" value=" マイキチ日記を書く " /><br />
+				</div><!--/.btn-->
+			</form>
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+		</div><!--/.diary-->
+	{% else %}
+		{%*
+			<div class="message">
+				{% assign var="message_title" value="【ようこそマイキッチン】"|cat:$user.displayName|cat:"からのお便り" %}
+				{% assign var="message_body" value="◎メッセージ\n\n\n-----------------\nようこそマイキッチン\nhttp://mixi.jp/view_appli.pl?id=16235" %}
+				<form method="post" action='{% "send:message?callback=$baseUrl/mobile/callback/message?forward=$baseUrl/mobile/kitchen/sendfinish" %}'>
+					<input type="text" name="recipients" value="{% $data.uid %}" />
+					<input type="text" name="title" value="{% $message_title %}" />
+					<input type="text" name="body" value="{% $message_body %}" />
+					<div class="btn" style="text-align:center;">
+						<input type="submit" value=" メッセージを送る " /><br />
+					</div><!--/.btn-->
+				</form>
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			</div><!--/.message-->
+		*%}
+	{% /if %}
+
+	<div id="summary" style="background:#ffffdd;">
+		<div class="line" style="background:#ab9575;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+		<div class="inner">
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			{% emoji code="F995" %}{%$user.displayName%}<br />
+			{%emoji code="F8D0"%}ﾚﾍﾞﾙ:{%$user.lv%}<br />
+			{% emoji code="F8E5" %}{%$user.point%} {% emoji code="F8C8" %}{%$user.gold%}<br />
+			{% emoji code="F8E4" %}ﾚｼﾋﾟ開発:{%$allUserRecipe%}件<br />
+			{% emoji code="F8E6" %}ｷﾞﾌﾄ送付:{%$user.gift_count%}件<br />
+	    </div><!--/.inner-->
+		<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+		<div class="line" style="background:#ab9575;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+	</div><!--/#summary-->
+
+	<div id="restaurantList">
+		<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+		<div class="content" style="background:#f0f5e0;">
+			<div class="headline" style="background:#8bbd82;color:#ffffff;text-align:center;">
+				<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+				経営中のレストラン<br />
+				<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+			</div><!--/.headline-->
+			<div class="inner">
+				{% foreach from=$rest item=data%}
+					<div class="section">
+						<table width="100%" cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td style="width:44px;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/{%$data.img_path%}" width="40" height="40" style="margin:3px 0;" /></td>
+								<td><div style="{% if $ua==1 %}font-size:x-small;{%/if%}">
+									[{%$data.rest_name%}]{%$data.name%}<br />
+									{% emoji code="F8E4" %}ﾚｼﾋﾟ図鑑:<a href='{% "$baseUrl/mobile/kitchenrecipe/recipelist?CF_genre=`$data.genre`&CF_uid=`$data.uid`"|mixiurl %}'>{%$data.recipe_count%}/{%$data.total_recipe%}</a><br />
+									{% if $ismine %}
+										{% if $data.in_use %}<span style="color:#cc0000;">{% if $ua!=2 %}{% emoji code="F983" %}{% else %}{% emoji code="F9EF" %}{% /if %}使用中</span>{% else %}<a href='{% "$baseUrl/mobile/kitchen/changerestaurant?CF_genre=`$data.genre`"|mixiurl %}'>使用する</a>{% /if %} {% emoji code="F9BE" %}<a href='{% "$baseUrl/mobile/kitchenfirst/editname?CF_genre=`$data.genre`&CF_changeFlag=1"|mixiurl %}'>店名変更</a><br />
+									{% else %}
+										{% if $data.in_use %}{% emoji code="F8F2" %}<a href='{% "$baseUrl/mobile/kitchen/home?CF_genre=`$data.genre`&CF_uid=`$data.uid`"|mixiurl %}'>この店を見る</a><br />{% else %}{% emoji code="F8F2" %}<span style="color:#999999;">この店を見る</span><br />{% /if %}
+									{%/if%}
+								</div></td>
+							</tr>
+						</table>
+						<div class="line" style="background:#8bbd82;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+					</div><!--/.section-->
+				{% /foreach %}
+			</div><!--/.inner-->
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			<div class="headline" style="background:#8bbd82;color:#ffffff;text-align:center;">
+				<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+				作ったレシピの数<br />
+				<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+			</div><!--/.headline-->
+			<div class="inner">
+				<div class="description">
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+					全{%$totalRecipeCount%}種類のうち<span style="color:#cc0000;">{%$allUserRecipe%}</span>種類<br />
+					{% foreach from=$rest item=data%}
+						{%$data.rest_name%}:<a href='{% "$baseUrl/mobile/kitchenrecipe/recipelist?CF_genre=`$data.genre`&CF_uid=`$user.uid`"|mixiurl %}'>{%$data.recipe_count%}/{%$data.total_recipe%}</a><br />
+					{% /foreach %}
+				</div><!--/.description-->
+				{%*
+				<div class="about" style="text-align:right;">
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+					<div class="line" style="background:#8bbd82;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+					<span style="color:#ff9999;">⇒</span><a href='{% "$baseUrl/mobile/kitchenstatic/helpdetail"|mixiurl %}'>レシピ図鑑について</a><br />
+				</div><!--/.about-->
+				*%}
+			</div><!--/.inner-->
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			<div class="line" style="background:#8bbd82;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+		</div><!--/.content-->
+	</div><!--/#restaurantList-->
+
+	<div class="footlink">
+		<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+		{% if $ismine %}
+			{% if $ua!=2 %}{% emoji code="F97E" %}{% else %}{% emoji code="F8F8" %}{% /if %}<a href='{% "$baseUrl/mobile/kitchen/home?CF_uid=`$data.uid`"|mixiurl %}'>Myレストラン</a><br />
+		{% else %}
+			{% if $ua!=2 %}{% emoji code="F97E" %}{% else %}{% emoji code="F8F8" %}{% /if %}<a href='{% "$baseUrl/mobile/kitchen/home?CF_uid=`$data.uid`"|mixiurl %}'>{%$user.displayName%}のお店</a><br />
+		{% /if %}
+		<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+		<div class="line" style="background:#d0d0d0;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+	</div><!--/.footlink-->
+
+</div><!--/#profile-->
+
+{%include file="common/menu.phtml"%}
+{%include file="ad_footer.phtml"%}

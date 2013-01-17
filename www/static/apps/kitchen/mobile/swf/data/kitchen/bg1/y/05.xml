@@ -1,0 +1,173 @@
+<bounds>
+          <Rectangle left="0" right="4800" top="0" bottom="9600"/>
+        </bounds>
+        <styles>
+          <StyleList>
+            <fillStyles>
+              <Solid>
+                <color>
+                  <Color red="255" green="204" blue="204"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="196" green="145" blue="130"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="255" green="255" blue="255"/>
+                </color>
+              </Solid>
+            </fillStyles>
+            <lineStyles/>
+          </StyleList>
+        </styles>
+        <shapes>
+          <Shape>
+            <edges>
+              <ShapeSetup x="4800" y="424" fillStyle0="1"/>
+              <LineTo x="0" y="-424"/>
+              <LineTo x="-315" y="0"/>
+              <ShapeSetup fillStyle1="3"/>
+              <LineTo x="-874" y="2400"/>
+              <ShapeSetup fillStyle1="0"/>
+              <LineTo x="469" y="0"/>
+              <ShapeSetup fillStyle1="3"/>
+              <LineTo x="720" y="-1976"/>
+              <ShapeSetup fillStyle0="0"/>
+              <LineTo x="0" y="1289"/>
+              <LineTo x="-250" y="687"/>
+              <LineTo x="-470" y="0"/>
+              <ShapeSetup x="4015" y="0" fillStyle0="1" fillStyle1="0"/>
+              <LineTo x="-469" y="0"/>
+              <LineTo x="-874" y="2400"/>
+              <LineTo x="469" y="0"/>
+              <ShapeSetup fillStyle1="3"/>
+              <LineTo x="874" y="-2400"/>
+              <ShapeSetup fillStyle0="0"/>
+              <LineTo x="470" y="0"/>
+              <ShapeSetup x="4800" y="2400" fillStyle0="1" fillStyle1="0"/>
+              <LineTo x="0" y="-648"/>
+              <LineTo x="-236" y="648"/>
+              <LineTo x="236" y="0"/>
+              <ShapeSetup x="3070" y="0"/>
+              <LineTo x="-470" y="0"/>
+              <ShapeSetup fillStyle1="3"/>
+              <LineTo x="-874" y="2400"/>
+              <ShapeSetup fillStyle1="0"/>
+              <LineTo x="470" y="0"/>
+              <ShapeSetup fillStyle1="3"/>
+              <LineTo x="874" y="-2400"/>
+              <ShapeSetup fillStyle0="0"/>
+              <LineTo x="469" y="0"/>
+              <LineTo x="-874" y="2400"/>
+              <LineTo x="-469" y="0"/>
+              <ShapeSetup x="2130" y="0" fillStyle0="1" fillStyle1="0"/>
+              <LineTo x="-469" y="0"/>
+              <LineTo x="-874" y="2400"/>
+              <LineTo x="469" y="0"/>
+              <ShapeSetup fillStyle1="3"/>
+              <LineTo x="874" y="-2400"/>
+              <ShapeSetup fillStyle0="0"/>
+              <LineTo x="470" y="0"/>
+              <ShapeSetup x="238" y="0" fillStyle0="1" fillStyle1="0"/>
+              <LineTo x="-238" y="0"/>
+              <LineTo x="0" y="653"/>
+              <ShapeSetup fillStyle1="3"/>
+              <LineTo x="238" y="-653"/>
+              <ShapeSetup fillStyle0="0"/>
+              <LineTo x="470" y="0"/>
+              <ShapeSetup fillStyle1="1"/>
+              <LineTo x="469" y="0"/>
+              <ShapeSetup fillStyle1="3"/>
+              <LineTo x="470" y="0"/>
+              <LineTo x="-874" y="2400"/>
+              <LineTo x="-470" y="0"/>
+              <ShapeSetup fillStyle1="1"/>
+              <LineTo x="-303" y="0"/>
+              <LineTo x="0" y="-458"/>
+              <ShapeSetup fillStyle1="3"/>
+              <LineTo x="0" y="-1289"/>
+              <ShapeSetup x="708" y="0" fillStyle0="1"/>
+              <LineTo x="-708" y="1942"/>
+              <ShapeSetup x="303" y="2400"/>
+              <LineTo x="874" y="-2400"/>
+              <ShapeSetup x="1256" y="2400" fillStyle0="3" fillStyle1="0"/>
+              <LineTo x="470" y="0"/>
+              <ShapeSetup x="447" y="7201" fillStyle0="1"/>
+              <LineTo x="-447" y="0"/>
+              <LineTo x="0" y="1225"/>
+              <ShapeSetup fillStyle1="3"/>
+              <LineTo x="447" y="-1225"/>
+              <ShapeSetup fillStyle0="0"/>
+              <LineTo x="469" y="0"/>
+              <LineTo x="-874" y="2399"/>
+              <LineTo x="-42" y="0"/>
+              <LineTo x="0" y="-1174"/>
+              <ShapeSetup x="1392" y="7201" fillStyle0="1" fillStyle1="0"/>
+              <LineTo x="-469" y="0"/>
+              <LineTo x="-874" y="2399"/>
+              <LineTo x="469" y="0"/>
+              <ShapeSetup fillStyle1="3"/>
+              <LineTo x="874" y="-2399"/>
+              <ShapeSetup fillStyle0="0"/>
+              <LineTo x="470" y="0"/>
+              <ShapeSetup fillStyle1="1"/>
+              <LineTo x="469" y="0"/>
+              <ShapeSetup fillStyle1="3"/>
+              <LineTo x="470" y="0"/>
+              <LineTo x="-874" y="2399"/>
+              <LineTo x="-470" y="0"/>
+              <ShapeSetup fillStyle1="1"/>
+              <LineTo x="-469" y="0"/>
+              <ShapeSetup fillStyle1="3"/>
+              <LineTo x="-470" y="0"/>
+              <ShapeSetup x="3754" y="7201" fillStyle0="3" fillStyle1="0"/>
+              <LineTo x="-469" y="0"/>
+              <ShapeSetup fillStyle1="1"/>
+              <LineTo x="-874" y="2399"/>
+              <ShapeSetup fillStyle1="0"/>
+              <LineTo x="469" y="0"/>
+              <ShapeSetup fillStyle1="1"/>
+              <LineTo x="874" y="-2399"/>
+              <ShapeSetup fillStyle0="0"/>
+              <LineTo x="470" y="0"/>
+              <ShapeSetup fillStyle1="3"/>
+              <LineTo x="469" y="0"/>
+              <LineTo x="-874" y="2399"/>
+              <LineTo x="-469" y="0"/>
+              <ShapeSetup fillStyle1="1"/>
+              <LineTo x="-470" y="0"/>
+              <ShapeSetup x="4800" y="8217" fillStyle0="1" fillStyle1="0"/>
+              <LineTo x="0" y="-1016"/>
+              <LineTo x="-99" y="0"/>
+              <LineTo x="-875" y="2399"/>
+              <LineTo x="470" y="0"/>
+              <ShapeSetup fillStyle1="3"/>
+              <LineTo x="504" y="-1383"/>
+              <ShapeSetup fillStyle0="0"/>
+              <LineTo x="0" y="1289"/>
+              <ShapeSetup fillStyle1="1"/>
+              <LineTo x="0" y="94"/>
+              <LineTo x="-34" y="0"/>
+              <ShapeSetup fillStyle1="3"/>
+              <LineTo x="-470" y="0"/>
+              <ShapeSetup x="3285" y="7201" fillStyle0="1" fillStyle1="0"/>
+              <LineTo x="-470" y="0"/>
+              <LineTo x="-874" y="2399"/>
+              <LineTo x="470" y="0"/>
+              <ShapeSetup x="3141" y="2400" fillStyle0="3"/>
+              <LineTo x="470" y="0"/>
+              <ShapeSetup x="4800" y="9506" fillStyle0="1" fillStyle1="3"/>
+              <LineTo x="-34" y="94"/>
+              <ShapeSetup x="1862" y="7201"/>
+              <LineTo x="-874" y="2399"/>
+              <ShapeSetup x="1457" y="9600"/>
+              <LineTo x="874" y="-2399"/>
+              <ShapeSetup x="4224" y="7201" fillStyle0="3" fillStyle1="1"/>
+              <LineTo x="-874" y="2399"/>
+              <ShapeSetup/>
+            </edges>
+          </Shape>
+        </shapes>

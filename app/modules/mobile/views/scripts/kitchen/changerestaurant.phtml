@@ -1,0 +1,78 @@
+{% if $step == 'confirm' %}
+
+	{%include file="header.phtml"%}
+
+	<div id="changeRestaurant">
+		<div class="content" style="background:#f0f5e0;">
+			<div class="headline" style="background:#8bbd82;color:#ffffff;text-align:center;">
+				<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+				運営するお店を変更する<br />
+				<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+			</div><!--/.headline-->
+			<div class="inner">
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				運営するお店を以下に変更してもよろしいですか?よろしければ[変更]を押してください｡<br />
+				<div class="thumb" style="text-align:center;">
+					<img src="{%$staticUrl%}/apps/kitchen/mobile/img/estate/130x130/{% $changeRestInfo.genre_alp %}/{% $changeRestInfo.estate_pic %}.gif" width="130" height="130" style="margin:3px 0;" /><br />
+					{% $restName %}({% $genreName %})<br />
+				</div><!--/.thumb-->
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+				<form method="post" action='{% "$baseUrl/mobile/kitchen/changerestaurant"|mixiurl %}'>
+					<input type="hidden" name="CF_step" value="complete"/>
+					<input type="hidden" name="CF_genre" value="{% $genre %}"/>
+					<div class="btn" style="text-align:center;">
+						<input type="submit" value=" 変 更 " />
+					</div><!--/.btn-->
+				</form>
+				<form method="post" action='{% "$baseUrl/mobile/kitchen/profile"|mixiurl %}'>
+					<input type="hidden" name="CF_uid" value="{% $uid %}"/>
+					<div class="btn" style="text-align:center;">
+						<input type="submit" value=" ｷｬﾝｾﾙ " />
+					</div><!--/.btn-->
+				</form>
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+				<div class="caution">
+					{%emoji code="F9DC"%}ご注意ください{%emoji code="F9DC"%}
+					・変更時に運営中のお店で調理中の料理があった場合､すべて無効となります。<br />
+					・複数のお店を同時に運営することはできませんので､ご注意ください｡<br />
+				</div><!--/.caution-->
+			</div><!--/.inner-->
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			<div class="line" style="background:#8bbd82;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+		</div><!--/.content-->
+	</div><!--/#changeRestaurant-->
+
+	{%include file="common/browseback.phtml"%}
+	{%include file="footer.phtml"%}
+
+{% elseif $step == 'complete' %}
+
+	{%include file="header.phtml"%}
+
+	<div id="changeRestaurantFinish">
+		<div class="content" style="background:#f0f5e0;">
+			<div class="headline" style="background:#8bbd82;color:#ffffff;text-align:center;">
+				<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+				運営するお店を変更する<br />
+				<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+			</div><!--/.headline-->
+			<div class="inner">
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				運営するお店を変更しました!<br />
+
+				{%include file="common/ad_192x106.phtml"%}
+
+				<div class="toRestaurant" style="text-align:center;">
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+					<span style="color:#ff9999;">≫</span><a href='{% "$baseUrl/mobile/kitchen/home?CF_uid=`$uid`"|mixiurl %}'>Myレストランへ</a><span style="color:#ff9999;">≪</span><br />
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+				</div><!--/.toRestaurant-->
+				<div class="line" style="background:#8bbd82;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+			</div><!--/.inner-->
+	    </div><!--/.content-->
+	</div><!--/#changeRestaurantFinish-->
+
+	{%include file="common/menu.phtml"%}
+	{%include file="footer.phtml"%}
+
+{% /if %}

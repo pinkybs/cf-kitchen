@@ -1,0 +1,4111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<swf version="4" compressed="0">
+  <Header framerate="12" frames="1">
+    <size>
+      <Rectangle left="0" right="4800" top="0" bottom="4800"/>
+    </size>
+    <tags>
+      <SetBackgroundColor>
+        <color>
+          <Color red="0" green="0" blue="0"/>
+        </color>
+      </SetBackgroundColor>
+      <DoAction>
+        <actions>
+          <Stop/>
+          <PushData>
+            <items>
+              <StackString value=""/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="17"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="0"/>
+            </items>
+          </PushData>
+          <SetProperty/>
+          <PushData>
+            <items>
+              <StackString value="baseUrl"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="{%baseUrl%}"/>
+            </items>
+          </PushData>
+          <SetVariable/>
+          <PushData>
+            <items>
+              <StackString value="vid"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="{%vid%}"/>
+            </items>
+          </PushData>
+          <SetVariable/>
+          <PushData>
+            <items>
+              <StackString value="oid"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="{%oid%}"/>
+            </items>
+          </PushData>
+          <SetVariable/>
+          <PushData>
+            <items>
+              <StackString value="scene"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="start"/>
+            </items>
+          </PushData>
+          <SetVariable/>
+          <PushData>
+            <items>
+              <StackString value="b1_flg"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="{%b1_flg%}"/>
+            </items>
+          </PushData>
+          <SetVariable/>
+          <PushData>
+            <items>
+              <StackString value="b2_flg"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="{%b2_flg%}"/>
+            </items>
+          </PushData>
+          <SetVariable/>
+          <PushData>
+            <items>
+              <StackString value="b3_flg"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="{%b3_flg%}"/>
+            </items>
+          </PushData>
+          <SetVariable/>
+          <PushData>
+            <items>
+              <StackString value="b4_flg"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="{%b4_flg%}"/>
+            </items>
+          </PushData>
+          <SetVariable/>
+          <PushData>
+            <items>
+              <StackString value="b5_flg"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="{%b5_flg%}"/>
+            </items>
+          </PushData>
+          <SetVariable/>
+          <PushData>
+            <items>
+              <StackString value="b6_flg"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="{%b6_flg%}"/>
+            </items>
+          </PushData>
+          <SetVariable/>
+          <PushData>
+            <items>
+              <StackString value="b7_flg"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="{%b7_flg%}"/>
+            </items>
+          </PushData>
+          <SetVariable/>
+          <PushData>
+            <items>
+              <StackString value="b8_flg"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="{%b8_flg%}"/>
+            </items>
+          </PushData>
+          <SetVariable/>
+          <PushData>
+            <items>
+              <StackString value="b9_flg"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="{%b9_flg%}"/>
+            </items>
+          </PushData>
+          <SetVariable/>
+          <PushData>
+            <items>
+              <StackString value="b10_flg"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="{%b10_flg%}"/>
+            </items>
+          </PushData>
+          <SetVariable/>
+          <PushData>
+            <items>
+              <StackString value="b11_flg"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="{%b11_flg%}"/>
+            </items>
+          </PushData>
+          <SetVariable/>
+          <PushData>
+            <items>
+              <StackString value="b12_flg"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="{%b12_flg%}"/>
+            </items>
+          </PushData>
+          <SetVariable/>
+          <PushData>
+            <items>
+              <StackString value="b13_flg"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="{%b13_flg%}"/>
+            </items>
+          </PushData>
+          <SetVariable/>
+          <PushData>
+            <items>
+              <StackString value="b14_flg"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="{%b14_flg%}"/>
+            </items>
+          </PushData>
+          <SetVariable/>
+          <PushData>
+            <items>
+              <StackString value="b15_flg"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="{%b15_flg%}"/>
+            </items>
+          </PushData>
+          <SetVariable/>
+          <PushData>
+            <items>
+              <StackString value="b16_flg"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="{%b16_flg%}"/>
+            </items>
+          </PushData>
+          <SetVariable/>
+          <PushData>
+            <items>
+              <StackString value="b17_flg"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="{%b17_flg%}"/>
+            </items>
+          </PushData>
+          <SetVariable/>
+          <PushData>
+            <items>
+              <StackString value="b18_flg"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="{%b18_flg%}"/>
+            </items>
+          </PushData>
+          <SetVariable/>
+          <PushData>
+            <items>
+              <StackString value="b19_flg"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="{%b19_flg%}"/>
+            </items>
+          </PushData>
+          <SetVariable/>
+          <PushData>
+            <items>
+              <StackString value="b20_flg"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="{%b20_flg%}"/>
+            </items>
+          </PushData>
+          <SetVariable/>
+          <PushData>
+            <items>
+              <StackString value="b21_flg"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="{%b21_flg%}"/>
+            </items>
+          </PushData>
+          <SetVariable/>
+          <PushData>
+            <items>
+              <StackString value="b22_flg"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="{%b22_flg%}"/>
+            </items>
+          </PushData>
+          <SetVariable/>
+          <PushData>
+            <items>
+              <StackString value="b23_flg"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="{%b23_flg%}"/>
+            </items>
+          </PushData>
+          <SetVariable/>
+          <PushData>
+            <items>
+              <StackString value="b24_flg"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="{%b24_flg%}"/>
+            </items>
+          </PushData>
+          <SetVariable/>
+          <PushData>
+            <items>
+              <StackString value="b25_flg"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="{%b25_flg%}"/>
+            </items>
+          </PushData>
+          <SetVariable/>
+          <PushData>
+            <items>
+              <StackString value="b26_flg"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="{%b26_flg%}"/>
+            </items>
+          </PushData>
+          <SetVariable/>
+          <PushData>
+            <items>
+              <StackString value="b27_flg"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="{%b27_flg%}"/>
+            </items>
+          </PushData>
+          <SetVariable/>
+          <PushData>
+            <items>
+              <StackString value="b28_flg"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="{%b28_flg%}"/>
+            </items>
+          </PushData>
+          <SetVariable/>
+          <PushData>
+            <items>
+              <StackString value="b29_flg"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="{%b29_flg%}"/>
+            </items>
+          </PushData>
+          <SetVariable/>
+          <PushData>
+            <items>
+              <StackString value="b30_flg"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="{%b30_flg%}"/>
+            </items>
+          </PushData>
+          <SetVariable/>
+          <PushData>
+            <items>
+              <StackString value="i"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="1"/>
+            </items>
+          </PushData>
+          <SetVariable/>
+          <PushData>
+            <items>
+              <StackString value="30"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="i"/>
+            </items>
+          </PushData>
+          <GetVariable/>
+          <LessThanCast/>
+          <LogicalNOT/>
+          <LogicalNOT/>
+          <BranchIfTrue byteOffset="276"/>
+          <PushData>
+            <items>
+              <StackString value="/:"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="b"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="i"/>
+            </items>
+          </PushData>
+          <GetVariable/>
+          <ConcatenateString/>
+          <PushData>
+            <items>
+              <StackString value="_flg"/>
+            </items>
+          </PushData>
+          <ConcatenateString/>
+          <ConcatenateString/>
+          <GetVariable/>
+          <PushData>
+            <items>
+              <StackString value="0"/>
+            </items>
+          </PushData>
+          <EqualCast/>
+          <LogicalNOT/>
+          <BranchIfTrue byteOffset="204"/>
+          <PushData>
+            <items>
+              <StackString value="objectPos"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="i"/>
+            </items>
+          </PushData>
+          <GetVariable/>
+          <SetVariable/>
+          <PushData>
+            <items>
+              <StackString value="i"/>
+            </items>
+          </PushData>
+          <GetVariable/>
+          <PushData>
+            <items>
+              <StackString value="10"/>
+            </items>
+          </PushData>
+          <LessThanCast/>
+          <LogicalNOT/>
+          <BranchIfTrue byteOffset="21"/>
+          <PushData>
+            <items>
+              <StackString value="i"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="0"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="i"/>
+            </items>
+          </PushData>
+          <GetVariable/>
+          <ConcatenateString/>
+          <SetVariable/>
+          <PushData>
+            <items>
+              <StackString value="xpos"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="/field/"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="b"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="i"/>
+            </items>
+          </PushData>
+          <GetVariable/>
+          <ConcatenateString/>
+          <ConcatenateString/>
+          <PushData>
+            <items>
+              <StackString value="0"/>
+            </items>
+          </PushData>
+          <GetProperty/>
+          <PushData>
+            <items>
+              <StackString value="/field"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="0"/>
+            </items>
+          </PushData>
+          <GetProperty/>
+          <AddCast/>
+          <SetVariable/>
+          <PushData>
+            <items>
+              <StackString value="ypos"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="/field/"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="b"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="i"/>
+            </items>
+          </PushData>
+          <GetVariable/>
+          <ConcatenateString/>
+          <ConcatenateString/>
+          <PushData>
+            <items>
+              <StackString value="1"/>
+            </items>
+          </PushData>
+          <GetProperty/>
+          <PushData>
+            <items>
+              <StackString value="/field"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="1"/>
+            </items>
+          </PushData>
+          <GetProperty/>
+          <AddCast/>
+          <SetVariable/>
+          <PushData>
+            <items>
+              <StackString value="i"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="31"/>
+            </items>
+          </PushData>
+          <SetVariable/>
+          <PushData>
+            <items>
+              <StackString value="i"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="i"/>
+            </items>
+          </PushData>
+          <GetVariable/>
+          <PushData>
+            <items>
+              <StackString value="1"/>
+            </items>
+          </PushData>
+          <AddCast/>
+          <SetVariable/>
+          <BranchAlways byteOffset="65238"/>
+          <SetTarget label="/object"/>
+          <PushData>
+            <items>
+              <StackString value=""/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="0"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="/:xpos"/>
+            </items>
+          </PushData>
+          <GetVariable/>
+          <SetProperty/>
+          <SetTarget label=""/>
+          <SetTarget label="/object"/>
+          <PushData>
+            <items>
+              <StackString value=""/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="1"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="/:ypos"/>
+            </items>
+          </PushData>
+          <GetVariable/>
+          <SetProperty/>
+          <SetTarget label=""/>
+          <SetTarget label="/marker"/>
+          <PushData>
+            <items>
+              <StackString value=""/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="0"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="/:xpos"/>
+            </items>
+          </PushData>
+          <GetVariable/>
+          <SetProperty/>
+          <SetTarget label=""/>
+          <SetTarget label="/marker"/>
+          <PushData>
+            <items>
+              <StackString value=""/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="1"/>
+            </items>
+          </PushData>
+          <PushData>
+            <items>
+              <StackString value="/:ypos"/>
+            </items>
+          </PushData>
+          <GetVariable/>
+          <SetProperty/>
+          <SetTarget label=""/>
+          <EndAction/>
+        </actions>
+      </DoAction>
+      <DefineShape objectID="1">
+        {%bg%}
+      </DefineShape>
+      <DefineSprite objectID="2" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="1" objectID="1">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <PlaceObject2 replace="0" depth="1" objectID="2" name="bg">
+        <transform>
+          <Transform transX="0" transY="550"/>
+        </transform>
+      </PlaceObject2>
+      <DefineShape objectID="3">
+      	{%building%}
+      </DefineShape>
+      <DefineSprite objectID="4" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="1" objectID="3">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <PlaceObject2 replace="0" depth="3" objectID="4" name="building">
+        <transform>
+          <Transform transX="1580" transY="900"/>
+        </transform>
+      </PlaceObject2>
+
+      {%b01_30%}
+
+      <DefineSprite objectID="6" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="2" objectID="5">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="14" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="1" objectID="13">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="30" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="29">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="48" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="1" objectID="47">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="10" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="2" objectID="9">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="22" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="1" objectID="21">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="40" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="39">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="58" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="1" objectID="57">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="16" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="1" objectID="15">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="32" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="31">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="50" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="49">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="24" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="23">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="42" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="41">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="60" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="59">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="34" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="33">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="52" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="51">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="26" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="25">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="44" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="43">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="62" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="61">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="18" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="17">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="36" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="35">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="54" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="53">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="12" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="11">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="28" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="27">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="46" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="45">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="64" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="63">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="8" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="7">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="20" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="19">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="38" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="37">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="56" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="3" objectID="55">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="65" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="1" objectID="6" name="b01">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="15" objectID="14" name="b02">
+            <transform>
+              <Transform transX="0" transY="400"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="41" objectID="30" name="b03">
+            <transform>
+              <Transform transX="0" transY="800"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="77" objectID="48" name="b04">
+            <transform>
+              <Transform transX="0" transY="1200"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="8" objectID="10" name="b05">
+            <transform>
+              <Transform transX="480" transY="200"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="27" objectID="22" name="b06">
+            <transform>
+              <Transform transX="480" transY="600"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="61" objectID="40" name="b07">
+            <transform>
+              <Transform transX="480" transY="1000"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="95" objectID="58" name="b08">
+            <transform>
+              <Transform transX="480" transY="1400"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="17" objectID="16" name="b09">
+            <transform>
+              <Transform transX="960" transY="400"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="45" objectID="32" name="b10">
+            <transform>
+              <Transform transX="960" transY="800"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="79" objectID="50" name="b11">
+            <transform>
+              <Transform transX="960" transY="1200"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="29" objectID="24" name="b12">
+            <transform>
+              <Transform transX="1440" transY="600"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="65" objectID="42" name="b13">
+            <transform>
+              <Transform transX="1440" transY="1000"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="97" objectID="60" name="b14">
+            <transform>
+              <Transform transX="1440" transY="1400"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="49" objectID="34" name="b15">
+            <transform>
+              <Transform transX="1920" transY="800"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="83" objectID="52" name="b16">
+            <transform>
+              <Transform transX="1920" transY="1200"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="33" objectID="26" name="b17">
+            <transform>
+              <Transform transX="2400" transY="600"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="69" objectID="44" name="b18">
+            <transform>
+              <Transform transX="2400" transY="1000"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="101" objectID="62" name="b19">
+            <transform>
+              <Transform transX="2400" transY="1400"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="19" objectID="18" name="b20">
+            <transform>
+              <Transform transX="2880" transY="400"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="53" objectID="36" name="b21">
+            <transform>
+              <Transform transX="2880" transY="800"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="87" objectID="54" name="b22">
+            <transform>
+              <Transform transX="2880" transY="1200"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="11" objectID="12" name="b23">
+            <transform>
+              <Transform transX="3360" transY="200"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="37" objectID="28" name="b24">
+            <transform>
+              <Transform transX="3360" transY="600"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="73" objectID="46" name="b25">
+            <transform>
+              <Transform transX="3360" transY="1000"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="105" objectID="64" name="b26">
+            <transform>
+              <Transform transX="3360" transY="1400"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="4" objectID="8" name="b27">
+            <transform>
+              <Transform transX="3840" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="23" objectID="20" name="b28">
+            <transform>
+              <Transform transX="3840" transY="400"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="57" objectID="38" name="b29">
+            <transform>
+              <Transform transX="3840" transY="800"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="91" objectID="56" name="b30">
+            <transform>
+              <Transform transX="3840" transY="1200"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <PlaceObject2 replace="0" depth="5" objectID="65" name="field">
+        <transform>
+          <Transform transX="140" transY="2020"/>
+        </transform>
+      </PlaceObject2>
+      <DefineShape objectID="66">
+        <bounds>
+          <Rectangle left="0" right="680" top="0" bottom="400"/>
+        </bounds>
+        <styles>
+          <StyleList>
+            <fillStyles>
+              <Solid>
+                <color>
+                  <Color red="255" green="0" blue="0"/>
+                </color>
+              </Solid>
+            </fillStyles>
+            <lineStyles/>
+          </StyleList>
+        </styles>
+        <shapes>
+          <Shape>
+            <edges>
+              <ShapeSetup x="612" y="200" fillStyle1="1"/>
+              <LineTo x="-160" y="-160"/>
+              <LineTo x="-224" y="0"/>
+              <LineTo x="-160" y="160"/>
+              <LineTo x="160" y="160"/>
+              <LineTo x="224" y="0"/>
+              <LineTo x="160" y="-160"/>
+              <ShapeSetup x="480" y="0" fillStyle0="1" fillStyle1="0"/>
+              <LineTo x="-280" y="0"/>
+              <LineTo x="-200" y="200"/>
+              <LineTo x="200" y="200"/>
+              <LineTo x="280" y="0"/>
+              <LineTo x="200" y="-200"/>
+              <LineTo x="-200" y="-200"/>
+              <ShapeSetup/>
+            </edges>
+          </Shape>
+        </shapes>
+      </DefineShape>
+      <DefineSprite objectID="67" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="1" objectID="66">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <DefineSprite objectID="68" frames="10">
+        <tags>
+          <PlaceObject2 replace="0" depth="1" objectID="67">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <PlaceObject2 replace="1" depth="1">
+            <transform>
+              <Transform scaleX="1.055557250976562" scaleY="1.055557250976562" transX="-19" transY="-11"/>
+            </transform>
+            <colorTransform>
+              <ColorTransform2 factorRed="256" factorGreen="256" factorBlue="256" factorAlpha="228"/>
+            </colorTransform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <PlaceObject2 replace="1" depth="1">
+            <transform>
+              <Transform scaleX="1.111114501953125" scaleY="1.111114501953125" transX="-38" transY="-22"/>
+            </transform>
+            <colorTransform>
+              <ColorTransform2 factorRed="256" factorGreen="256" factorBlue="256" factorAlpha="199"/>
+            </colorTransform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <PlaceObject2 replace="1" depth="1">
+            <transform>
+              <Transform scaleX="1.166671752929688" scaleY="1.166671752929688" transX="-57" transY="-33"/>
+            </transform>
+            <colorTransform>
+              <ColorTransform2 factorRed="256" factorGreen="256" factorBlue="256" factorAlpha="171"/>
+            </colorTransform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <PlaceObject2 replace="1" depth="1">
+            <transform>
+              <Transform scaleX="1.222229003906250" scaleY="1.222229003906250" transX="-76" transY="-44"/>
+            </transform>
+            <colorTransform>
+              <ColorTransform2 factorRed="256" factorGreen="256" factorBlue="256" factorAlpha="142"/>
+            </colorTransform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <PlaceObject2 replace="1" depth="1">
+            <transform>
+              <Transform scaleX="1.277786254882812" scaleY="1.277786254882812" transX="-94" transY="-56"/>
+            </transform>
+            <colorTransform>
+              <ColorTransform2 factorRed="256" factorGreen="256" factorBlue="256" factorAlpha="114"/>
+            </colorTransform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <PlaceObject2 replace="1" depth="1">
+            <transform>
+              <Transform scaleX="1.333343505859375" scaleY="1.333343505859375" transX="-113" transY="-67"/>
+            </transform>
+            <colorTransform>
+              <ColorTransform2 factorRed="256" factorGreen="256" factorBlue="256" factorAlpha="85"/>
+            </colorTransform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <PlaceObject2 replace="1" depth="1">
+            <transform>
+              <Transform scaleX="1.388885498046875" scaleY="1.388885498046875" transX="-132" transY="-78"/>
+            </transform>
+            <colorTransform>
+              <ColorTransform2 factorRed="256" factorGreen="256" factorBlue="256" factorAlpha="57"/>
+            </colorTransform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <PlaceObject2 replace="1" depth="1">
+            <transform>
+              <Transform scaleX="1.444442749023438" scaleY="1.444442749023438" transX="-151" transY="-89"/>
+            </transform>
+            <colorTransform>
+              <ColorTransform2 factorRed="256" factorGreen="256" factorBlue="256" factorAlpha="28"/>
+            </colorTransform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <PlaceObject2 replace="1" depth="1">
+            <transform>
+              <Transform scaleX="1.500000000000000" scaleY="1.500000000000000" transX="-170" transY="-100"/>
+            </transform>
+            <colorTransform>
+              <ColorTransform2 factorRed="256" factorGreen="256" factorBlue="256" factorAlpha="0"/>
+            </colorTransform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <PlaceObject2 replace="0" depth="111" objectID="68" name="marker">
+        <transform>
+          <Transform transX="-1000" transY="2000"/>
+        </transform>
+      </PlaceObject2>
+
+      <DefineShape2 objectID="69">
+        {%object%}
+      </DefineShape2>
+      <DefineSprite objectID="70" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="1" objectID="69">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <PlaceObject2 replace="0" depth="113" objectID="70" name="object">
+        <transform>
+          <Transform transX="-1000" transY="1000"/>
+        </transform>
+      </PlaceObject2>
+      <DefineShape2 objectID="71">
+        <bounds>
+          <Rectangle left="-2300" right="2300" top="-1000" bottom="1000"/>
+        </bounds>
+        <styles>
+          <StyleList>
+            <fillStyles>
+              <Solid>
+                <color>
+                  <Color red="229" green="229" blue="229"/>
+                </color>
+              </Solid>
+              <Solid>
+                <color>
+                  <Color red="255" green="255" blue="255"/>
+                </color>
+              </Solid>
+            </fillStyles>
+            <lineStyles/>
+          </StyleList>
+        </styles>
+        <shapes>
+          <Shape>
+            <edges>
+              <ShapeSetup x="2300" y="-900" fillStyle1="2"/>
+              <LineTo x="0" y="1800"/>
+              <CurveTo x1="0" y1="41" x2="-29" y2="30"/>
+              <CurveTo x1="-30" y1="29" x2="-41" y2="0"/>
+              <LineTo x="-4400" y="0"/>
+              <CurveTo x1="-41" y1="0" x2="-30" y2="-29"/>
+              <CurveTo x1="-29" y1="-30" x2="0" y2="-41"/>
+              <LineTo x="0" y="-1800"/>
+              <CurveTo x1="0" y1="-41" x2="29" y2="-30"/>
+              <CurveTo x1="30" y1="-29" x2="41" y2="0"/>
+              <LineTo x="4400" y="0"/>
+              <CurveTo x1="41" y1="0" x2="30" y2="29"/>
+              <CurveTo x1="29" y1="30" x2="0" y2="41"/>
+              <ShapeSetup x="0" y="0" fillStyle0="0" fillStyle1="0" lineStyle="0">
+                <styles>
+                  <StyleList>
+                    <fillStyles>
+                      <Solid>
+                        <color>
+                          <Color red="0" green="0" blue="0"/>
+                        </color>
+                      </Solid>
+                    </fillStyles>
+                    <lineStyles/>
+                  </StyleList>
+                </styles>
+              </ShapeSetup>
+              <ShapeSetup x="-762" y="-412" fillStyle1="1"/>
+              <LineTo x="-50" y="3"/>
+              <LineTo x="-2" y="88"/>
+              <LineTo x="83" y="2"/>
+              <LineTo x="30" y="6"/>
+              <LineTo x="1" y="10"/>
+              <LineTo x="-4" y="13"/>
+              <LineTo x="-11" y="1"/>
+              <LineTo x="-46" y="0"/>
+              <LineTo x="-1" y="1"/>
+              <LineTo x="-43" y="0"/>
+              <LineTo x="-1" y="2"/>
+              <LineTo x="-47" y="0"/>
+              <LineTo x="-1" y="1"/>
+              <LineTo x="-73" y="0"/>
+              <LineTo x="-4" y="-9"/>
+              <LineTo x="-1" y="-9"/>
+              <LineTo x="3" y="-6"/>
+              <LineTo x="43" y="-8"/>
+              <LineTo x="44" y="-3"/>
+              <LineTo x="-5" y="-133"/>
+              <CurveTo x1="4" y1="-10" x2="-2" y2="-11"/>
+              <CurveTo x1="-2" y1="-9" x2="6" y2="-10"/>
+              <LineTo x="17" y="-1"/>
+              <LineTo x="5" y="2"/>
+              <LineTo x="6" y="50"/>
+              <LineTo x="94" y="-5"/>
+              <LineTo x="3" y="11"/>
+              <LineTo x="1" y="13"/>
+              <CurveTo x1="-22" y1="10" x2="-25" y2="1"/>
+              <ShapeSetup x="0" y="0" fillStyle0="0" fillStyle1="0" lineStyle="0">
+                <styles>
+                  <StyleList>
+                    <fillStyles>
+                      <Solid>
+                        <color>
+                          <Color red="0" green="0" blue="0"/>
+                        </color>
+                      </Solid>
+                    </fillStyles>
+                    <lineStyles/>
+                  </StyleList>
+                </styles>
+              </ShapeSetup>
+              <ShapeSetup x="-472" y="-342" fillStyle1="1"/>
+              <LineTo x="-34" y="-7"/>
+              <LineTo x="-34" y="-11"/>
+              <LineTo x="-7" y="99"/>
+              <LineTo x="-19" y="1"/>
+              <LineTo x="-6" y="-3"/>
+              <LineTo x="2" y="-200"/>
+              <LineTo x="-94" y="5"/>
+              <LineTo x="-5" y="-9"/>
+              <LineTo x="-2" y="-10"/>
+              <LineTo x="3" y="-7"/>
+              <LineTo x="86" y="-16"/>
+              <LineTo x="88" y="-3"/>
+              <LineTo x="56" y="6"/>
+              <LineTo x="2" y="14"/>
+              <LineTo x="-3" y="12"/>
+              <LineTo x="-103" y="6"/>
+              <LineTo x="3" y="71"/>
+              <LineTo x="42" y="9"/>
+              <LineTo x="40" y="16"/>
+              <LineTo x="0" y="11"/>
+              <LineTo x="-4" y="15"/>
+              <LineTo x="-11" y="1"/>
+              <ShapeSetup x="0" y="0" fillStyle0="0" fillStyle1="0" lineStyle="0">
+                <styles>
+                  <StyleList>
+                    <fillStyles>
+                      <Solid>
+                        <color>
+                          <Color red="0" green="0" blue="0"/>
+                        </color>
+                      </Solid>
+                    </fillStyles>
+                    <lineStyles/>
+                  </StyleList>
+                </styles>
+              </ShapeSetup>
+              <ShapeSetup x="-235" y="-515" fillStyle1="1"/>
+              <LineTo x="3" y="54"/>
+              <LineTo x="96" y="3"/>
+              <LineTo x="4" y="15"/>
+              <LineTo x="-2" y="14"/>
+              <LineTo x="-97" y="5"/>
+              <CurveTo x1="0" y1="86" x2="-7" y2="58"/>
+              <LineTo x="-18" y="4"/>
+              <LineTo x="-15" y="-4"/>
+              <CurveTo x1="-6" y1="-35" x2="4" y2="-109"/>
+              <LineTo x="-87" y="0"/>
+              <LineTo x="-5" y="-16"/>
+              <CurveTo x1="0" y1="-16" x2="4" y2="0"/>
+              <LineTo x="90" y="-4"/>
+              <LineTo x="6" y="-59"/>
+              <LineTo x="13" y="-5"/>
+              <CurveTo x1="16" y1="0" x2="1" y2="9"/>
+              <ShapeSetup x="-166" y="-519"/>
+              <CurveTo x1="6" y1="0" x2="6" y2="14"/>
+              <LineTo x="5" y="20"/>
+              <LineTo x="0" y="3"/>
+              <CurveTo x1="-12" y1="6" x2="-7" y2="0"/>
+              <LineTo x="-10" y="-16"/>
+              <LineTo x="-5" y="-20"/>
+              <LineTo x="6" y="-4"/>
+              <LineTo x="11" y="-3"/>
+              <ShapeSetup x="-142" y="-521"/>
+              <LineTo x="11" y="-2"/>
+              <CurveTo x1="7" y1="0" x2="4" y2="14"/>
+              <LineTo x="5" y="20"/>
+              <LineTo x="0" y="2"/>
+              <CurveTo x1="-8" y1="5" x2="-11" y2="2"/>
+              <LineTo x="-10" y="-17"/>
+              <LineTo x="-5" y="-19"/>
+              <LineTo x="7" y="-5"/>
+              <ShapeSetup x="-324" y="-374"/>
+              <LineTo x="10" y="8"/>
+              <CurveTo x1="0" y1="12" x2="-9" y2="19"/>
+              <CurveTo x1="-9" y1="21" x2="-12" y2="12"/>
+              <CurveTo x1="-8" y1="-2" x2="-20" y2="-12"/>
+              <CurveTo x1="0" y1="-14" x2="15" y2="-23"/>
+              <LineTo x="20" y="-25"/>
+              <LineTo x="13" y="4"/>
+              <ShapeSetup x="-180" y="-375"/>
+              <LineTo x="16" y="-3"/>
+              <LineTo x="16" y="26"/>
+              <CurveTo x1="11" y1="21" x2="1" y2="18"/>
+              <LineTo x="-27" y="12"/>
+              <CurveTo x1="-10" y1="-5" x2="-9" y2="-24"/>
+              <LineTo x="-9" y="-35"/>
+              <LineTo x="0" y="-3"/>
+              <LineTo x="11" y="-7"/>
+              <ShapeSetup x="0" y="0" fillStyle0="0" fillStyle1="0" lineStyle="0">
+                <styles>
+                  <StyleList>
+                    <fillStyles>
+                      <Solid>
+                        <color>
+                          <Color red="0" green="0" blue="0"/>
+                        </color>
+                      </Solid>
+                    </fillStyles>
+                    <lineStyles/>
+                  </StyleList>
+                </styles>
+              </ShapeSetup>
+              <ShapeSetup x="123" y="-473" fillStyle1="1"/>
+              <LineTo x="7" y="21"/>
+              <CurveTo x1="0" y1="20" x2="-15" y2="28"/>
+              <LineTo x="-28" y="46"/>
+              <CurveTo x1="-28" y1="34" x2="-26" y2="19"/>
+              <CurveTo x1="-26" y1="18" x2="-41" y2="14"/>
+              <LineTo x="-10" y="-7"/>
+              <LineTo x="-5" y="-12"/>
+              <LineTo x="1" y="-4"/>
+              <CurveTo x1="42" y1="-22" x2="36" y2="-40"/>
+              <LineTo x="-36" y="-31"/>
+              <LineTo x="-17" y="-23"/>
+              <LineTo x="8" y="-12"/>
+              <LineTo x="11" y="-8"/>
+              <LineTo x="27" y="17"/>
+              <LineTo x="29" y="30"/>
+              <CurveTo x1="35" y1="-52" x2="0" y2="-11"/>
+              <LineTo x="-1" y="-5"/>
+              <LineTo x="-41" y="-16"/>
+              <LineTo x="-33" y="-8"/>
+              <LineTo x="-27" y="25"/>
+              <LineTo x="-40" y="37"/>
+              <LineTo x="-12" y="-9"/>
+              <LineTo x="-8" y="-12"/>
+              <LineTo x="0" y="-1"/>
+              <LineTo x="42" y="-48"/>
+              <CurveTo x1="36" y1="-35" x2="9" y2="3"/>
+              <LineTo x="50" y="12"/>
+              <CurveTo x1="44" y1="15" x2="17" y2="17"/>
+              <ShapeSetup x="0" y="0" fillStyle0="0" fillStyle1="0" lineStyle="0">
+                <styles>
+                  <StyleList>
+                    <fillStyles>
+                      <Solid>
+                        <color>
+                          <Color red="0" green="0" blue="0"/>
+                        </color>
+                      </Solid>
+                    </fillStyles>
+                    <lineStyles/>
+                  </StyleList>
+                </styles>
+              </ShapeSetup>
+              <ShapeSetup x="359" y="-337" fillStyle1="1"/>
+              <CurveTo x1="-33" y1="29" x2="-51" y2="20"/>
+              <CurveTo x1="-38" y1="15" x2="-9" y2="-2"/>
+              <LineTo x="-9" y="-11"/>
+              <CurveTo x1="-5" y1="-7" x2="0" y2="-10"/>
+              <LineTo x="0" y="-4"/>
+              <CurveTo x1="125" y1="-37" x2="50" y2="-98"/>
+              <LineTo x="3" y="0"/>
+              <CurveTo x1="14" y1="0" x2="10" y2="10"/>
+              <CurveTo x1="-9" y1="53" x2="-48" y2="42"/>
+              <ShapeSetup x="259" y="-399"/>
+              <CurveTo x1="-20" y1="-7" x2="-22" y2="-28"/>
+              <CurveTo x1="-23" y1="-26" x2="0" y2="-18"/>
+              <LineTo x="8" y="-10"/>
+              <LineTo x="14" y="-7"/>
+              <LineTo x="1" y="0"/>
+              <LineTo x="35" y="31"/>
+              <LineTo x="29" y="40"/>
+              <LineTo x="-8" y="12"/>
+              <LineTo x="-14" y="13"/>
+              <ShapeSetup x="0" y="0" fillStyle0="0" fillStyle1="0" lineStyle="0">
+                <styles>
+                  <StyleList>
+                    <fillStyles>
+                      <Solid>
+                        <color>
+                          <Color red="0" green="0" blue="0"/>
+                        </color>
+                      </Solid>
+                    </fillStyles>
+                    <lineStyles/>
+                  </StyleList>
+                </styles>
+              </ShapeSetup>
+              <ShapeSetup x="471" y="-486" fillStyle1="1"/>
+              <CurveTo x1="24" y1="-12" x2="75" y2="0"/>
+              <LineTo x="119" y="15"/>
+              <LineTo x="3" y="15"/>
+              <LineTo x="-4" y="16"/>
+              <LineTo x="-10" y="8"/>
+              <CurveTo x1="-48" y1="38" x2="-16" y2="28"/>
+              <CurveTo x1="-9" y1="14" x2="0" y2="15"/>
+              <CurveTo x1="0" y1="17" x2="10" y2="11"/>
+              <CurveTo x1="10" y1="13" x2="16" y2="5"/>
+              <LineTo x="1" y="6"/>
+              <CurveTo x1="0" y1="11" x2="-8" y2="10"/>
+              <CurveTo x1="-30" y1="-2" x2="-19" y2="-22"/>
+              <CurveTo x1="-20" y1="-20" x2="0" y2="-32"/>
+              <CurveTo x1="0" y1="-53" x2="60" y2="-47"/>
+              <LineTo x="-77" y="1"/>
+              <LineTo x="-78" y="-3"/>
+              <CurveTo x1="-5" y1="-2" x2="0" y2="-14"/>
+              <CurveTo x1="0" y1="-13" x2="6" y2="-3"/>
+              <ShapeSetup x="674" y="-421"/>
+              <LineTo x="11" y="13"/>
+              <LineTo x="6" y="20"/>
+              <LineTo x="0" y="3"/>
+              <CurveTo x1="-12" y1="6" x2="-7" y2="0"/>
+              <LineTo x="-11" y="-16"/>
+              <LineTo x="-5" y="-20"/>
+              <LineTo x="7" y="-4"/>
+              <LineTo x="11" y="-2"/>
+              <ShapeSetup x="697" y="-424"/>
+              <LineTo x="11" y="-2"/>
+              <LineTo x="12" y="14"/>
+              <LineTo x="5" y="20"/>
+              <LineTo x="0" y="3"/>
+              <LineTo x="-19" y="6"/>
+              <LineTo x="-10" y="-17"/>
+              <CurveTo x1="-5" y1="-9" x2="0" y2="-10"/>
+              <LineTo x="6" y="-5"/>
+              <ShapeSetup x="0" y="0" fillStyle0="0" fillStyle1="0" lineStyle="0">
+                <styles>
+                  <StyleList>
+                    <fillStyles>
+                      <Solid>
+                        <color>
+                          <Color red="0" green="0" blue="0"/>
+                        </color>
+                      </Solid>
+                    </fillStyles>
+                    <lineStyles/>
+                  </StyleList>
+                </styles>
+              </ShapeSetup>
+              <ShapeSetup x="-888" y="-92" fillStyle1="1"/>
+              <LineTo x="2" y="21"/>
+              <LineTo x="7" y="0"/>
+              <LineTo x="0" y="-6"/>
+              <LineTo x="4" y="-23"/>
+              <LineTo x="-13" y="0"/>
+              <LineTo x="0" y="8"/>
+              <ShapeSetup x="-934" y="-125"/>
+              <LineTo x="33" y="-6"/>
+              <LineTo x="36" y="-1"/>
+              <LineTo x="36" y="6"/>
+              <LineTo x="0" y="17"/>
+              <LineTo x="-4" y="5"/>
+              <LineTo x="-16" y="3"/>
+              <LineTo x="-1" y="34"/>
+              <LineTo x="13" y="5"/>
+              <LineTo x="11" y="9"/>
+              <CurveTo x1="12" y1="15" x2="3" y2="19"/>
+              <LineTo x="3" y="38"/>
+              <LineTo x="-4" y="34"/>
+              <CurveTo x1="-3" y1="18" x2="-12" y2="12"/>
+              <CurveTo x1="-14" y1="11" x2="-17" y2="5"/>
+              <LineTo x="-37" y="2"/>
+              <LineTo x="-18" y="-5"/>
+              <LineTo x="-15" y="-11"/>
+              <CurveTo x1="-12" y1="-19" x2="-5" y2="-26"/>
+              <CurveTo x1="-7" y1="-27" x2="3" y2="-23"/>
+              <LineTo x="4" y="-23"/>
+              <LineTo x="7" y="-21"/>
+              <LineTo x="7" y="-6"/>
+              <LineTo x="15" y="-8"/>
+              <LineTo x="2" y="-32"/>
+              <LineTo x="-20" y="-4"/>
+              <LineTo x="-3" y="-16"/>
+              <LineTo x="3" y="-5"/>
+              <ShapeSetup x="-922" y="-23"/>
+              <LineTo x="0" y="20"/>
+              <LineTo x="2" y="-2"/>
+              <LineTo x="0" y="-2"/>
+              <LineTo x="4" y="-16"/>
+              <LineTo x="0" y="-19"/>
+              <LineTo x="-2" y="0"/>
+              <LineTo x="-4" y="19"/>
+              <ShapeSetup x="-886" y="-11"/>
+              <CurveTo x1="-5" y1="17" x2="-12" y2="11"/>
+              <LineTo x="-16" y="8"/>
+              <LineTo x="0" y="2"/>
+              <LineTo x="5" y="2"/>
+              <LineTo x="4" y="0"/>
+              <LineTo x="2" y="-1"/>
+              <LineTo x="44" y="0"/>
+              <LineTo x="23" y="3"/>
+              <LineTo x="0" y="-4"/>
+              <LineTo x="-3" y="0"/>
+              <LineTo x="-6" y="1"/>
+              <LineTo x="-14" y="-6"/>
+              <LineTo x="-12" y="-8"/>
+              <LineTo x="-5" y="-14"/>
+              <LineTo x="0" y="-45"/>
+              <LineTo x="-3" y="0"/>
+              <LineTo x="-2" y="34"/>
+              <ShapeSetup x="-791" y="-113"/>
+              <LineTo x="4" y="-7"/>
+              <LineTo x="47" y="-1"/>
+              <LineTo x="24" y="5"/>
+              <LineTo x="22" y="13"/>
+              <LineTo x="10" y="24"/>
+              <LineTo x="0" y="28"/>
+              <LineTo x="-3" y="20"/>
+              <CurveTo x1="-2" y1="9" x2="-10" y2="10"/>
+              <CurveTo x1="-11" y1="6" x2="-14" y2="3"/>
+              <LineTo x="-29" y="2"/>
+              <LineTo x="-21" y="-2"/>
+              <LineTo x="0" y="46"/>
+              <LineTo x="6" y="13"/>
+              <LineTo x="27" y="5"/>
+              <LineTo x="28" y="0"/>
+              <LineTo x="7" y="-5"/>
+              <LineTo x="8" y="-7"/>
+              <LineTo x="11" y="0"/>
+              <LineTo x="5" y="2"/>
+              <LineTo x="1" y="10"/>
+              <LineTo x="-5" y="10"/>
+              <LineTo x="-8" y="10"/>
+              <LineTo x="-30" y="9"/>
+              <LineTo x="-32" y="2"/>
+              <LineTo x="-19" y="-5"/>
+              <LineTo x="-16" y="-10"/>
+              <LineTo x="-11" y="-22"/>
+              <LineTo x="-2" y="-25"/>
+              <LineTo x="5" y="-30"/>
+              <LineTo x="6" y="-28"/>
+              <LineTo x="39" y="-1"/>
+              <CurveTo x1="21" y1="0" x2="15" y2="-7"/>
+              <LineTo x="3" y="-18"/>
+              <LineTo x="0" y="-17"/>
+              <LineTo x="-4" y="-13"/>
+              <CurveTo x1="-17" y1="-9" x2="-16" y2="-1"/>
+              <LineTo x="-36" y="-4"/>
+              <LineTo x="-3" y="-15"/>
+              <ShapeSetup x="-847" y="-32"/>
+              <LineTo x="-3" y="-1"/>
+              <LineTo x="-1" y="30"/>
+              <LineTo x="12" y="5"/>
+              <LineTo x="0" y="-2"/>
+              <LineTo x="-2" y="-17"/>
+              <LineTo x="-6" y="-15"/>
+              <ShapeSetup x="-851" y="57"/>
+              <LineTo x="-25" y="3"/>
+              <LineTo x="-32" y="-3"/>
+              <LineTo x="0" y="4"/>
+              <LineTo x="7" y="7"/>
+              <LineTo x="25" y="2"/>
+              <LineTo x="23" y="-6"/>
+              <LineTo x="6" y="-7"/>
+              <LineTo x="-4" y="0"/>
+              <ShapeSetup x="0" y="0" fillStyle0="0" fillStyle1="0" lineStyle="0">
+                <styles>
+                  <StyleList>
+                    <fillStyles>
+                      <Solid>
+                        <color>
+                          <Color red="0" green="0" blue="0"/>
+                        </color>
+                      </Solid>
+                    </fillStyles>
+                    <lineStyles/>
+                  </StyleList>
+                </styles>
+              </ShapeSetup>
+              <ShapeSetup x="-500" y="-148" fillStyle1="1"/>
+              <LineTo x="35" y="3"/>
+              <CurveTo x1="16" y1="1" x2="14" y2="13"/>
+              <CurveTo x1="5" y1="5" x2="2" y2="8"/>
+              <LineTo x="1" y="14"/>
+              <LineTo x="-4" y="10"/>
+              <LineTo x="-8" y="8"/>
+              <CurveTo x1="-12" y1="8" x2="-15" y2="1"/>
+              <LineTo x="-31" y="3"/>
+              <LineTo x="0" y="5"/>
+              <LineTo x="2" y="3"/>
+              <LineTo x="44" y="6"/>
+              <LineTo x="1" y="19"/>
+              <LineTo x="-1" y="3"/>
+              <LineTo x="-44" y="3"/>
+              <LineTo x="0" y="7"/>
+              <LineTo x="20" y="6"/>
+              <LineTo x="17" y="12"/>
+              <CurveTo x1="10" y1="11" x2="1" y2="14"/>
+              <LineTo x="1" y="30"/>
+              <LineTo x="-5" y="16"/>
+              <LineTo x="-11" y="15"/>
+              <CurveTo x1="-13" y1="10" x2="-14" y2="1"/>
+              <LineTo x="-32" y="2"/>
+              <LineTo x="-18" y="-4"/>
+              <LineTo x="-15" y="-9"/>
+              <LineTo x="-13" y="-25"/>
+              <LineTo x="-3" y="-30"/>
+              <LineTo x="5" y="-15"/>
+              <LineTo x="6" y="-13"/>
+              <LineTo x="5" y="-3"/>
+              <LineTo x="3" y="-6"/>
+              <LineTo x="12" y="-6"/>
+              <LineTo x="13" y="-4"/>
+              <LineTo x="0" y="-9"/>
+              <LineTo x="-41" y="-2"/>
+              <LineTo x="-5" y="-9"/>
+              <LineTo x="-1" y="-10"/>
+              <LineTo x="23" y="-8"/>
+              <LineTo x="24" y="-2"/>
+              <LineTo x="0" y="-7"/>
+              <LineTo x="-53" y="-2"/>
+              <CurveTo x1="-27" y1="0" x2="-18" y2="-18"/>
+              <LineTo x="-5" y="-9"/>
+              <LineTo x="0" y="-12"/>
+              <LineTo x="8" y="-17"/>
+              <CurveTo x1="27" y1="-13" x2="31" y2="-2"/>
+              <LineTo x="63" y="-2"/>
+              <ShapeSetup x="-590" y="-105"/>
+              <LineTo x="17" y="3"/>
+              <LineTo x="1" y="-2"/>
+              <LineTo x="-1" y="-15"/>
+              <LineTo x="-10" y="0"/>
+              <LineTo x="-21" y="4"/>
+              <LineTo x="-1" y="5"/>
+              <LineTo x="15" y="5"/>
+              <ShapeSetup x="-511" y="-119"/>
+              <LineTo x="-37" y="0"/>
+              <LineTo x="0" y="17"/>
+              <LineTo x="24" y="0"/>
+              <LineTo x="13" y="-2"/>
+              <LineTo x="0" y="-15"/>
+              <ShapeSetup x="-486" y="-105"/>
+              <LineTo x="11" y="0"/>
+              <LineTo x="15" y="-5"/>
+              <LineTo x="1" y="-1"/>
+              <LineTo x="-13" y="-4"/>
+              <LineTo x="-15" y="-2"/>
+              <LineTo x="0" y="4"/>
+              <LineTo x="1" y="8"/>
+              <ShapeSetup x="-450" y="122"/>
+              <LineTo x="-32" y="3"/>
+              <LineTo x="-98" y="-2"/>
+              <CurveTo x1="-23" y1="0" x2="-19" y2="-13"/>
+              <CurveTo x1="-9" y1="-12" x2="-1" y2="-12"/>
+              <LineTo x="-2" y="-29"/>
+              <LineTo x="3" y="-29"/>
+              <LineTo x="7" y="-28"/>
+              <LineTo x="12" y="-2"/>
+              <LineTo x="9" y="5"/>
+              <LineTo x="1" y="7"/>
+              <LineTo x="-2" y="53"/>
+              <LineTo x="2" y="15"/>
+              <LineTo x="5" y="14"/>
+              <LineTo x="17" y="0"/>
+              <LineTo x="130" y="9"/>
+              <LineTo x="3" y="13"/>
+              <LineTo x="-3" y="8"/>
+              <ShapeSetup x="-478" y="26"/>
+              <LineTo x="-55" y="0"/>
+              <LineTo x="-9" y="-1"/>
+              <LineTo x="0" y="8"/>
+              <LineTo x="4" y="0"/>
+              <LineTo x="30" y="-3"/>
+              <LineTo x="30" y="0"/>
+              <LineTo x="0" y="-4"/>
+              <ShapeSetup x="-502" y="-2"/>
+              <LineTo x="-20" y="0"/>
+              <LineTo x="-17" y="3"/>
+              <LineTo x="0" y="4"/>
+              <LineTo x="3" y="0"/>
+              <LineTo x="34" y="-3"/>
+              <LineTo x="15" y="2"/>
+              <LineTo x="1" y="-1"/>
+              <LineTo x="-16" y="-5"/>
+              <ShapeSetup x="-531" y="56"/>
+              <LineTo x="18" y="4"/>
+              <LineTo x="29" y="-7"/>
+              <LineTo x="-6" y="-1"/>
+              <LineTo x="-41" y="2"/>
+              <LineTo x="0" y="2"/>
+              <ShapeSetup x="0" y="0" fillStyle0="0" fillStyle1="0" lineStyle="0">
+                <styles>
+                  <StyleList>
+                    <fillStyles>
+                      <Solid>
+                        <color>
+                          <Color red="0" green="0" blue="0"/>
+                        </color>
+                      </Solid>
+                    </fillStyles>
+                    <lineStyles/>
+                  </StyleList>
+                </styles>
+              </ShapeSetup>
+              <ShapeSetup x="-375" y="-96" fillStyle1="1"/>
+              <LineTo x="123" y="-9"/>
+              <LineTo x="0" y="-28"/>
+              <LineTo x="8" y="-7"/>
+              <LineTo x="11" y="-2"/>
+              <LineTo x="7" y="1"/>
+              <LineTo x="6" y="16"/>
+              <LineTo x="3" y="21"/>
+              <LineTo x="51" y="3"/>
+              <CurveTo x1="3" y1="3" x2="0" y2="9"/>
+              <LineTo x="-4" y="17"/>
+              <LineTo x="-46" y="6"/>
+              <LineTo x="1" y="29"/>
+              <CurveTo x1="0" y1="92" x2="-36" y2="49"/>
+              <LineTo x="-1" y="0"/>
+              <LineTo x="-14" y="-4"/>
+              <LineTo x="-9" y="-10"/>
+              <LineTo x="10" y="-34"/>
+              <LineTo x="-23" y="3"/>
+              <CurveTo x1="-24" y1="0" x2="-13" y2="-16"/>
+              <CurveTo x1="-14" y1="-14" x2="0" y2="-24"/>
+              <CurveTo x1="0" y1="-25" x2="17" y2="-16"/>
+              <CurveTo x1="16" y1="-16" x2="26" y2="0"/>
+              <LineTo x="25" y="3"/>
+              <LineTo x="0" y="-15"/>
+              <LineTo x="-42" y="1"/>
+              <LineTo x="-81" y="-4"/>
+              <LineTo x="-5" y="-17"/>
+              <LineTo x="5" y="-12"/>
+              <ShapeSetup x="-275" y="-18"/>
+              <CurveTo x1="-14" y1="0" x2="-8" y2="13"/>
+              <LineTo x="0" y="7"/>
+              <CurveTo x1="0" y1="19" x2="21" y2="0"/>
+              <LineTo x="17" y="-5"/>
+              <CurveTo x1="7" y1="-4" x2="0" y2="-10"/>
+              <CurveTo x1="0" y1="-10" x2="-8" y2="-4"/>
+              <LineTo x="-15" y="-6"/>
+              <ShapeSetup x="0" y="0" fillStyle0="0" fillStyle1="0" lineStyle="0">
+                <styles>
+                  <StyleList>
+                    <fillStyles>
+                      <Solid>
+                        <color>
+                          <Color red="0" green="0" blue="0"/>
+                        </color>
+                      </Solid>
+                    </fillStyles>
+                    <lineStyles/>
+                  </StyleList>
+                </styles>
+              </ShapeSetup>
+              <ShapeSetup x="-102" y="-127" fillStyle1="1"/>
+              <LineTo x="33" y="-7"/>
+              <LineTo x="36" y="-2"/>
+              <CurveTo x1="53" y1="0" x2="7" y2="10"/>
+              <LineTo x="3" y="10"/>
+              <CurveTo x1="0" y1="15" x2="-21" y2="24"/>
+              <LineTo x="-36" y="39"/>
+              <LineTo x="23" y="-3"/>
+              <CurveTo x1="31" y1="0" x2="20" y2="20"/>
+              <CurveTo x1="22" y1="16" x2="0" y2="31"/>
+              <CurveTo x1="0" y1="36" x2="-32" y2="27"/>
+              <CurveTo x1="-29" y1="25" x2="-39" y2="0"/>
+              <CurveTo x1="-22" y1="0" x2="-15" y2="-12"/>
+              <CurveTo x1="-17" y1="-14" x2="0" y2="-20"/>
+              <CurveTo x1="0" y1="-20" x2="16" y2="-12"/>
+              <CurveTo x1="12" y1="-11" x2="22" y2="0"/>
+              <CurveTo x1="18" y1="0" x2="11" y2="8"/>
+              <CurveTo x1="12" y1="9" x2="3" y2="19"/>
+              <CurveTo x1="19" y1="-15" x2="0" y2="-17"/>
+              <CurveTo x1="0" y1="-15" x2="-12" y2="-11"/>
+              <CurveTo x1="-13" y1="-10" x2="-14" y2="0"/>
+              <LineTo x="-12" y="0"/>
+              <LineTo x="-37" y="7"/>
+              <CurveTo x1="-6" y1="2" x2="-19" y2="13"/>
+              <LineTo x="-12" y="7"/>
+              <LineTo x="-11" y="-7"/>
+              <LineTo x="-7" y="-14"/>
+              <LineTo x="2" y="-3"/>
+              <LineTo x="91" y="-94"/>
+              <LineTo x="-24" y="-3"/>
+              <LineTo x="-51" y="4"/>
+              <LineTo x="-6" y="-8"/>
+              <LineTo x="-2" y="-13"/>
+              <LineTo x="3" y="-11"/>
+              <ShapeSetup x="-49" y="69"/>
+              <CurveTo x1="0" y1="8" x2="13" y2="0"/>
+              <LineTo x="15" y="-5"/>
+              <CurveTo x1="-1" y1="-16" x2="-13" y2="0"/>
+              <CurveTo x1="-14" y1="0" x2="0" y2="13"/>
+              <ShapeSetup x="0" y="0" fillStyle0="0" fillStyle1="0" lineStyle="0">
+                <styles>
+                  <StyleList>
+                    <fillStyles>
+                      <Solid>
+                        <color>
+                          <Color red="0" green="0" blue="0"/>
+                        </color>
+                      </Solid>
+                    </fillStyles>
+                    <lineStyles/>
+                  </StyleList>
+                </styles>
+              </ShapeSetup>
+              <ShapeSetup x="329" y="-143" fillStyle1="1"/>
+              <LineTo x="18" y="15"/>
+              <LineTo x="11" y="22"/>
+              <LineTo x="1" y="27"/>
+              <LineTo x="-5" y="14"/>
+              <LineTo x="-10" y="14"/>
+              <LineTo x="-18" y="8"/>
+              <LineTo x="-19" y="6"/>
+              <LineTo x="0" y="2"/>
+              <LineTo x="56" y="4"/>
+              <LineTo x="1" y="19"/>
+              <LineTo x="-2" y="3"/>
+              <LineTo x="-91" y="4"/>
+              <LineTo x="-1" y="12"/>
+              <LineTo x="4" y="0"/>
+              <LineTo x="45" y="-4"/>
+              <LineTo x="29" y="4"/>
+              <CurveTo x1="13" y1="3" x2="11" y2="14"/>
+              <LineTo x="5" y="16"/>
+              <LineTo x="0" y="20"/>
+              <LineTo x="-9" y="30"/>
+              <LineTo x="-18" y="27"/>
+              <LineTo x="-9" y="5"/>
+              <LineTo x="-9" y="3"/>
+              <LineTo x="-16" y="-8"/>
+              <LineTo x="-1" y="-4"/>
+              <LineTo x="14" y="-13"/>
+              <LineTo x="10" y="-15"/>
+              <LineTo x="5" y="-20"/>
+              <LineTo x="3" y="-22"/>
+              <LineTo x="-8" y="-6"/>
+              <LineTo x="-5" y="0"/>
+              <CurveTo x1="0" y1="23" x2="-8" y2="13"/>
+              <LineTo x="-24" y="32"/>
+              <LineTo x="-12" y="9"/>
+              <LineTo x="-14" y="5"/>
+              <LineTo x="-6" y="-8"/>
+              <LineTo x="-4" y="-11"/>
+              <LineTo x="27" y="-31"/>
+              <CurveTo x1="12" y1="-19" x2="0" y2="-17"/>
+              <LineTo x="-12" y="0"/>
+              <LineTo x="-7" y="31"/>
+              <LineTo x="-22" y="25"/>
+              <LineTo x="-20" y="10"/>
+              <LineTo x="-11" y="-20"/>
+              <LineTo x="19" y="-22"/>
+              <LineTo x="12" y="-23"/>
+              <LineTo x="-4" y="-1"/>
+              <LineTo x="-15" y="21"/>
+              <LineTo x="-21" y="17"/>
+              <LineTo x="-3" y="0"/>
+              <LineTo x="-13" y="-17"/>
+              <LineTo x="20" y="-29"/>
+              <LineTo x="14" y="-31"/>
+              <LineTo x="-9" y="-2"/>
+              <LineTo x="-3" y="-18"/>
+              <LineTo x="28" y="-7"/>
+              <LineTo x="30" y="-1"/>
+              <LineTo x="0" y="-2"/>
+              <LineTo x="-24" y="-5"/>
+              <CurveTo x1="-13" y1="-6" x2="-6" y2="-8"/>
+              <CurveTo x1="-7" y1="-7" x2="-2" y2="-12"/>
+              <CurveTo x1="-3" y1="-10" x2="0" y2="-11"/>
+              <LineTo x="4" y="-19"/>
+              <LineTo x="10" y="-17"/>
+              <LineTo x="28" y="-15"/>
+              <LineTo x="34" y="-2"/>
+              <LineTo x="20" y="5"/>
+              <ShapeSetup x="133" y="-12"/>
+              <LineTo x="-17" y="-4"/>
+              <LineTo x="-1" y="-8"/>
+              <LineTo x="5" y="-14"/>
+              <LineTo x="31" y="-4"/>
+              <LineTo x="2" y="-19"/>
+              <LineTo x="19" y="-2"/>
+              <LineTo x="5" y="4"/>
+              <LineTo x="4" y="15"/>
+              <LineTo x="36" y="3"/>
+              <LineTo x="3" y="18"/>
+              <LineTo x="-5" y="6"/>
+              <LineTo x="-33" y="5"/>
+              <LineTo x="-3" y="27"/>
+              <LineTo x="5" y="0"/>
+              <LineTo x="22" y="-2"/>
+              <LineTo x="4" y="21"/>
+              <CurveTo x1="-18" y1="10" x2="-22" y2="6"/>
+              <LineTo x="-43" y="7"/>
+              <LineTo x="-4" y="-9"/>
+              <LineTo x="-3" y="-12"/>
+              <LineTo x="15" y="-8"/>
+              <LineTo x="16" y="-7"/>
+              <LineTo x="1" y="-4"/>
+              <LineTo x="-2" y="-28"/>
+              <LineTo x="-17" y="-1"/>
+              <ShapeSetup x="322" y="-116"/>
+              <LineTo x="-17" y="-7"/>
+              <LineTo x="-20" y="-1"/>
+              <LineTo x="-22" y="5"/>
+              <LineTo x="-4" y="16"/>
+              <LineTo x="6" y="0"/>
+              <LineTo x="11" y="-2"/>
+              <LineTo x="44" y="0"/>
+              <LineTo x="8" y="1"/>
+              <LineTo x="1" y="-1"/>
+              <LineTo x="-7" y="-11"/>
+              <ShapeSetup x="328" y="-74"/>
+              <LineTo x="1" y="-6"/>
+              <LineTo x="-5" y="0"/>
+              <LineTo x="-62" y="3"/>
+              <LineTo x="0" y="2"/>
+              <LineTo x="5" y="5"/>
+              <LineTo x="7" y="5"/>
+              <LineTo x="23" y="2"/>
+              <LineTo x="15" y="-4"/>
+              <CurveTo x1="8" y1="-2" x2="5" y2="-4"/>
+              <LineTo x="3" y="-1"/>
+              <ShapeSetup x="0" y="0" fillStyle0="0" fillStyle1="0" lineStyle="0">
+                <styles>
+                  <StyleList>
+                    <fillStyles>
+                      <Solid>
+                        <color>
+                          <Color red="0" green="0" blue="0"/>
+                        </color>
+                      </Solid>
+                    </fillStyles>
+                    <lineStyles/>
+                  </StyleList>
+                </styles>
+              </ShapeSetup>
+              <ShapeSetup x="428" y="-65" fillStyle1="1"/>
+              <LineTo x="29" y="-6"/>
+              <LineTo x="31" y="-1"/>
+              <LineTo x="18" y="7"/>
+              <LineTo x="16" y="11"/>
+              <LineTo x="10" y="19"/>
+              <LineTo x="2" y="21"/>
+              <LineTo x="-4" y="14"/>
+              <LineTo x="-11" y="14"/>
+              <CurveTo x1="-14" y1="11" x2="-16" y2="3"/>
+              <LineTo x="-37" y="3"/>
+              <LineTo x="-9" y="37"/>
+              <LineTo x="-19" y="32"/>
+              <LineTo x="-16" y="-11"/>
+              <LineTo x="0" y="-5"/>
+              <LineTo x="12" y="-42"/>
+              <LineTo x="4" y="-98"/>
+              <LineTo x="2" y="0"/>
+              <LineTo x="2" y="-9"/>
+              <ShapeSetup x="424" y="-83"/>
+              <LineTo x="0" y="-16"/>
+              <LineTo x="2" y="-6"/>
+              <LineTo x="33" y="-6"/>
+              <LineTo x="36" y="-2"/>
+              <LineTo x="23" y="3"/>
+              <LineTo x="0" y="19"/>
+              <LineTo x="-1" y="2"/>
+              <LineTo x="-40" y="8"/>
+              <LineTo x="-45" y="1"/>
+              <LineTo x="-8" y="-3"/>
+              <ShapeSetup x="454" y="-44"/>
+              <LineTo x="-4" y="1"/>
+              <LineTo x="0" y="2"/>
+              <LineTo x="4" y="46"/>
+              <LineTo x="7" y="0"/>
+              <LineTo x="16" y="-3"/>
+              <LineTo x="15" y="-7"/>
+              <LineTo x="7" y="-5"/>
+              <LineTo x="4" y="-4"/>
+              <LineTo x="1" y="-8"/>
+              <LineTo x="-8" y="-14"/>
+              <LineTo x="-19" y="-7"/>
+              <LineTo x="-23" y="-1"/>
+              <ShapeSetup x="633" y="-119"/>
+              <LineTo x="17" y="7"/>
+              <LineTo x="0" y="7"/>
+              <LineTo x="-7" y="12"/>
+              <LineTo x="-9" y="11"/>
+              <LineTo x="-30" y="20"/>
+              <LineTo x="-34" y="12"/>
+              <LineTo x="0" y="6"/>
+              <LineTo x="3" y="14"/>
+              <LineTo x="4" y="1"/>
+              <LineTo x="27" y="-4"/>
+              <LineTo x="47" y="0"/>
+              <LineTo x="20" y="4"/>
+              <LineTo x="0" y="19"/>
+              <LineTo x="-18" y="4"/>
+              <LineTo x="-22" y="3"/>
+              <LineTo x="0" y="4"/>
+              <LineTo x="5" y="29"/>
+              <LineTo x="1" y="31"/>
+              <LineTo x="-3" y="30"/>
+              <LineTo x="-4" y="29"/>
+              <LineTo x="-17" y="1"/>
+              <LineTo x="-5" y="-1"/>
+              <LineTo x="-3" y="-25"/>
+              <LineTo x="0" y="-98"/>
+              <LineTo x="-32" y="0"/>
+              <LineTo x="-6" y="40"/>
+              <CurveTo x1="-4" y1="18" x2="-14" y2="17"/>
+              <LineTo x="-5" y="1"/>
+              <LineTo x="-14" y="-10"/>
+              <LineTo x="0" y="-3"/>
+              <LineTo x="11" y="-56"/>
+              <LineTo x="2" y="-57"/>
+              <LineTo x="-1" y="-5"/>
+              <LineTo x="4" y="-5"/>
+              <LineTo x="0" y="-7"/>
+              <LineTo x="39" y="-17"/>
+              <LineTo x="35" y="-22"/>
+              <LineTo x="9" y="-10"/>
+              <LineTo x="4" y="0"/>
+              <ShapeSetup x="0" y="0" fillStyle0="0" fillStyle1="0" lineStyle="0">
+                <styles>
+                  <StyleList>
+                    <fillStyles>
+                      <Solid>
+                        <color>
+                          <Color red="0" green="0" blue="0"/>
+                        </color>
+                      </Solid>
+                    </fillStyles>
+                    <lineStyles/>
+                  </StyleList>
+                </styles>
+              </ShapeSetup>
+              <ShapeSetup x="716" y="-103" fillStyle1="1"/>
+              <LineTo x="54" y="-9"/>
+              <LineTo x="9" y="-20"/>
+              <LineTo x="11" y="-16"/>
+              <LineTo x="12" y="-3"/>
+              <LineTo x="12" y="2"/>
+              <LineTo x="9" y="4"/>
+              <CurveTo x1="0" y1="9" x2="-11" y2="22"/>
+              <LineTo x="90" y="9"/>
+              <LineTo x="3" y="7"/>
+              <LineTo x="-3" y="11"/>
+              <LineTo x="-5" y="9"/>
+              <LineTo x="-100" y="5"/>
+              <CurveTo x1="-6" y1="14" x2="0" y2="10"/>
+              <LineTo x="5" y="22"/>
+              <LineTo x="23" y="-11"/>
+              <LineTo x="20" y="-6"/>
+              <LineTo x="11" y="5"/>
+              <LineTo x="5" y="11"/>
+              <CurveTo x1="0" y1="8" x2="-32" y2="18"/>
+              <LineTo x="22" y="12"/>
+              <LineTo x="1" y="3"/>
+              <LineTo x="-4" y="13"/>
+              <LineTo x="-8" y="10"/>
+              <CurveTo x1="-17" y1="0" x2="-26" y2="-15"/>
+              <CurveTo x1="-19" y1="15" x2="0" y2="13"/>
+              <CurveTo x1="0" y1="21" x2="42" y2="0"/>
+              <LineTo x="48" y="-5"/>
+              <LineTo x="1" y="0"/>
+              <LineTo x="6" y="9"/>
+              <LineTo x="3" y="13"/>
+              <LineTo x="-2" y="5"/>
+              <LineTo x="-32" y="9"/>
+              <LineTo x="-34" y="3"/>
+              <CurveTo x1="-27" y1="0" x2="-23" y2="-12"/>
+              <CurveTo x1="-26" y1="-17" x2="0" y2="-23"/>
+              <CurveTo x1="0" y1="-29" x2="34" y2="-30"/>
+              <CurveTo x1="-11" y1="-19" x2="0" y2="-22"/>
+              <LineTo x="3" y="-25"/>
+              <LineTo x="-23" y="1"/>
+              <CurveTo x1="-22" y1="0" x2="0" y2="-16"/>
+              <CurveTo x1="0" y1="-12" x2="7" y2="-3"/>
+              <ShapeSetup x="0" y="0" fillStyle0="0" fillStyle1="0" lineStyle="0">
+                <styles>
+                  <StyleList>
+                    <fillStyles>
+                      <Solid>
+                        <color>
+                          <Color red="0" green="0" blue="0"/>
+                        </color>
+                      </Solid>
+                    </fillStyles>
+                    <lineStyles/>
+                  </StyleList>
+                </styles>
+              </ShapeSetup>
+              <ShapeSetup x="1120" y="-146" fillStyle1="1"/>
+              <LineTo x="30" y="-2"/>
+              <LineTo x="20" y="2"/>
+              <LineTo x="16" y="12"/>
+              <LineTo x="5" y="13"/>
+              <LineTo x="0" y="16"/>
+              <LineTo x="-9" y="17"/>
+              <CurveTo x1="-8" y1="7" x2="-12" y2="1"/>
+              <LineTo x="-24" y="1"/>
+              <LineTo x="0" y="3"/>
+              <LineTo x="14" y="5"/>
+              <LineTo x="15" y="1"/>
+              <LineTo x="4" y="-4"/>
+              <LineTo x="13" y="0"/>
+              <LineTo x="8" y="3"/>
+              <LineTo x="0" y="12"/>
+              <LineTo x="-6" y="11"/>
+              <CurveTo x1="-3" y1="3" x2="-9" y2="2"/>
+              <LineTo x="-15" y="3"/>
+              <LineTo x="0" y="6"/>
+              <LineTo x="1" y="7"/>
+              <LineTo x="20" y="2"/>
+              <LineTo x="2" y="18"/>
+              <LineTo x="-3" y="4"/>
+              <LineTo x="-18" y="3"/>
+              <LineTo x="-3" y="26"/>
+              <LineTo x="26" y="3"/>
+              <LineTo x="1" y="15"/>
+              <LineTo x="-2" y="5"/>
+              <LineTo x="-20" y="4"/>
+              <LineTo x="0" y="2"/>
+              <LineTo x="12" y="16"/>
+              <LineTo x="-12" y="17"/>
+              <LineTo x="-4" y="0"/>
+              <LineTo x="-21" y="-13"/>
+              <LineTo x="-7" y="-10"/>
+              <LineTo x="-5" y="-11"/>
+              <LineTo x="-32" y="-1"/>
+              <LineTo x="-6" y="13"/>
+              <LineTo x="-11" y="11"/>
+              <LineTo x="-9" y="5"/>
+              <LineTo x="-12" y="3"/>
+              <LineTo x="-9" y="-20"/>
+              <LineTo x="11" y="-14"/>
+              <LineTo x="-11" y="-2"/>
+              <CurveTo x1="-8" y1="0" x2="-2" y2="-4"/>
+              <LineTo x="-1" y="-14"/>
+              <LineTo x="2" y="-4"/>
+              <LineTo x="12" y="-4"/>
+              <LineTo x="13" y="-1"/>
+              <LineTo x="0" y="-6"/>
+              <LineTo x="-2" y="-15"/>
+              <LineTo x="-12" y="-4"/>
+              <LineTo x="-2" y="-12"/>
+              <LineTo x="3" y="-10"/>
+              <LineTo x="12" y="-1"/>
+              <LineTo x="2" y="-14"/>
+              <LineTo x="-17" y="-3"/>
+              <CurveTo x1="-10" y1="-2" x2="-5" y2="-7"/>
+              <LineTo x="-7" y="-12"/>
+              <CurveTo x1="-3" y1="-6" x2="0" y2="-8"/>
+              <LineTo x="6" y="-27"/>
+              <LineTo x="47" y="-6"/>
+              <LineTo x="0" y="-4"/>
+              <LineTo x="-21" y="-5"/>
+              <LineTo x="-21" y="-3"/>
+              <LineTo x="-4" y="-16"/>
+              <LineTo x="4" y="-7"/>
+              <LineTo x="31" y="-2"/>
+              <LineTo x="20" y="3"/>
+              <LineTo x="15" y="11"/>
+              <LineTo x="5" y="13"/>
+              <LineTo x="0" y="16"/>
+              <LineTo x="-9" y="17"/>
+              <CurveTo x1="-8" y1="8" x2="-12" y2="0"/>
+              <LineTo x="-24" y="0"/>
+              <LineTo x="0" y="4"/>
+              <CurveTo x1="6" y1="5" x2="8" y2="0"/>
+              <LineTo x="15" y="1"/>
+              <LineTo x="4" y="-4"/>
+              <LineTo x="13" y="0"/>
+              <LineTo x="9" y="3"/>
+              <LineTo x="0" y="12"/>
+              <LineTo x="-7" y="11"/>
+              <LineTo x="-14" y="6"/>
+              <LineTo x="0" y="2"/>
+              <LineTo x="2" y="0"/>
+              <LineTo x="3" y="12"/>
+              <LineTo x="41" y="0"/>
+              <LineTo x="4" y="-15"/>
+              <LineTo x="-9" y="-3"/>
+              <LineTo x="-7" y="-6"/>
+              <CurveTo x1="-5" y1="-4" x2="-2" y2="-8"/>
+              <CurveTo x1="-3" y1="-6" x2="0" y2="-8"/>
+              <LineTo x="5" y="-26"/>
+              <LineTo x="25" y="-4"/>
+              <LineTo x="24" y="-3"/>
+              <LineTo x="0" y="-5"/>
+              <LineTo x="-43" y="-7"/>
+              <LineTo x="-4" y="-16"/>
+              <LineTo x="4" y="-7"/>
+              <ShapeSetup x="999" y="-76"/>
+              <LineTo x="2" y="11"/>
+              <LineTo x="-19" y="13"/>
+              <LineTo x="-10" y="-9"/>
+              <LineTo x="-8" y="-11"/>
+              <LineTo x="-1" y="-9"/>
+              <LineTo x="21" y="-11"/>
+              <LineTo x="9" y="7"/>
+              <LineTo x="6" y="9"/>
+              <ShapeSetup x="983" y="-41"/>
+              <LineTo x="12" y="2"/>
+              <LineTo x="10" y="8"/>
+              <LineTo x="6" y="13"/>
+              <LineTo x="0" y="14"/>
+              <LineTo x="-6" y="11"/>
+              <LineTo x="-7" y="10"/>
+              <LineTo x="-10" y="6"/>
+              <LineTo x="-2" y="4"/>
+              <LineTo x="-2" y="6"/>
+              <LineTo x="12" y="16"/>
+              <LineTo x="4" y="18"/>
+              <LineTo x="-5" y="17"/>
+              <LineTo x="50" y="10"/>
+              <LineTo x="52" y="2"/>
+              <LineTo x="50" y="-3"/>
+              <LineTo x="49" y="-7"/>
+              <LineTo x="4" y="9"/>
+              <LineTo x="2" y="10"/>
+              <LineTo x="-1" y="3"/>
+              <LineTo x="-63" y="16"/>
+              <LineTo x="-67" y="4"/>
+              <LineTo x="-63" y="-10"/>
+              <LineTo x="-60" y="-21"/>
+              <LineTo x="-3" y="-18"/>
+              <LineTo x="11" y="-6"/>
+              <LineTo x="12" y="-3"/>
+              <LineTo x="2" y="-6"/>
+              <LineTo x="-13" y="-15"/>
+              <CurveTo x1="-5" y1="-7" x2="0" y2="-13"/>
+              <LineTo x="7" y="-17"/>
+              <LineTo x="12" y="-14"/>
+              <LineTo x="9" y="-7"/>
+              <LineTo x="0" y="-2"/>
+              <LineTo x="-35" y="-4"/>
+              <LineTo x="-5" y="-14"/>
+              <LineTo x="3" y="-5"/>
+              <LineTo x="19" y="-6"/>
+              <LineTo x="21" y="-1"/>
+              <ShapeSetup x="1104" y="3"/>
+              <LineTo x="-12" y="-1"/>
+              <LineTo x="0" y="20"/>
+              <LineTo x="39" y="1"/>
+              <LineTo x="0" y="-1"/>
+              <LineTo x="-2" y="-20"/>
+              <LineTo x="-25" y="1"/>
+              <ShapeSetup x="0" y="0" fillStyle0="0" fillStyle1="0" lineStyle="0">
+                <styles>
+                  <StyleList>
+                    <fillStyles>
+                      <Solid>
+                        <color>
+                          <Color red="0" green="0" blue="0"/>
+                        </color>
+                      </Solid>
+                    </fillStyles>
+                    <lineStyles/>
+                  </StyleList>
+                </styles>
+              </ShapeSetup>
+              <ShapeSetup x="1354" y="-132" fillStyle1="1"/>
+              <LineTo x="17" y="5"/>
+              <LineTo x="11" y="11"/>
+              <LineTo x="-1" y="2"/>
+              <LineTo x="-16" y="27"/>
+              <LineTo x="-30" y="57"/>
+              <CurveTo x1="22" y1="-13" x2="20" y2="0"/>
+              <CurveTo x1="26" y1="0" x2="14" y2="14"/>
+              <CurveTo x1="16" y1="15" x2="0" y2="23"/>
+              <LineTo x="-6" y="43"/>
+              <CurveTo x1="0" y1="12" x2="13" y2="0"/>
+              <LineTo x="27" y="-7"/>
+              <LineTo x="17" y="-9"/>
+              <LineTo x="6" y="11"/>
+              <LineTo x="4" y="13"/>
+              <LineTo x="0" y="3"/>
+              <LineTo x="-6" y="5"/>
+              <CurveTo x1="-24" y1="18" x2="-27" y2="0"/>
+              <CurveTo x1="-48" y1="0" x2="0" y2="-38"/>
+              <LineTo x="3" y="-22"/>
+              <LineTo x="4" y="-20"/>
+              <CurveTo x1="0" y1="-12" x2="-7" y2="-7"/>
+              <LineTo x="-20" y="-6"/>
+              <CurveTo x1="-30" y1="0" x2="-18" y2="24"/>
+              <CurveTo x1="-13" y1="17" x2="-9" y2="40"/>
+              <LineTo x="-5" y="23"/>
+              <LineTo x="-14" y="4"/>
+              <CurveTo x1="-19" y1="0" x2="0" y2="-6"/>
+              <LineTo x="5" y="-36"/>
+              <CurveTo x1="12" y1="-56" x2="19" y2="-43"/>
+              <CurveTo x1="26" y1="-60" x2="26" y2="-30"/>
+              <LineTo x="5" y="-2"/>
+              <ShapeSetup x="0" y="0" fillStyle0="0" fillStyle1="0" lineStyle="0">
+                <styles>
+                  <StyleList>
+                    <fillStyles>
+                      <Solid>
+                        <color>
+                          <Color red="0" green="0" blue="0"/>
+                        </color>
+                      </Solid>
+                    </fillStyles>
+                    <lineStyles/>
+                  </StyleList>
+                </styles>
+              </ShapeSetup>
+              <ShapeSetup x="1771" y="-11" fillStyle1="1"/>
+              <LineTo x="-19" y="5"/>
+              <CurveTo x1="-7" y1="-6" x2="-4" y2="-9"/>
+              <LineTo x="-5" y="-20"/>
+              <CurveTo x1="0" y1="-3" x2="7" y2="-1"/>
+              <LineTo x="11" y="-3"/>
+              <LineTo x="11" y="14"/>
+              <LineTo x="6" y="20"/>
+              <LineTo x="0" y="3"/>
+              <ShapeSetup x="1517" y="-108"/>
+              <LineTo x="98" y="-11"/>
+              <LineTo x="119" y="15"/>
+              <LineTo x="3" y="15"/>
+              <LineTo x="-4" y="15"/>
+              <LineTo x="-9" y="8"/>
+              <CurveTo x1="-48" y1="37" x2="-17" y2="28"/>
+              <CurveTo x1="-9" y1="15" x2="0" y2="14"/>
+              <CurveTo x1="0" y1="18" x2="11" y2="11"/>
+              <CurveTo x1="9" y1="12" x2="16" y2="5"/>
+              <LineTo x="1" y="6"/>
+              <CurveTo x1="0" y1="14" x2="-8" y2="7"/>
+              <CurveTo x1="-28" y1="0" x2="-21" y2="-23"/>
+              <CurveTo x1="-20" y1="-21" x2="0" y2="-31"/>
+              <CurveTo x1="0" y1="-52" x2="60" y2="-47"/>
+              <LineTo x="-76" y="1"/>
+              <LineTo x="-79" y="-4"/>
+              <CurveTo x1="-5" y1="-2" x2="0" y2="-14"/>
+              <CurveTo x1="0" y1="-13" x2="7" y2="-3"/>
+              <ShapeSetup x="1719" y="-43"/>
+              <CurveTo x1="6" y1="0" x2="6" y2="13"/>
+              <LineTo x="5" y="20"/>
+              <LineTo x="0" y="2"/>
+              <LineTo x="-19" y="6"/>
+              <LineTo x="-10" y="-15"/>
+              <LineTo x="-5" y="-20"/>
+              <CurveTo x1="0" y1="-2" x2="6" y2="-2"/>
+              <LineTo x="11" y="-2"/>
+              <ShapeSetup x="0" y="0" fillStyle0="0" fillStyle1="0" lineStyle="0">
+                <styles>
+                  <StyleList>
+                    <fillStyles>
+                      <Solid>
+                        <color>
+                          <Color red="0" green="0" blue="0"/>
+                        </color>
+                      </Solid>
+                    </fillStyles>
+                    <lineStyles/>
+                  </StyleList>
+                </styles>
+              </ShapeSetup>
+              <ShapeSetup x="1881" y="-143" fillStyle1="1"/>
+              <CurveTo x1="14" y1="0" x2="0" y2="8"/>
+              <LineTo x="-1" y="18"/>
+              <LineTo x="16" y="1"/>
+              <LineTo x="0" y="1"/>
+              <LineTo x="9" y="5"/>
+              <LineTo x="4" y="10"/>
+              <LineTo x="-14" y="32"/>
+              <LineTo x="-19" y="37"/>
+              <CurveTo x1="50" y1="-36" x2="33" y2="0"/>
+              <LineTo x="26" y="5"/>
+              <CurveTo x1="24" y1="11" x2="7" y2="21"/>
+              <CurveTo x1="7" y1="17" x2="0" y2="28"/>
+              <LineTo x="0" y="9"/>
+              <LineTo x="23" y="13"/>
+              <LineTo x="2" y="7"/>
+              <LineTo x="-3" y="9"/>
+              <LineTo x="-6" y="6"/>
+              <LineTo x="-21" y="-6"/>
+              <CurveTo x1="-16" y1="49" x2="-37" y2="0"/>
+              <CurveTo x1="-20" y1="0" x2="-13" y2="-13"/>
+              <CurveTo x1="-15" y1="-12" x2="0" y2="-20"/>
+              <CurveTo x1="0" y1="-20" x2="16" y2="-14"/>
+              <CurveTo x1="17" y1="-14" x2="19" y2="0"/>
+              <LineTo x="18" y="3"/>
+              <LineTo x="-7" y="-31"/>
+              <CurveTo x1="-8" y1="-14" x2="-18" y2="0"/>
+              <CurveTo x1="-20" y1="0" x2="-23" y2="15"/>
+              <LineTo x="-38" y="27"/>
+              <LineTo x="-9" y="95"/>
+              <LineTo x="-8" y="2"/>
+              <LineTo x="-18" y="-4"/>
+              <LineTo x="-2" y="-71"/>
+              <LineTo x="-27" y="37"/>
+              <LineTo x="-11" y="-4"/>
+              <LineTo x="-8" y="-8"/>
+              <CurveTo x1="15" y1="-45" x2="35" y2="-53"/>
+              <LineTo x="4" y="-37"/>
+              <LineTo x="-48" y="-3"/>
+              <CurveTo x1="-3" y1="-1" x2="0" y2="-11"/>
+              <CurveTo x1="0" y1="-11" x2="3" y2="-2"/>
+              <LineTo x="53" y="-9"/>
+              <LineTo x="4" y="-19"/>
+              <CurveTo x1="3" y1="-8" x2="11" y2="0"/>
+              <ShapeSetup x="1969" y="44"/>
+              <CurveTo x1="-7" y1="5" x2="0" y2="8"/>
+              <CurveTo x1="0" y1="13" x2="14" y2="0"/>
+              <LineTo x="14" y="-9"/>
+              <LineTo x="7" y="-18"/>
+              <LineTo x="-14" y="-4"/>
+              <LineTo x="-14" y="5"/>
+              <ShapeSetup x="0" y="0" fillStyle0="0" fillStyle1="0" lineStyle="0">
+                <styles>
+                  <StyleList>
+                    <fillStyles>
+                      <Solid>
+                        <color>
+                          <Color red="255" green="239" blue="90"/>
+                        </color>
+                      </Solid>
+                    </fillStyles>
+                    <lineStyles/>
+                  </StyleList>
+                </styles>
+              </ShapeSetup>
+              <ShapeSetup x="950" y="440" fillStyle0="1"/>
+              <CurveTo x1="0" y1="-16" x2="-12" y2="-12"/>
+              <CurveTo x1="-11" y1="-12" x2="-17" y2="0"/>
+              <LineTo x="-1820" y="0"/>
+              <CurveTo x1="-16" y1="0" x2="-12" y2="12"/>
+              <CurveTo x1="-12" y1="12" x2="0" y2="16"/>
+              <LineTo x="0" y="320"/>
+              <CurveTo x1="0" y1="16" x2="12" y2="12"/>
+              <CurveTo x1="12" y1="12" x2="16" y2="0"/>
+              <LineTo x="1820" y="0"/>
+              <CurveTo x1="16" y1="0" x2="12" y2="-12"/>
+              <CurveTo x1="12" y1="-12" x2="0" y2="-16"/>
+              <LineTo x="0" y="-320"/>
+              <ShapeSetup x="0" y="0" fillStyle0="0" fillStyle1="0" lineStyle="0">
+                <styles>
+                  <StyleList>
+                    <fillStyles>
+                      <Solid>
+                        <color>
+                          <Color red="0" green="0" blue="0"/>
+                        </color>
+                      </Solid>
+                    </fillStyles>
+                    <lineStyles/>
+                  </StyleList>
+                </styles>
+              </ShapeSetup>
+              <ShapeSetup x="-14" y="637" fillStyle1="1"/>
+              <CurveTo x1="-19" y1="47" x2="-66" y2="0"/>
+              <LineTo x="-35" y="-5"/>
+              <CurveTo x1="-21" y1="-7" x2="-10" y2="-11"/>
+              <CurveTo x1="-29" y1="-27" x2="4" y2="-44"/>
+              <LineTo x="12" y="-44"/>
+              <CurveTo x1="15" y1="-30" x2="37" y2="-10"/>
+              <LineTo x="54" y="1"/>
+              <CurveTo x1="29" y1="9" x2="18" y2="22"/>
+              <CurveTo x1="17" y1="21" x2="1" y2="31"/>
+              <CurveTo x1="2" y1="25" x2="-9" y2="22"/>
+              <ShapeSetup x="-35" y="593"/>
+              <LineTo x="-5" y="-20"/>
+              <LineTo x="-16" y="-24"/>
+              <CurveTo x1="-15" y1="-15" x2="-25" y2="-2"/>
+              <CurveTo x1="-22" y1="-1" x2="-13" y2="8"/>
+              <CurveTo x1="-15" y1="7" x2="-8" y2="21"/>
+              <LineTo x="-7" y="33"/>
+              <CurveTo x1="6" y1="62" x2="66" y2="-7"/>
+              <CurveTo x1="23" y1="-4" x2="15" y2="-13"/>
+              <CurveTo x1="19" y1="-18" x2="-3" y2="-27"/>
+              <ShapeSetup x="0" y="0" fillStyle0="0" fillStyle1="0" lineStyle="0">
+                <styles>
+                  <StyleList>
+                    <fillStyles>
+                      <Solid>
+                        <color>
+                          <Color red="0" green="0" blue="0"/>
+                        </color>
+                      </Solid>
+                    </fillStyles>
+                    <lineStyles/>
+                  </StyleList>
+                </styles>
+              </ShapeSetup>
+              <ShapeSetup x="57" y="513" fillStyle1="1"/>
+              <CurveTo x1="4" y1="-4" x2="14" y2="4"/>
+              <LineTo x="8" y="2"/>
+              <LineTo x="0" y="66"/>
+              <LineTo x="45" y="-38"/>
+              <LineTo x="44" y="-32"/>
+              <LineTo x="15" y="19"/>
+              <LineTo x="-33" y="32"/>
+              <LineTo x="-33" y="28"/>
+              <LineTo x="40" y="36"/>
+              <LineTo x="38" y="41"/>
+              <LineTo x="-6" y="8"/>
+              <LineTo x="-11" y="9"/>
+              <LineTo x="-43" y="-36"/>
+              <LineTo x="-40" y="-41"/>
+              <LineTo x="-16" y="10"/>
+              <LineTo x="-6" y="69"/>
+              <LineTo x="-24" y="-1"/>
+              <CurveTo x1="-4" y1="-53" x2="4" y2="-68"/>
+              <LineTo x="4" y="-51"/>
+              <ShapeSetup x="0" y="0" fillStyle0="0" fillStyle1="0" lineStyle="0">
+                <styles>
+                  <StyleList>
+                    <fillStyles>
+                      <Solid>
+                        <color>
+                          <Color red="255" green="0" blue="0"/>
+                        </color>
+                      </Solid>
+                    </fillStyles>
+                    <lineStyles/>
+                  </StyleList>
+                </styles>
+              </ShapeSetup>
+              <ShapeSetup x="-1738" y="-478" fillStyle0="1"/>
+              <LineTo x="322" y="0"/>
+              <LineTo x="-161" y="-162"/>
+              <LineTo x="-161" y="162"/>
+              <ShapeSetup x="0" y="0" fillStyle0="0" fillStyle1="0" lineStyle="0">
+                <styles>
+                  <StyleList>
+                    <fillStyles>
+                      <Solid>
+                        <color>
+                          <Color red="255" green="0" blue="0"/>
+                        </color>
+                      </Solid>
+                    </fillStyles>
+                    <lineStyles/>
+                  </StyleList>
+                </styles>
+              </ShapeSetup>
+              <ShapeSetup x="-1577" y="244" fillStyle0="1"/>
+              <LineTo x="161" y="-162"/>
+              <LineTo x="-322" y="0"/>
+              <LineTo x="161" y="162"/>
+              <ShapeSetup/>
+            </edges>
+          </Shape>
+        </shapes>
+      </DefineShape2>
+      <DefineSprite objectID="72" frames="1">
+        <tags>
+          <PlaceObject2 replace="0" depth="23" objectID="71">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <PlaceObject2 replace="0" depth="24" objectID="68">
+            <transform>
+              <Transform transX="-1920" transY="-400"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <PlaceObject2 replace="0" depth="115" objectID="72" name="help">
+        <transform>
+          <Transform transX="2400" transY="2560"/>
+        </transform>
+      </PlaceObject2>
+      <DefineShape objectID="73">
+        <bounds>
+          <Rectangle left="0" right="400" top="0" bottom="400"/>
+        </bounds>
+        <styles>
+          <StyleList>
+            <fillStyles>
+              <Solid>
+                <color>
+                  <Color red="0" green="255" blue="0"/>
+                </color>
+              </Solid>
+            </fillStyles>
+            <lineStyles/>
+          </StyleList>
+        </styles>
+        <shapes>
+          <Shape>
+            <edges>
+              <ShapeSetup x="0" y="400" fillStyle1="1"/>
+              <LineTo x="0" y="-400"/>
+              <LineTo x="400" y="0"/>
+              <LineTo x="0" y="400"/>
+              <LineTo x="-400" y="0"/>
+              <ShapeSetup/>
+            </edges>
+          </Shape>
+        </shapes>
+      </DefineShape>
+      <DefineButton2 objectID="74" menu="0" buttonsSize="10">
+        <buttons>
+          <Button hitTest="1" down="1" over="1" up="1" objectID="73" depth="1">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+            <colorTransform>
+              <ColorTransform2/>
+            </colorTransform>
+          </Button>
+          <Button hitTest="0" down="0" over="0" up="0"/>
+        </buttons>
+        <conditions>
+          <Condition next="120" menuEnter="0" pointerReleaseOutside="0" pointerDragEnter="0" pointerDragLeave="0" pointerReleaseInside="0" pointerPush="0" pointerLeave="0" pointerEnter="1" key="0" menuLeave="0">
+            <actions>
+              <PushData>
+                <items>
+                  <StackString value="/:pos"/>
+                </items>
+              </PushData>
+              <GetVariable/>
+              <PushData>
+                <items>
+                  <StackString value="3"/>
+                </items>
+              </PushData>
+              <EqualCast/>
+              <LogicalNOT/>
+              <BranchIfTrue byteOffset="28"/>
+              <PushData>
+                <items>
+                  <StackString value="/as/:pressRight"/>
+                </items>
+              </PushData>
+              <CallFrame/>
+              <BranchAlways byteOffset="46"/>
+              <PushData>
+                <items>
+                  <StackString value="/:pos"/>
+                </items>
+              </PushData>
+              <GetVariable/>
+              <PushData>
+                <items>
+                  <StackString value="2"/>
+                </items>
+              </PushData>
+              <EqualCast/>
+              <LogicalNOT/>
+              <BranchIfTrue byteOffset="22"/>
+              <PushData>
+                <items>
+                  <StackString value="/as/:pressLeft"/>
+                </items>
+              </PushData>
+              <CallFrame/>
+              <PushData>
+                <items>
+                  <StackString value="/:pos"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="1"/>
+                </items>
+              </PushData>
+              <SetVariable/>
+              <EndAction/>
+            </actions>
+          </Condition>
+          <Condition next="27" menuEnter="0" pointerReleaseOutside="0" pointerDragEnter="0" pointerDragLeave="0" pointerReleaseInside="0" pointerPush="0" pointerLeave="0" pointerEnter="0" key="1" menuLeave="0">
+            <actions>
+              <PushData>
+                <items>
+                  <StackString value="/as/:pressLeft"/>
+                </items>
+              </PushData>
+              <CallFrame/>
+              <EndAction/>
+            </actions>
+          </Condition>
+          <Condition next="27" menuEnter="0" pointerReleaseOutside="0" pointerDragEnter="0" pointerDragLeave="0" pointerReleaseInside="0" pointerPush="0" pointerLeave="0" pointerEnter="0" key="50" menuLeave="0">
+            <actions>
+              <PushData>
+                <items>
+                  <StackString value="/as/:pressLeft"/>
+                </items>
+              </PushData>
+              <CallFrame/>
+              <EndAction/>
+            </actions>
+          </Condition>
+          <Condition next="27" menuEnter="0" pointerReleaseOutside="0" pointerDragEnter="0" pointerDragLeave="0" pointerReleaseInside="0" pointerPush="0" pointerLeave="0" pointerEnter="0" key="52" menuLeave="0">
+            <actions>
+              <PushData>
+                <items>
+                  <StackString value="/as/:pressLeft"/>
+                </items>
+              </PushData>
+              <CallFrame/>
+              <EndAction/>
+            </actions>
+          </Condition>
+          <Condition next="28" menuEnter="0" pointerReleaseOutside="0" pointerDragEnter="0" pointerDragLeave="0" pointerReleaseInside="0" pointerPush="0" pointerLeave="0" pointerEnter="0" key="2" menuLeave="0">
+            <actions>
+              <PushData>
+                <items>
+                  <StackString value="/as/:pressRight"/>
+                </items>
+              </PushData>
+              <CallFrame/>
+              <EndAction/>
+            </actions>
+          </Condition>
+          <Condition next="28" menuEnter="0" pointerReleaseOutside="0" pointerDragEnter="0" pointerDragLeave="0" pointerReleaseInside="0" pointerPush="0" pointerLeave="0" pointerEnter="0" key="54" menuLeave="0">
+            <actions>
+              <PushData>
+                <items>
+                  <StackString value="/as/:pressRight"/>
+                </items>
+              </PushData>
+              <CallFrame/>
+              <EndAction/>
+            </actions>
+          </Condition>
+          <Condition next="28" menuEnter="0" pointerReleaseOutside="0" pointerDragEnter="0" pointerDragLeave="0" pointerReleaseInside="0" pointerPush="0" pointerLeave="0" pointerEnter="0" key="56" menuLeave="0">
+            <actions>
+              <PushData>
+                <items>
+                  <StackString value="/as/:pressRight"/>
+                </items>
+              </PushData>
+              <CallFrame/>
+              <EndAction/>
+            </actions>
+          </Condition>
+          <Condition next="29" menuEnter="0" pointerReleaseOutside="0" pointerDragEnter="0" pointerDragLeave="0" pointerReleaseInside="0" pointerPush="0" pointerLeave="0" pointerEnter="0" key="13" menuLeave="0">
+            <actions>
+              <PushData>
+                <items>
+                  <StackString value="/as/:pressCenter"/>
+                </items>
+              </PushData>
+              <CallFrame/>
+              <EndAction/>
+            </actions>
+          </Condition>
+          <Condition next="0" menuEnter="0" pointerReleaseOutside="0" pointerDragEnter="0" pointerDragLeave="0" pointerReleaseInside="0" pointerPush="0" pointerLeave="0" pointerEnter="0" key="53" menuLeave="0">
+            <actions>
+              <PushData>
+                <items>
+                  <StackString value="/as/:pressCenter"/>
+                </items>
+              </PushData>
+              <CallFrame/>
+              <EndAction/>
+            </actions>
+          </Condition>
+        </conditions>
+      </DefineButton2>
+      <PlaceObject2 replace="0" depth="140" objectID="74">
+        <transform>
+          <Transform transX="-400" transY="0"/>
+        </transform>
+        <colorTransform>
+          <ColorTransform2 factorRed="256" factorGreen="256" factorBlue="256" factorAlpha="0"/>
+        </colorTransform>
+      </PlaceObject2>
+      <DefineButton2 objectID="75" menu="0" buttonsSize="10">
+        <buttons>
+          <Button hitTest="1" down="1" over="1" up="1" objectID="73" depth="1">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+            <colorTransform>
+              <ColorTransform2/>
+            </colorTransform>
+          </Button>
+          <Button hitTest="0" down="0" over="0" up="0"/>
+        </buttons>
+        <conditions>
+          <Condition next="0" menuEnter="0" pointerReleaseOutside="0" pointerDragEnter="0" pointerDragLeave="0" pointerReleaseInside="0" pointerPush="0" pointerLeave="0" pointerEnter="1" key="0" menuLeave="0">
+            <actions>
+              <PushData>
+                <items>
+                  <StackString value="/:pos"/>
+                </items>
+              </PushData>
+              <GetVariable/>
+              <PushData>
+                <items>
+                  <StackString value="1"/>
+                </items>
+              </PushData>
+              <EqualCast/>
+              <LogicalNOT/>
+              <BranchIfTrue byteOffset="28"/>
+              <PushData>
+                <items>
+                  <StackString value="/as/:pressRight"/>
+                </items>
+              </PushData>
+              <CallFrame/>
+              <BranchAlways byteOffset="46"/>
+              <PushData>
+                <items>
+                  <StackString value="/:pos"/>
+                </items>
+              </PushData>
+              <GetVariable/>
+              <PushData>
+                <items>
+                  <StackString value="3"/>
+                </items>
+              </PushData>
+              <EqualCast/>
+              <LogicalNOT/>
+              <BranchIfTrue byteOffset="22"/>
+              <PushData>
+                <items>
+                  <StackString value="/as/:pressLeft"/>
+                </items>
+              </PushData>
+              <CallFrame/>
+              <PushData>
+                <items>
+                  <StackString value="/:pos"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="2"/>
+                </items>
+              </PushData>
+              <SetVariable/>
+              <EndAction/>
+            </actions>
+          </Condition>
+        </conditions>
+      </DefineButton2>
+      <PlaceObject2 replace="0" depth="142" objectID="75">
+        <transform>
+          <Transform transX="-400" transY="400"/>
+        </transform>
+        <colorTransform>
+          <ColorTransform2 factorRed="256" factorGreen="256" factorBlue="256" factorAlpha="0"/>
+        </colorTransform>
+      </PlaceObject2>
+      <DefineButton2 objectID="76" menu="0" buttonsSize="10">
+        <buttons>
+          <Button hitTest="1" down="1" over="1" up="1" objectID="73" depth="1">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+            <colorTransform>
+              <ColorTransform2/>
+            </colorTransform>
+          </Button>
+          <Button hitTest="0" down="0" over="0" up="0"/>
+        </buttons>
+        <conditions>
+          <Condition next="0" menuEnter="0" pointerReleaseOutside="0" pointerDragEnter="0" pointerDragLeave="0" pointerReleaseInside="0" pointerPush="0" pointerLeave="0" pointerEnter="1" key="0" menuLeave="0">
+            <actions>
+              <PushData>
+                <items>
+                  <StackString value="/:pos"/>
+                </items>
+              </PushData>
+              <GetVariable/>
+              <PushData>
+                <items>
+                  <StackString value="2"/>
+                </items>
+              </PushData>
+              <EqualCast/>
+              <LogicalNOT/>
+              <BranchIfTrue byteOffset="28"/>
+              <PushData>
+                <items>
+                  <StackString value="/as/:pressRight"/>
+                </items>
+              </PushData>
+              <CallFrame/>
+              <BranchAlways byteOffset="46"/>
+              <PushData>
+                <items>
+                  <StackString value="/:pos"/>
+                </items>
+              </PushData>
+              <GetVariable/>
+              <PushData>
+                <items>
+                  <StackString value="1"/>
+                </items>
+              </PushData>
+              <EqualCast/>
+              <LogicalNOT/>
+              <BranchIfTrue byteOffset="22"/>
+              <PushData>
+                <items>
+                  <StackString value="/as/:pressLeft"/>
+                </items>
+              </PushData>
+              <CallFrame/>
+              <PushData>
+                <items>
+                  <StackString value="/:pos"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="3"/>
+                </items>
+              </PushData>
+              <SetVariable/>
+              <EndAction/>
+            </actions>
+          </Condition>
+        </conditions>
+      </DefineButton2>
+      <PlaceObject2 replace="0" depth="144" objectID="76">
+        <transform>
+          <Transform transX="-400" transY="800"/>
+        </transform>
+        <colorTransform>
+          <ColorTransform2 factorRed="256" factorGreen="256" factorBlue="256" factorAlpha="0"/>
+        </colorTransform>
+      </PlaceObject2>
+      <DefineSprite objectID="77" frames="40">
+        <tags>
+          <DoAction>
+            <actions>
+              <Stop/>
+              <EndAction/>
+            </actions>
+          </DoAction>
+          <PlaceObject2 replace="0" depth="1" objectID="73">
+            <transform>
+              <Transform transX="0" transY="0"/>
+            </transform>
+          </PlaceObject2>
+          <ShowFrame/>
+          <ShowFrame/>
+          <ShowFrame/>
+          <ShowFrame/>
+          <ShowFrame/>
+          <ShowFrame/>
+          <ShowFrame/>
+          <ShowFrame/>
+          <ShowFrame/>
+          <ShowFrame/>
+          <DoAction>
+            <actions>
+              <Stop/>
+              <PushData>
+                <items>
+                  <StackString value="/:scene"/>
+                </items>
+              </PushData>
+              <GetVariable/>
+              <PushData>
+                <items>
+                  <StackString value="select"/>
+                </items>
+              </PushData>
+              <StringEqual/>
+              <LogicalNOT/>
+              <BranchIfTrue byteOffset="524"/>
+              <PushData>
+                <items>
+                  <StackString value="i"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="/:objectPos"/>
+                </items>
+              </PushData>
+              <GetVariable/>
+              <PushData>
+                <items>
+                  <StackString value="1"/>
+                </items>
+              </PushData>
+              <Substract/>
+              <SetVariable/>
+              <PushData>
+                <items>
+                  <StackString value="-1"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="i"/>
+                </items>
+              </PushData>
+              <GetVariable/>
+              <LessThanCast/>
+              <LogicalNOT/>
+              <BranchIfTrue byteOffset="472"/>
+              <PushData>
+                <items>
+                  <StackString value="i"/>
+                </items>
+              </PushData>
+              <GetVariable/>
+              <PushData>
+                <items>
+                  <StackString value="0"/>
+                </items>
+              </PushData>
+              <EqualCast/>
+              <LogicalNOT/>
+              <BranchIfTrue byteOffset="14"/>
+              <PushData>
+                <items>
+                  <StackString value="i"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="30"/>
+                </items>
+              </PushData>
+              <SetVariable/>
+              <PushData>
+                <items>
+                  <StackString value="/:"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="b"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="i"/>
+                </items>
+              </PushData>
+              <GetVariable/>
+              <ConcatenateString/>
+              <PushData>
+                <items>
+                  <StackString value="_flg"/>
+                </items>
+              </PushData>
+              <ConcatenateString/>
+              <ConcatenateString/>
+              <GetVariable/>
+              <PushData>
+                <items>
+                  <StackString value="0"/>
+                </items>
+              </PushData>
+              <EqualCast/>
+              <LogicalNOT/>
+              <BranchIfTrue byteOffset="366"/>
+              <PushData>
+                <items>
+                  <StackString value="/:objectPos"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="i"/>
+                </items>
+              </PushData>
+              <GetVariable/>
+              <SetVariable/>
+              <PushData>
+                <items>
+                  <StackString value="i"/>
+                </items>
+              </PushData>
+              <GetVariable/>
+              <PushData>
+                <items>
+                  <StackString value="10"/>
+                </items>
+              </PushData>
+              <LessThanCast/>
+              <LogicalNOT/>
+              <BranchIfTrue byteOffset="21"/>
+              <PushData>
+                <items>
+                  <StackString value="i"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="0"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="i"/>
+                </items>
+              </PushData>
+              <GetVariable/>
+              <ConcatenateString/>
+              <SetVariable/>
+              <PushData>
+                <items>
+                  <StackString value="/:xpos"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="/field/"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="b"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="i"/>
+                </items>
+              </PushData>
+              <GetVariable/>
+              <ConcatenateString/>
+              <ConcatenateString/>
+              <PushData>
+                <items>
+                  <StackString value="0"/>
+                </items>
+              </PushData>
+              <GetProperty/>
+              <PushData>
+                <items>
+                  <StackString value="/field"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="0"/>
+                </items>
+              </PushData>
+              <GetProperty/>
+              <AddCast/>
+              <SetVariable/>
+              <PushData>
+                <items>
+                  <StackString value="/:ypos"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="/field/"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="b"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="i"/>
+                </items>
+              </PushData>
+              <GetVariable/>
+              <ConcatenateString/>
+              <ConcatenateString/>
+              <PushData>
+                <items>
+                  <StackString value="1"/>
+                </items>
+              </PushData>
+              <GetProperty/>
+              <PushData>
+                <items>
+                  <StackString value="/field"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="1"/>
+                </items>
+              </PushData>
+              <GetProperty/>
+              <AddCast/>
+              <SetVariable/>
+              <SetTarget label="/object"/>
+              <PushData>
+                <items>
+                  <StackString value=""/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="0"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="/:xpos"/>
+                </items>
+              </PushData>
+              <GetVariable/>
+              <SetProperty/>
+              <SetTarget label=""/>
+              <SetTarget label="/object"/>
+              <PushData>
+                <items>
+                  <StackString value=""/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="1"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="/:ypos"/>
+                </items>
+              </PushData>
+              <GetVariable/>
+              <SetProperty/>
+              <SetTarget label=""/>
+              <SetTarget label="/marker"/>
+              <PushData>
+                <items>
+                  <StackString value=""/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="0"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="/:xpos"/>
+                </items>
+              </PushData>
+              <GetVariable/>
+              <SetProperty/>
+              <SetTarget label=""/>
+              <SetTarget label="/marker"/>
+              <PushData>
+                <items>
+                  <StackString value=""/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="1"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="/:ypos"/>
+                </items>
+              </PushData>
+              <GetVariable/>
+              <SetProperty/>
+              <SetTarget label=""/>
+              <PushData>
+                <items>
+                  <StackString value="i"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="-1"/>
+                </items>
+              </PushData>
+              <SetVariable/>
+              <PushData>
+                <items>
+                  <StackString value="i"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="i"/>
+                </items>
+              </PushData>
+              <GetVariable/>
+              <PushData>
+                <items>
+                  <StackString value="1"/>
+                </items>
+              </PushData>
+              <Substract/>
+              <SetVariable/>
+              <BranchAlways byteOffset="65043"/>
+              <EndAction/>
+            </actions>
+          </DoAction>
+          <FrameLabel label="pressLeft">
+            <flags/>
+          </FrameLabel>
+          <ShowFrame/>
+          <ShowFrame/>
+          <ShowFrame/>
+          <ShowFrame/>
+          <ShowFrame/>
+          <ShowFrame/>
+          <ShowFrame/>
+          <ShowFrame/>
+          <ShowFrame/>
+          <ShowFrame/>
+          <DoAction>
+            <actions>
+              <Stop/>
+              <PushData>
+                <items>
+                  <StackString value="/:scene"/>
+                </items>
+              </PushData>
+              <GetVariable/>
+              <PushData>
+                <items>
+                  <StackString value="select"/>
+                </items>
+              </PushData>
+              <StringEqual/>
+              <LogicalNOT/>
+              <BranchIfTrue byteOffset="524"/>
+              <PushData>
+                <items>
+                  <StackString value="i"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="/:objectPos"/>
+                </items>
+              </PushData>
+              <GetVariable/>
+              <PushData>
+                <items>
+                  <StackString value="1"/>
+                </items>
+              </PushData>
+              <AddCast/>
+              <SetVariable/>
+              <PushData>
+                <items>
+                  <StackString value="i"/>
+                </items>
+              </PushData>
+              <GetVariable/>
+              <PushData>
+                <items>
+                  <StackString value="32"/>
+                </items>
+              </PushData>
+              <LessThanCast/>
+              <LogicalNOT/>
+              <BranchIfTrue byteOffset="472"/>
+              <PushData>
+                <items>
+                  <StackString value="i"/>
+                </items>
+              </PushData>
+              <GetVariable/>
+              <PushData>
+                <items>
+                  <StackString value="31"/>
+                </items>
+              </PushData>
+              <EqualCast/>
+              <LogicalNOT/>
+              <BranchIfTrue byteOffset="13"/>
+              <PushData>
+                <items>
+                  <StackString value="i"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="1"/>
+                </items>
+              </PushData>
+              <SetVariable/>
+              <PushData>
+                <items>
+                  <StackString value="/:"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="b"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="i"/>
+                </items>
+              </PushData>
+              <GetVariable/>
+              <ConcatenateString/>
+              <PushData>
+                <items>
+                  <StackString value="_flg"/>
+                </items>
+              </PushData>
+              <ConcatenateString/>
+              <ConcatenateString/>
+              <GetVariable/>
+              <PushData>
+                <items>
+                  <StackString value="0"/>
+                </items>
+              </PushData>
+              <EqualCast/>
+              <LogicalNOT/>
+              <BranchIfTrue byteOffset="366"/>
+              <PushData>
+                <items>
+                  <StackString value="/:objectPos"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="i"/>
+                </items>
+              </PushData>
+              <GetVariable/>
+              <SetVariable/>
+              <PushData>
+                <items>
+                  <StackString value="i"/>
+                </items>
+              </PushData>
+              <GetVariable/>
+              <PushData>
+                <items>
+                  <StackString value="10"/>
+                </items>
+              </PushData>
+              <LessThanCast/>
+              <LogicalNOT/>
+              <BranchIfTrue byteOffset="21"/>
+              <PushData>
+                <items>
+                  <StackString value="i"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="0"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="i"/>
+                </items>
+              </PushData>
+              <GetVariable/>
+              <ConcatenateString/>
+              <SetVariable/>
+              <PushData>
+                <items>
+                  <StackString value="/:xpos"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="/field/"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="b"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="i"/>
+                </items>
+              </PushData>
+              <GetVariable/>
+              <ConcatenateString/>
+              <ConcatenateString/>
+              <PushData>
+                <items>
+                  <StackString value="0"/>
+                </items>
+              </PushData>
+              <GetProperty/>
+              <PushData>
+                <items>
+                  <StackString value="/field"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="0"/>
+                </items>
+              </PushData>
+              <GetProperty/>
+              <AddCast/>
+              <SetVariable/>
+              <PushData>
+                <items>
+                  <StackString value="/:ypos"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="/field/"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="b"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="i"/>
+                </items>
+              </PushData>
+              <GetVariable/>
+              <ConcatenateString/>
+              <ConcatenateString/>
+              <PushData>
+                <items>
+                  <StackString value="1"/>
+                </items>
+              </PushData>
+              <GetProperty/>
+              <PushData>
+                <items>
+                  <StackString value="/field"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="1"/>
+                </items>
+              </PushData>
+              <GetProperty/>
+              <AddCast/>
+              <SetVariable/>
+              <SetTarget label="/object"/>
+              <PushData>
+                <items>
+                  <StackString value=""/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="0"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="/:xpos"/>
+                </items>
+              </PushData>
+              <GetVariable/>
+              <SetProperty/>
+              <SetTarget label=""/>
+              <SetTarget label="/object"/>
+              <PushData>
+                <items>
+                  <StackString value=""/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="1"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="/:ypos"/>
+                </items>
+              </PushData>
+              <GetVariable/>
+              <SetProperty/>
+              <SetTarget label=""/>
+              <SetTarget label="/marker"/>
+              <PushData>
+                <items>
+                  <StackString value=""/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="0"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="/:xpos"/>
+                </items>
+              </PushData>
+              <GetVariable/>
+              <SetProperty/>
+              <SetTarget label=""/>
+              <SetTarget label="/marker"/>
+              <PushData>
+                <items>
+                  <StackString value=""/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="1"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="/:ypos"/>
+                </items>
+              </PushData>
+              <GetVariable/>
+              <SetProperty/>
+              <SetTarget label=""/>
+              <PushData>
+                <items>
+                  <StackString value="i"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="32"/>
+                </items>
+              </PushData>
+              <SetVariable/>
+              <PushData>
+                <items>
+                  <StackString value="i"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="i"/>
+                </items>
+              </PushData>
+              <GetVariable/>
+              <PushData>
+                <items>
+                  <StackString value="1"/>
+                </items>
+              </PushData>
+              <AddCast/>
+              <SetVariable/>
+              <BranchAlways byteOffset="65043"/>
+              <EndAction/>
+            </actions>
+          </DoAction>
+          <FrameLabel label="pressRight">
+            <flags/>
+          </FrameLabel>
+          <ShowFrame/>
+          <ShowFrame/>
+          <ShowFrame/>
+          <ShowFrame/>
+          <ShowFrame/>
+          <ShowFrame/>
+          <ShowFrame/>
+          <ShowFrame/>
+          <ShowFrame/>
+          <ShowFrame/>
+          <DoAction>
+            <actions>
+              <Stop/>
+              <PushData>
+                <items>
+                  <StackString value="/:scene"/>
+                </items>
+              </PushData>
+              <GetVariable/>
+              <PushData>
+                <items>
+                  <StackString value="start"/>
+                </items>
+              </PushData>
+              <StringEqual/>
+              <LogicalNOT/>
+              <BranchIfTrue byteOffset="52"/>
+              <PushData>
+                <items>
+                  <StackString value="/help"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="6"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="0"/>
+                </items>
+              </PushData>
+              <SetProperty/>
+              <PushData>
+                <items>
+                  <StackString value="/:scene"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="select"/>
+                </items>
+              </PushData>
+              <SetVariable/>
+              <BranchAlways byteOffset="211"/>
+              <PushData>
+                <items>
+                  <StackString value="/:scene"/>
+                </items>
+              </PushData>
+              <GetVariable/>
+              <PushData>
+                <items>
+                  <StackString value="select"/>
+                </items>
+              </PushData>
+              <StringEqual/>
+              <LogicalNOT/>
+              <BranchIfTrue byteOffset="180"/>
+              <PushData>
+                <items>
+                  <StackString value="/:baseUrl"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="/:baseUrl"/>
+                </items>
+              </PushData>
+              <GetVariable/>
+              <PushData>
+                <items>
+                  <StackString value="%2FCF_position%2F"/>
+                </items>
+              </PushData>
+              <ConcatenateString/>
+              <PushData>
+                <items>
+                  <StackString value="/:objectPos"/>
+                </items>
+              </PushData>
+              <GetVariable/>
+              <ConcatenateString/>
+              <PushData>
+                <items>
+                  <StackString value="%2FCF_goodsId%2F"/>
+                </items>
+              </PushData>
+              <ConcatenateString/>
+              <PushData>
+                <items>
+                  <StackString value="/:vid"/>
+                </items>
+              </PushData>
+              <GetVariable/>
+              <ConcatenateString/>
+              <PushData>
+                <items>
+                  <StackString value="%2FCF_owner%2F"/>
+                </items>
+              </PushData>
+              <ConcatenateString/>
+              <PushData>
+                <items>
+                  <StackString value="/:oid"/>
+                </items>
+              </PushData>
+              <GetVariable/>
+              <ConcatenateString/>
+              <SetVariable/>
+              <PushData>
+                <items>
+                  <StackString value="/:submit"/>
+                </items>
+              </PushData>
+              <GetVariable/>
+              <LogicalNOT/>
+              <LogicalNOT/>
+              <BranchIfTrue byteOffset="44"/>
+              <PushData>
+                <items>
+                  <StackString value="/:baseUrl"/>
+                </items>
+              </PushData>
+              <GetVariable/>
+              <PushData>
+                <items>
+                  <StackString value=""/>
+                </items>
+              </PushData>
+              <GetURL2 method="0"/>
+              <PushData>
+                <items>
+                  <StackString value="/:submit"/>
+                </items>
+              </PushData>
+              <PushData>
+                <items>
+                  <StackString value="1"/>
+                </items>
+              </PushData>
+              <SetVariable/>
+              <EndAction/>
+            </actions>
+          </DoAction>
+          <FrameLabel label="pressCenter">
+            <flags/>
+          </FrameLabel>
+          <ShowFrame/>
+          <ShowFrame/>
+          <ShowFrame/>
+          <ShowFrame/>
+          <ShowFrame/>
+          <ShowFrame/>
+          <ShowFrame/>
+          <ShowFrame/>
+          <ShowFrame/>
+          <ShowFrame/>
+          <End/>
+        </tags>
+      </DefineSprite>
+      <PlaceObject2 replace="0" depth="146" objectID="77" name="as">
+        <transform>
+          <Transform transX="-400" transY="1200"/>
+        </transform>
+        <colorTransform>
+          <ColorTransform2 factorRed="256" factorGreen="256" factorBlue="256" factorAlpha="0"/>
+        </colorTransform>
+      </PlaceObject2>
+      <ShowFrame/>
+      <End/>
+    </tags>
+  </Header>
+</swf>

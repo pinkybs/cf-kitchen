@@ -1,0 +1,34 @@
+{%include file="common/header_shiftjis.phtml"%}
+
+<div id="giftSelectList">
+    <div class="content" style="background:#fff5f5;">
+    	<div class="headline" style="background:#ff9999;color:#ffffff;text-align:center;">
+            <img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+            注文の確認<br />
+			<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+        </div><!--/.headline-->
+        <div class="description">
+            <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+            {%$profileUidInfo.displayName%}さんに料理を注文しますか？<br />
+            <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+        </div><!--/.description-->
+        <div class="buy" style="color:#cc0000;text-align:center;">
+            <form action="create:activity?callback={%$baseUrl%}/mobile/kitchen/orderfinish/CF_uid/{%$profileUid%}/CF_kitchen_id/{%$kitchenId%}{% if $ua==1 %}&guid=ON{%/if%}" method="POST" >
+                <input type="hidden" name="title" value="{%$commFeedTitle%}" />
+                <input type="hidden" name="mobileUrl" value="http://ma.mixi.net/{%$appId%}/" />
+                <input type="hidden" name="recipient1" value="{%$profileUid%}" />
+                <div style="text-align:center;"><input type="submit" value="決定" /></div>
+            </form>
+
+            <form method="post" action='{% "$baseUrl/mobile/kitchen/home?CF_uid=$profileUid"|mixiurl %}'>
+                    <div style="text-align:center;"><input type="submit" value="ｷｬﾝｾﾙ" /></div>
+            </form>
+            <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="10" /><br />
+        </div><!--/.buy-->
+
+        <div class="line" style="background:#ff9999;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+    </div><!--/.content-->
+</div><!--/#yorozuConfirm-->
+
+{%include file="common/browseback.phtml"%}
+{%include file="footer.phtml"%}

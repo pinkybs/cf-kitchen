@@ -1,0 +1,44 @@
+{%include file="common/header_shiftjis.phtml"%}
+
+<div id="giftSelectList">
+    <div class="content" style="background:#f0f5e0;">
+        <div class="headline" style="background:#8bbd82;color:#ffffff;text-align:center;">
+            <img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/giftcenter.gif" width="230" height="60" /><br />
+            <img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+            {% $giftInfo.name %}<br />
+        </div><!--/.headline-->
+        <div class="description">
+            <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+                         このｷﾞﾌﾄを選択した{%$tarCount%}人のﾏｲﾐｸに贈りますか？<br />
+        </div><!--/.description-->
+        <div class="thumb" style="text-align:center;">
+            {% if $giftInfo.goods_gift %}
+            <img src="{%$staticUrl%}/apps/kitchen/mobile/img/zakka/130x130/{% $giftInfo.picture %}.gif" width="130" height="130" style="margin:3px 0;" />
+            {% elseif $giftInfo.item_gift %}
+            <img src="{%$staticUrl%}/apps/kitchen/mobile/img/yorozu/130x130/{% $giftInfo.picture %}.gif" width="130" height="130" style="margin:3px 0;" />
+            {% /if %}
+            <br/>
+            {% $giftInfo.introduce %}<br />
+        </div><!--/.thumb-->
+        <div class="buy" style="color:#cc0000;text-align:center;">
+            <form action="create:activity?callback={%$baseUrl%}/mobile/kitchenitem/freegiftfinish{% if $ua==1 %}&guid=ON{%/if%}" method="POST" >
+                <input type="hidden" name="title" value="{%$commFeedTitle%}" />
+                <input type="hidden" name="mobileUrl" value="http://ma.mixi.net/{%$appId%}/" />
+                <input type="hidden" name="mediaItem1" value="{%$commFeedUrl%}" />
+                {%foreach key=key item=id from=$taruids%}
+                <input type="hidden" name="recipient{%$key+1%}" value="{%$id%}" />
+                {%/foreach%}
+                <div style="text-align:center;"><input type="submit" value="決定" /></div>
+            </form>
+
+            <form method="post" action='{% "$baseUrl/mobile/kitchenitem/freegiftselect?giftId=$gid"|mixiurl %}'>
+                    <div style="text-align:center;"><input type="submit" value="ｷｬﾝｾﾙ" /></div>
+            </form>
+        </div><!--/.buy-->
+
+        <div class="line" style="background:#82bdba;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+    </div><!--/.content-->
+</div><!--/#yorozuConfirm-->
+
+{%include file="common/browseback.phtml"%}
+{%include file="footer.phtml"%}

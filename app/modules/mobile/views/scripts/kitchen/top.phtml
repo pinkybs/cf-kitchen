@@ -1,0 +1,210 @@
+{%include file="header.phtml"%}
+{%include file="common/ad_header.phtml"%}
+
+<div id="top">
+
+    <div id="title" style="text-align:center;">
+        <object data="{%$staticUrl%}/apps/kitchen/mobile/img/title/title.swf" type="application/x-shockwave-flash" width="240" height="106">
+            <param name="bgcolor" value="ffffff" />
+            <param name="loop" value="on" />
+            <param name="quality" value="high" />
+            <embed src="{%$staticUrl%}/apps/kitchen/mobile/img/title/title.swf" width="240" height="106" loop="on" quality="high" bgcolor="#ffffff"></embed>
+        </object><br />
+        <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="5" /><br />
+        {% if $friendCookingCnt > 0 %}
+            <span style="color:#999999;text-decoration:blink;">現在 {% $friendCookingCnt %}人の友達が調理中!</span><br />
+        {% /if %}
+        {% emoji code="F8C4" %}<a href='{% "$baseUrl/mobile/kitchen/home"|mixiurl %}' accesskey="3" style="color:#cc0000;"><span style="color:#cc0000;">ゲーム開始[Myレストランへ]</span></a><br />
+        {% emoji code="F8E6" %}<a href='{% "$baseUrl/mobile/kitchen/inviteguide"|mixiurl %}'>ﾏｲﾐｸ招待で100M+ﾌﾟﾚﾐｱｶﾞﾁｬ!!</a><br />
+        <div class="community">
+            <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="5" /><br />
+            <div class="line" style="background:#c0c0c0;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+            <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="5" /><br />
+            {% emoji code="F9F4" %}攻略情報＆ﾚｼﾋﾟ要望{% emoji code="F9F4" %}<br />
+            <a href="http://m.mixi.jp/view_community.pl?id=4809835&guid=ON">公式コミュニティへ</a><br />
+        </div><!--/.community-->
+    </div><!--/#title-->
+
+    <div id="info">
+        <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+        <div class="content" style="background:#f0f5e0;">
+            <div class="headline" style="background:#8bbd82;color:#ffffff;text-align:center;">
+                <img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+                お知らせ<br />
+                <img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+            </div><!--/.headline-->
+            <div class="inner">
+                {% emoji code="F977" %}<a href='{% "$baseUrl/mobile/kitchenstatic/info?CF_info=100414_update"|mixiurl %}'>ｱｯﾌﾟﾃﾞｰﾄのお知らせ</a><br />
+                {% emoji code="F977" %}<a href='{% "$baseUrl/mobile/kitchenstatic/info?CF_info=100406"|mixiurl %}'>ｽﾊﾟｲｽ効果のお詫び</a><br />
+				{% emoji code="F977" %}<a href='{% "$baseUrl/mobile/kitchenstatic/info?CF_info=100401_invitecampaign"|mixiurl %}'>友達招待ｷｬﾝﾍﾟｰﾝ開始</a><br />
+                <div class="more" style="text-align:right;">
+                    <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+                    <div class="line" style="background:#8bbd82;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+                    <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+                    <span style="color:#cc6666;">⇒</span><a href='{% "$baseUrl/mobile/kitchenstatic/info"|mixiurl %}'>お知らせ一覧</a>&nbsp;<br />
+                </div><!--/.more-->
+            </div><!--/.inner-->
+            <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+            <div class="line" style="background:#8bbd82;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+        </div><!--/.content-->
+    </div><!--/#info-->
+
+	<div id="news">
+		<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+		<div class="content" style="background:#fff5f5;">
+			<div class="headline" style="background:#ff9999;color:#ffffff;text-align:center;">
+				<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+				{% emoji code="F99F" %}特別キャンペーン{% emoji code="F99F" %}<br />
+				<img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+			</div><!--/.headline-->
+			<div class="inner">
+				<div class="section">
+					<div class="banner" style="text-align:center;">
+						<img src="{%$staticUrl%}/apps/kitchen/mobile/img/campaign/100401_gacha192x53.gif?" width="192" height="53" style="margin-top:3px;" /><br />
+						<span style="color:#cc0000;"><a href='{% "$baseUrl/mobile/kitchenshop/gachainfo?gacha_id=4"|mixiurl %}'>待望の新ｶﾞﾁｬが登場!</a></span><br />
+					</div><!--/.banner-->
+				</div><!--/.section-->
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				<div class="line" style="background:#ff9999;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+				<div class="section">
+					<div class="banner" style="text-align:center;">
+						<img src="{%$staticUrl%}/apps/kitchen/mobile/img/campaign/100401_item192x53.gif?" width="192" height="53" style="margin-top:3px;" /><br />
+						<span style="color:#cc0000;"><a href='{% "$baseUrl/mobile/kitchenstatic/info?CF_info=100401_item"|mixiurl %}'>一流ﾚｽﾄﾗﾝへの近道はｺﾁﾗ!</a></span><br />
+					</div><!--/.banner-->
+				</div><!--/.section-->
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				<div class="line" style="background:#ff9999;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+				<div class="section">
+					<div class="banner" style="text-align:center;">
+						<img src="{%$staticUrl%}/apps/kitchen/mobile/img/campaign/100401_invitecampaign192x53.gif?" width="192" height="53" style="margin-top:3px;" /><br />
+						<span style="color:#cc0000;">今度は全員にﾌﾟﾚｾﾞﾝﾄ!<br />ﾒﾀﾞﾙ限定の強力ﾚｱｱｲﾃﾑ!!</span><br />
+					</div><!--/.banner-->
+					<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+					<form method="post" action='{% "invite:friends?callback=$baseUrl/mobile/callback/invite?forward=$baseUrl/mobile/kitchen/invitefinish" %}'>
+						<div class="btn" style="text-align:center;">
+							<input type="submit" value="  マイミクを招待する  " /><br />
+						</div><!--/.btn-->
+					</form>
+					<div class="more" style="text-align:right;">
+						<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+						<span style="color:#cc6666;">⇒</span><a href='{% "$baseUrl/mobile/kitchenstatic/info?CF_info=100401_invitecampaign"|mixiurl %}'>招待キャンペーン詳細</a>&nbsp;<br />
+					</div><!--/.more-->
+				</div><!--/.section-->
+				<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+				<div class="line" style="background:#ff9999;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+				{% assign var="diary_title" value="ようこそマイキッチン" %}
+				{% assign var="diary_body" value="◎ようこそマイキッチン\nhttp://mixi.jp/view_appli.pl?id=16235\n\nケータイで遊べる、ほのぼの系お料理ゲーム！\n\n「食材を集めてレシピをつくろう！」" %}
+				<div class="section">
+					<div class="banner" style="text-align:center;">
+						<img src="{%$staticUrl%}/apps/kitchen/mobile/img/campaign/bn192x53.gif?" width="192" height="53" style="margin-top:3px;" /><br />
+						<span style="color:#cc0000;">日記投稿で必ず貰える<br />4月末までの期間限定ｷｬﾝﾍﾟｰﾝ!</span><br />
+						<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+						<form method="get" action="http://m.mixi.jp/add_diary.pl">
+							<input type="hidden" name="diary_title" value="{% $diary_title %}" />
+							<input type="hidden" name="diary_body" value="{% $diary_body %}" />
+							<input type="hidden" name="guid" value="ON" />
+							<input type="submit" value=" キャンペーン日記を書く " /><br />
+						</form>
+					</div><!--/.banner-->
+					<div class="more" style="text-align:right;">
+						<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+						<span style="color:#cc6666;">⇒</span><a href='{% "$baseUrl/mobile/kitchenstatic/info?CF_info=100324_campaign"|mixiurl %}'>日記キャンペーン詳細</a>&nbsp;<br />
+					</div><!--/.more-->
+				</div><!--/.section-->
+			</div><!--/.inner-->
+			<img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+			<div class="line" style="background:#ff9999;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+		</div><!--/.content-->
+	</div><!--/#news-->
+
+    {% if $myRes.level && $myRes.level>1 %}
+    <div id="gacha">
+        <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+        <div class="content" style="background:#f0f5e0;">
+            <div class="headline" style="background:#82bdba;color:#ffffff;text-align:center;">
+                <img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+                ﾏｲﾐｸ招待でﾌﾟﾚﾐｱｶﾞﾁｬに挑戦{% emoji code="F9CE" %}<br />
+                <img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+            </div><!--/.headline-->
+            <div class="inner">
+                <div class="section" style="text-align:center;">
+                    <a href='{% "$baseUrl/mobile/kitchenshop/gachalist"|mixiurl %}'><img src="{%$staticUrl%}/apps/kitchen/mobile/img/gacha/192x53/00.gif" width="192" height="53" style="margin-top:3px;text-align:center;" /><br />
+                    ｶﾞﾁｬで非売品ｱｲﾃﾑをGETしよ!</a><br />
+                </div><!--/.section-->
+            </div><!--/.inner-->
+            <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+            <div class="line" style="background:#82bdba;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+        </div><!--/.content-->
+    </div><!--/#gacha-->
+    {% /if %}
+    
+    <div id="ranking">
+        <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+        <div class="content" style="background:#fff5f5;">
+            <div class="headline" style="background:#ff9999;color:#ffffff;text-align:center;">
+                <img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+                {% emoji code="F9BF" %}人気店ランキング{% emoji code="F9BF" %}<br />
+                <img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+            </div><!--/.headline-->
+            <div class="inner">
+                {% foreach from=$ranking item=data%}
+                <div class="section">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            {% if $data.rank <= 3%}
+                            <td style="width:44px;text-align:center;"><img src="{%$data.miniThumbnailUrl%}" style="margin:3px 0;" /></td>
+                            {% /if %}
+                            <td><div style="{% if $ua==1 %}font-size:x-small;{%/if%}"><span style="color:#FF6600;">{% emoji code="F9BF" %}</span>{%$data.rank%}位
+                                {% if $uid == $data.uid %}
+                                    {% emoji code="F995" %}<span style="color:#cc0000;">{%$data.displayName%}</span><br />
+                                {% else %}
+                                    {% emoji code="F995" %}<a href='{% "$baseUrl/mobile/kitchen/home?CF_uid=`$data.uid`"|mixiurl %}'>{%$data.displayName%}</a><br />
+                                {% /if %}
+                                {% emoji code="F99F" %}ﾚﾍﾞﾙ:{%$data.total_level%}<br /></div></td>
+                        </tr>
+                    </table>
+                    <div style="background:#ff9999;text-align:center;"><img src="{%$staticUrl%}/apps/kitchen/mobile/img/line.gif" width="230" height="1" /></div>
+                </div><!--/.section-->
+                {% /foreach %}
+                
+                <div class="more" style="text-align:right;">
+                    <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+                    <span style="color:#cc6666;">⇒</span><a href='{% "$baseUrl/mobile/kitchen/rankinglist"|mixiurl %}'>続きを見る</a>&nbsp;<br />
+                </div><!--/.more-->
+            </div><!--/.inner-->
+            <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+            <div class="line" style="background:#ff9999;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+        </div><!--/.content-->
+    </div><!--/#ranking-->
+
+    <div id="menu">
+        <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+        <div class="content" style="background:#f0f5e0;">
+            <div class="headline" style="background:#8bbd82;color:#ffffff;text-align:center;">
+                <img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+                メニュー<br />
+                <img src="{%$staticUrl%}/apps/kitchen/mobile/img/title/w.gif" width="100%" height="1" style="margin:1px 0;" /><br />
+            </div><!--/.headline-->
+            <div class="inner">
+                {% if $myRes.level && $myRes.level==1 %}
+                {% emoji code="F9EB" %}<span style="color:#999999;">デパート</span>:食材･ざっか･不動産<br />
+                {% emoji code="F8E4" %}<span style="color:#999999;">ﾚｼﾋﾟ図鑑</span>:全種類集めよう!<br />
+                {% else %}
+                {% emoji code="F9EB" %}<a href='{% "$baseUrl/mobile/kitchenshop/shopping"|mixiurl %}'>デパート</a>:食材･ざっか･不動産<br />
+                {% emoji code="F8E4" %}<a href='{% "$baseUrl/mobile/kitchenrecipe/recipelist"|mixiurl %}'>ﾚｼﾋﾟ図鑑</a>:全種類集めよう!<br />
+                {% /if %}
+                {% emoji code="F981" %}<a href='{% "$baseUrl/mobile/kitchenstatic/help"|mixiurl %}'>ヘ ル プ</a>:困ったときは…<br />
+                {%*
+                    <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+                    <div style="text-align:center;"><a href='{% "$baseUrl/mobile/kitchenstatic/info"|mixiurl %}'>お知らせ</a><span style="color:#999999;">|</span><a href='{% "$baseUrl/mobile/kitchenfirst/kitchenfirst"|mixiurl %}'>入門ｶﾞｲﾄﾞ</a><span style="color:#999999;">|</span><a href='{% "$baseUrl/mobile/kitchenstatic/qa"|mixiurl %}'>FAQ</a></div>
+                *%}
+            </div><!--/.inner-->
+            <img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /><br />
+            <div class="line" style="background:#8bbd82;"><img src="http://mm.mixi.net/img/dot0.gif" width="1" height="3" /></div>
+        </div><!--/.content-->
+    </div><!--/#menu-->
+
+</div><!--/#top-->
+
+{%include file="common/menu.phtml"%}
+{%include file="ad_footer.phtml"%}
